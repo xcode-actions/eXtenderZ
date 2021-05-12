@@ -670,8 +670,10 @@
 		7BDF6459255AA34F00CA77DF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HPN;
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = happn;
 				TargetAttributes = {
 					7B0E91ED255ACC03002E8F1F = {
 						CreatedOnToolsVersion = 12.2;
