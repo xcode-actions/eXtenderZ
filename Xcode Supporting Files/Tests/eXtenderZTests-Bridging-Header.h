@@ -18,8 +18,8 @@ limitations under the License. */
  * expose to Swift.
  *
  * “Funny” note: This file (it is presumably this file) must not be along a file
- * called module.modulemap or the test target will use the given the modulemap
- * as its own, and compilation will fail.
+ * called module.modulemap or the test target will use it as its own module map,
+ * and compilation will fail.
  */
 
 #import "HPNSimpleObject.h"

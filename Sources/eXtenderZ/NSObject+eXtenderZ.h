@@ -133,7 +133,12 @@ NS_ASSUME_NONNULL_BEGIN
  * WARNING: This method is NOT called when a non-extended object is dealloced! */
 - (void)hpn_prepareDeallocationOfExtendedObject;
 
+#ifdef HPN_eXtenderZ_STATIC
+void __hpn_linkNSObjectExtenderzCategory(void);
+#endif
+
 @end
+
 
 /** Variant of the CHECKED_ADD_EXTENDER preprocessor macro (created for Swift). */
 void HPNCheckedAddExtender(_Nullable id receiver, NSObject <HPNExtender> *extender);

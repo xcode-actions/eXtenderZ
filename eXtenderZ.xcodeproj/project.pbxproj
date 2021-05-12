@@ -47,6 +47,14 @@
 		7B0E93A2255AD090002E8F1F /* SimpleObjectExtender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEC0255AA577008AF2C5 /* SimpleObjectExtender.swift */; };
 		7B0E93AE255AD093002E8F1F /* eXtenderZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEBB255AA577008AF2C5 /* eXtenderZTests.swift */; };
 		7B0E93DB255AD139002E8F1F /* ObjcCategoryLibrary.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEAD255AA577008AF2C5 /* ObjcCategoryLibrary.c */; };
+		7B256EBB264C745F00840604 /* HPNCategoriesLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B256EB9264C745F00840604 /* HPNCategoriesLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B256EBC264C745F00840604 /* HPNCategoriesLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B256EB9264C745F00840604 /* HPNCategoriesLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B256EBD264C745F00840604 /* HPNCategoriesLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B256EB9264C745F00840604 /* HPNCategoriesLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B256EBE264C745F00840604 /* HPNCategoriesLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B256EB9264C745F00840604 /* HPNCategoriesLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B256EBF264C745F00840604 /* HPNCategoriesLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B256EBA264C745F00840604 /* HPNCategoriesLoader.m */; };
+		7B256EC0264C745F00840604 /* HPNCategoriesLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B256EBA264C745F00840604 /* HPNCategoriesLoader.m */; };
+		7B256EC1264C745F00840604 /* HPNCategoriesLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B256EBA264C745F00840604 /* HPNCategoriesLoader.m */; };
+		7B256EC2264C745F00840604 /* HPNCategoriesLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B256EBA264C745F00840604 /* HPNCategoriesLoader.m */; };
 		7B2FA004255AD8880094DFB4 /* ObjcCategoryLibrary.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEAD255AA577008AF2C5 /* ObjcCategoryLibrary.c */; };
 		7B2FA010255AD8A50094DFB4 /* HPNSimpleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEBE255AA577008AF2C5 /* HPNSimpleObject.m */; };
 		7B2FA01C255AD8A80094DFB4 /* HPNSimpleObjectHelptender.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEBD255AA577008AF2C5 /* HPNSimpleObjectHelptender.m */; };
@@ -131,6 +139,8 @@
 		7B0E9234255ACC73002E8F1F /* eXtenderZ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = eXtenderZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B0E923C255ACC74002E8F1F /* eXtenderZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eXtenderZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B0E925A255ACC8B002E8F1F /* eXtenderZ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = eXtenderZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B256EB9264C745F00840604 /* HPNCategoriesLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPNCategoriesLoader.h; sourceTree = "<group>"; };
+		7B256EBA264C745F00840604 /* HPNCategoriesLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPNCategoriesLoader.m; sourceTree = "<group>"; };
 		7B390028255AC5BC008AF2C5 /* eXtenderZ-static.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eXtenderZ-static.h"; sourceTree = "<group>"; };
 		7B39FEA7255AA50B008AF2C5 /* Readme.adoc */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme.adoc; sourceTree = "<group>"; wrapsLines = 1; };
 		7B39FEA8255AA50B008AF2C5 /* License.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
@@ -285,13 +295,15 @@
 			isa = PBXGroup;
 			children = (
 				7B39FEB2255AA577008AF2C5 /* eXtenderZ.h */,
-				7B39FEB3255AA577008AF2C5 /* HPNExtenderConfig.h */,
-				7B39FEB8255AA577008AF2C5 /* HPNExtenderConfig.m */,
 				7B39FEB6255AA577008AF2C5 /* HelptenderUtils.h */,
 				7B39FEB7255AA577008AF2C5 /* NSObject+Utils.h */,
 				7B39FEB4255AA577008AF2C5 /* NSObject+Utils.m */,
 				7B39FEB1255AA577008AF2C5 /* NSObject+eXtenderZ.h */,
 				7B39FEB5255AA577008AF2C5 /* NSObject+eXtenderZ.m */,
+				7B39FEB3255AA577008AF2C5 /* HPNExtenderConfig.h */,
+				7B39FEB8255AA577008AF2C5 /* HPNExtenderConfig.m */,
+				7B256EB9264C745F00840604 /* HPNCategoriesLoader.h */,
+				7B256EBA264C745F00840604 /* HPNCategoriesLoader.m */,
 			);
 			path = eXtenderZ;
 			sourceTree = "<group>";
@@ -421,6 +433,7 @@
 				7B390012255AB194008AF2C5 /* HPNExtenderConfig.h in Headers */,
 				7B390017255AB197008AF2C5 /* NSObject+eXtenderZ.h in Headers */,
 				7B39001C255AB19B008AF2C5 /* NSObject+Utils.h in Headers */,
+				7B256EBE264C745F00840604 /* HPNCategoriesLoader.h in Headers */,
 				7B390021255AB19D008AF2C5 /* HelptenderUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +448,7 @@
 				7B39FF5B255AAB33008AF2C5 /* HPNExtenderConfig.h in Headers */,
 				7B39FF65255AAB3E008AF2C5 /* NSObject+eXtenderZ.h in Headers */,
 				7B39FF6A255AAB42008AF2C5 /* NSObject+Utils.h in Headers */,
+				7B256EBB264C745F00840604 /* HPNCategoriesLoader.h in Headers */,
 				7B39FF60255AAB38008AF2C5 /* HelptenderUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +463,7 @@
 				7B39FFD4255AB0F4008AF2C5 /* HPNExtenderConfig.h in Headers */,
 				7B39FFD9255AB0FB008AF2C5 /* NSObject+eXtenderZ.h in Headers */,
 				7B39FFDE255AB116008AF2C5 /* NSObject+Utils.h in Headers */,
+				7B256EBC264C745F00840604 /* HPNCategoriesLoader.h in Headers */,
 				7B39FFE3255AB11D008AF2C5 /* HelptenderUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,6 +478,7 @@
 				7B39FFF3255AB169008AF2C5 /* HPNExtenderConfig.h in Headers */,
 				7B39FFF8255AB16B008AF2C5 /* NSObject+eXtenderZ.h in Headers */,
 				7B39FFFD255AB178008AF2C5 /* NSObject+Utils.h in Headers */,
+				7B256EBD264C745F00840604 /* HPNCategoriesLoader.h in Headers */,
 				7B390002255AB181008AF2C5 /* HelptenderUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -874,6 +890,7 @@
 				7B39FFA2255AAE92008AF2C5 /* HPNExtenderConfig.m in Sources */,
 				7B39FFA3255AAE92008AF2C5 /* NSObject+eXtenderZ.m in Sources */,
 				7B39FFA1255AAE92008AF2C5 /* NSObject+Utils.m in Sources */,
+				7B256EBF264C745F00840604 /* HPNCategoriesLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -884,6 +901,7 @@
 				7B39FFA9255AAE93008AF2C5 /* HPNExtenderConfig.m in Sources */,
 				7B39FFAA255AAE93008AF2C5 /* NSObject+eXtenderZ.m in Sources */,
 				7B39FFA8255AAE93008AF2C5 /* NSObject+Utils.m in Sources */,
+				7B256EC0264C745F00840604 /* HPNCategoriesLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -894,6 +912,7 @@
 				7B39FFB0255AAE93008AF2C5 /* HPNExtenderConfig.m in Sources */,
 				7B39FFB1255AAE93008AF2C5 /* NSObject+eXtenderZ.m in Sources */,
 				7B39FFAF255AAE93008AF2C5 /* NSObject+Utils.m in Sources */,
+				7B256EC1264C745F00840604 /* HPNCategoriesLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -904,6 +923,7 @@
 				7B39FFB7255AAE94008AF2C5 /* HPNExtenderConfig.m in Sources */,
 				7B39FFB8255AAE94008AF2C5 /* NSObject+eXtenderZ.m in Sources */,
 				7B39FFB6255AAE94008AF2C5 /* NSObject+Utils.m in Sources */,
+				7B256EC2264C745F00840604 /* HPNCategoriesLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1290,6 +1310,10 @@
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
 				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HPN_eXtenderZ_STATIC,
+					"$(inherited)",
+				);
 				MARKETING_VERSION = 1.0.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1308,6 +1332,10 @@
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
 				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HPN_eXtenderZ_STATIC,
+					"$(inherited)",
+				);
 				MARKETING_VERSION = 1.0.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -1325,6 +1353,10 @@
 				CURRENT_PROJECT_VERSION = 8;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HPN_eXtenderZ_STATIC,
+					"$(inherited)",
+				);
 				MARKETING_VERSION = 1.0.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1343,6 +1375,10 @@
 				CURRENT_PROJECT_VERSION = 8;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HPN_eXtenderZ_STATIC,
+					"$(inherited)",
+				);
 				MARKETING_VERSION = 1.0.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -1361,6 +1397,10 @@
 				CURRENT_PROJECT_VERSION = 8;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HPN_eXtenderZ_STATIC,
+					"$(inherited)",
+				);
 				MARKETING_VERSION = 1.0.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1379,6 +1419,10 @@
 				CURRENT_PROJECT_VERSION = 8;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HPN_eXtenderZ_STATIC,
+					"$(inherited)",
+				);
 				MARKETING_VERSION = 1.0.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -1397,6 +1441,10 @@
 				CURRENT_PROJECT_VERSION = 8;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HPN_eXtenderZ_STATIC,
+					"$(inherited)",
+				);
 				MARKETING_VERSION = 1.0.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1415,6 +1463,10 @@
 				CURRENT_PROJECT_VERSION = 8;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HPN_eXtenderZ_STATIC,
+					"$(inherited)",
+				);
 				MARKETING_VERSION = 1.0.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
