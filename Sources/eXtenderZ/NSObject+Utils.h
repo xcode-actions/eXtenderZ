@@ -41,6 +41,10 @@ NS_ASSUME_NONNULL_BEGIN
 /* Get the associated object for the given key (same as calling objc_getAssociatedObject). */
 - (nullable id)hpn_getAssociatedObjectWithKey:(void *)key;
 
+#ifdef HPN_eXtenderZ_STATIC
+void __hpn_linkNSObjectUtilsCategory(void);
+#endif
+
 @end
 
 NS_ASSUME_NONNULL_END

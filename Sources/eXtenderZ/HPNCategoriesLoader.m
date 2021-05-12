@@ -1,5 +1,5 @@
 /*
-Copyright 2019 happn
+Copyright 2021 happn
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -13,20 +13,23 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. */
 
-#ifndef HPN_eXtenderZ_STATIC
+#import "HPNCategoriesLoader.h"
 
-# import <eXtenderZ/HPNExtenderConfig.h>
+#import "NSObject+Utils.h"
+#import "NSObject+eXtenderZ.h"
 
-# import <eXtenderZ/NSObject+Utils.h>
-# import <eXtenderZ/NSObject+eXtenderZ.h>
 
-#else
 
-# import "HPNExtenderConfig.h"
+#ifdef HPN_eXtenderZ_STATIC
 
-# import "NSObject+Utils.h"
-# import "NSObject+eXtenderZ.h"
+@implementation HPNCategoriesLoader
 
-# import "HPNCategoriesLoader.h"
++ (void)loadCategories
+{
+	__hpn_linkNSObjectUtilsCategory();
+	__hpn_linkNSObjectExtenderzCategory();
+}
+
+@end
 
 #endif

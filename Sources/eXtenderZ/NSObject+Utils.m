@@ -73,4 +73,9 @@ limitations under the License. */
 	return [self hpn_getAssociatedObjectWithKey:key createIfNotExistWithBlock:NULL associationPolicy:OBJC_ASSOCIATION_RETAIN_NONATOMIC];
 }
 
+#ifdef HPN_eXtenderZ_STATIC
+void __hpn_linkNSObjectUtilsCategory(void) {
+}
+#endif
+
 @end

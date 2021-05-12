@@ -16,6 +16,21 @@ limitations under the License. */
 #ifndef __HPN_eXtenderZ__
 # define __HPN_eXtenderZ__
 
+/* Defined here _and_ in build settings. We previously did not need it in the
+ * build settings, but now we do because we allow force loading the categories
+ * in the static version of the xcframework to avoid the need of -ObjC. As this
+ * is not needed in the dymamic version of the xcframework, we want not to do it
+ * in it.
+ * So we need the preprocessor instruction to be defined in the source files to
+ * know whether to load the categories or not, which is done with the build
+ * settings, and in eXtenderZ.h in the client code to know which quoting style
+ * to use (the define in this file).
+ * As an added bonus, clients can know whether the xcframework they are using is
+ * static or dynamic using a preprocessor check.
+ *
+ * Note: We could easily have left the force loading of the categories in the
+ * dynamic xcframework. It has _no_ performance impact (it is never called!).
+ * The only different AFAIK is the addition of a few symbols. */
 # define HPN_eXtenderZ_STATIC
 # include "eXtenderZ.h"
 

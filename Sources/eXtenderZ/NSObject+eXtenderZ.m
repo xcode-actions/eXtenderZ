@@ -1050,6 +1050,11 @@ static Class changeClassOfObjectNotifyingHelptenders(NSObject *object, Class new
 											 * must call the original class then. */
 }
 
+#ifdef HPN_eXtenderZ_STATIC
+void __hpn_linkNSObjectExtenderzCategory(void) {
+}
+#endif
+
 @end
 
 
