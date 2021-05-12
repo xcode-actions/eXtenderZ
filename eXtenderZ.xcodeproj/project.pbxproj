@@ -953,7 +953,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
@@ -964,7 +964,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -981,7 +981,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
@@ -992,7 +992,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -1052,7 +1052,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
@@ -1063,7 +1063,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1080,7 +1080,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
@@ -1091,7 +1091,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -1150,7 +1150,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
@@ -1161,7 +1161,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1178,7 +1178,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
@@ -1189,7 +1189,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -1249,7 +1249,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
@@ -1260,7 +1260,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1278,7 +1278,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
@@ -1289,7 +1289,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -1306,7 +1306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
 				EXECUTABLE_PREFIX = lib;
@@ -1314,7 +1314,7 @@
 					HPN_eXtenderZ_STATIC,
 					"$(inherited)",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1328,7 +1328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
 				EXECUTABLE_PREFIX = lib;
@@ -1336,7 +1336,7 @@
 					HPN_eXtenderZ_STATIC,
 					"$(inherited)",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1350,14 +1350,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					HPN_eXtenderZ_STATIC,
 					"$(inherited)",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1372,14 +1372,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					HPN_eXtenderZ_STATIC,
 					"$(inherited)",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1394,14 +1394,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					HPN_eXtenderZ_STATIC,
 					"$(inherited)",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1416,14 +1416,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					HPN_eXtenderZ_STATIC,
 					"$(inherited)",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1438,14 +1438,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					HPN_eXtenderZ_STATIC,
 					"$(inherited)",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1460,14 +1460,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					HPN_eXtenderZ_STATIC,
 					"$(inherited)",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "-ObjC";
