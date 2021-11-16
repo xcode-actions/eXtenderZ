@@ -39,10 +39,12 @@ static CFMutableDictionaryRef sharedClassLevelFromOriginalAndRuntimeHelptender(v
 static Class classForObjectExtendedWith(NSObject *object, NSArray *extenders);
 static Class changeClassOfObjectNotifyingHelptenders(NSObject *object, Class newClass);
 
-/* Returns a concatenation of str, str2 and str3. str3 can be NULL (not the others).
- * The returned string should be free’d using free().
- * The implementation is not optimized.
- * This function is intended to be used in addMethodForPropertyNamed:inClass: to create the selector name and type for the added selector. */
+/**
+ Returns a concatenation of @c str, @c str2 and @c str3. @c str3 can be @c NULL (not the others).
+ The returned string should be free’d using @c free()@endc.
+ 
+ The implementation is not optimized.
+ This function is intended to be used in @c classForObjectExtendedWith() to create the selector name and type for the added selector. */
 static char *copyStrs(const char * restrict str1, const char * restrict str2, const char * restrict str3);
 static char *auto_sprintf(char * restrict buffer, size_t buffer_size, BOOL * restrict has_malloced, const char * restrict format, ...);
 
@@ -368,7 +370,7 @@ static CFHashCode classPairHash(const void *value) {
 		[self hpn_removeExtender:self.hpn_extenders[n-1] atIndex:n-1];
 	
 	((void (*)(id, SEL))HPN_HELPTENDER_CALL_SUPER_NO_ARGS(HPNObjectBaseHelptender));
-	if (/* DISABLES CODE */ (NO)) [super dealloc]; /* Happy compiler is happy */
+	if (/* DISABLED CODE */(NO)) [super dealloc]; /* Happy compiler is happy */
 }
 
 - (BOOL)hpn_isExtended
@@ -577,8 +579,7 @@ static CFHashCode classPairHash(const void *value) {
 	CFNumberRef n = NULL;
 	do {
 		n = CFDictionaryGetValue(sharedClassLevelFromOriginalAndRuntimeHelptender(), &classPair);
-		/* If n is NULL (unregistered class pair), we try with super classes
-		 *  because (among others) KVO does ISA-swizzling too and screws the class pair registration… */
+		/* If n is NULL (unregistered class pair), we try with super classes because (among others) KVO does ISA-swizzling too and screws the class pair registration… */
 	} while (n == NULL && (classPair.class1 = class_getSuperclass(classPair.class1)) != Nil);
 	NSCAssert(n != NULL, @"***** INTERNAL ERROR: Got NULL level for class pair %s (or superclass)/%s.", class_getName(object_getClass(self)), class_getName(classPair.class2));
 #endif
@@ -680,7 +681,8 @@ static CFMutableDictionaryRef sharedClassLevelFromOriginalAndRuntimeHelptender(v
 	return classLevelFromOriginalAndRuntimeHelptender;
 }
 
-/* Returns NO if the baseProtocol conforms to protocol HPNExtender, but the helptender is not kind of the class of the ref object. */
+/**
+ Returns @c NO if the baseProtocol conforms to protocol @c HPNExtender, but the helptender is not kind of the class of the ref object. */
 static BOOL recAddProtocolsHelptendersToSet(Protocol *baseProtocol, CFMutableSetRef set, NSObject *refObject) {
 	if (!protocol_conformsToProtocol(baseProtocol, @protocol(HPNExtender)))
 		return YES;
@@ -711,7 +713,7 @@ end:
 	return ok;
 }
 
-/* Compute which helptenders are needed for each extenders given, then get or create the class that will have the correct hierarchy. */
+/** Computes which helptenders are needed for each extenders given, then get or create the class that will have the correct hierarchy. */
 static Class classForObjectExtendedWith(NSObject *object, NSArray *extenders) {
 	const char *className = class_getName(object.class);
 	
@@ -822,7 +824,7 @@ static Class classForObjectExtendedWith(NSObject *object, NSArray *extenders) {
 				++level;
 			}
 			
-			/* We have created the new class. 
+			/* We have created the new class.
 			 * Let’s add the methods of the original helptender to it. */
 			Method *methods = class_copyMethodList(curHelptender->helptenderClass, NULL);
 			for (Method *curMethodPtr = methods; curMethodPtr != NULL && *curMethodPtr != NULL; ++curMethodPtr)
