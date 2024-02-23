@@ -13,7 +13,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. */
 
-@import ObjectiveC.runtime;
+#import <objc/runtime.h>
 
 
 
@@ -40,20 +40,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 /* *** */
 
-#define HPN_DYNAMIC_ACCESSOR(type, name, key)                                                                                                                                            \
-	- (nullable type *)name                                                                                                                                                               \
-	{                                                                                                                                                                                     \
-		return [self name##CreateIfNotExist:NO];                                                                                                                                           \
-	}                                                                                                                                                                                     \
-	                                                                                                                                                                                      \
-	- (nullable type *)name##CreateIfNotExist:(BOOL)createIfNeeded                                                                                                                        \
-	{                                                                                                                                                                                     \
-		id ret = [self hpn_getAssociatedObjectWithKey:&key createIfNotExistWithBlock:(createIfNeeded? ^id{                                                                                 \
-			return [[type alloc] initWithCapacity:7];                                                                                                                                       \
-		}: NULL)];                                                                                                                                                                         \
-		                                                                                                                                                                                   \
-		NSAssert(ret == nil || [ret isKindOfClass:type.class], @"***** INTERNAL ERROR: Got invalid (not of class "S(type)") associated object %@ in %@", ret, NSStringFromSelector(_cmd)); \
-		return ret;                                                                                                                                                                        \
+#define HPN_DYNAMIC_ACCESSOR(type, name, key)                                                                                                                                              \
+	- (nullable type *)name                                                                                                                                                                 \
+	{                                                                                                                                                                                       \
+		return [self name##CreateIfNotExist:NO];                                                                                                                                             \
+	}                                                                                                                                                                                       \
+	                                                                                                                                                                                        \
+	- (nullable type *)name##CreateIfNotExist:(BOOL)createIfNeeded                                                                                                                          \
+	{                                                                                                                                                                                       \
+		id ret = [self hpn_getAssociatedObjectWithKey:&key createIfNotExistWithBlock:(createIfNeeded? ^id{                                                                                   \
+			return [[type alloc] initWithCapacity:7];                                                                                                                                         \
+		}: NULL)];                                                                                                                                                                           \
+		                                                                                                                                                                                     \
+		NSAssert(ret == nil || [ret isKindOfClass:type.class], @"***** INTERNAL ERROR: Got invalid (not of class " S(type) ") associated object %@ in %@", ret, NSStringFromSelector(_cmd)); \
+		return ret;                                                                                                                                                                          \
 	}
 
 
