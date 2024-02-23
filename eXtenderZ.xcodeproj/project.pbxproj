@@ -155,12 +155,12 @@
 			remoteGlobalIDString = 7B0E9233255ACC73002E8F1F;
 			remoteInfo = "eXtenderZ-dynamic-tvOS";
 		};
-		7B1B39FA2B8843ED00D3F1BB /* PBXContainerItemProxy */ = {
+		7B1B3A092B88451300D3F1BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7BDF6459255AA34F00CA77DF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7B0E920F255ACC59002E8F1F;
-			remoteInfo = "eXtenderZ-dynamic-iOS";
+			remoteGlobalIDString = 7B1B39E62B88430B00D3F1BB;
+			remoteInfo = "eXtenderZ-dynamic-visionOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -746,7 +746,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				7B1B39F92B8843ED00D3F1BB /* PBXTargetDependency */,
+				7B1B3A0A2B88451300D3F1BB /* PBXTargetDependency */,
 			);
 			name = "eXtenderZ-dynamic-visionOSTests";
 			productName = "eXtenderZ-dynamic-iOSTests";
@@ -1137,10 +1137,10 @@
 			target = 7B0E9233255ACC73002E8F1F /* eXtenderZ-dynamic-tvOS */;
 			targetProxy = 7B0E923E255ACC74002E8F1F /* PBXContainerItemProxy */;
 		};
-		7B1B39F92B8843ED00D3F1BB /* PBXTargetDependency */ = {
+		7B1B3A0A2B88451300D3F1BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7B0E920F255ACC59002E8F1F /* eXtenderZ-dynamic-iOS */;
-			targetProxy = 7B1B39FA2B8843ED00D3F1BB /* PBXContainerItemProxy */;
+			target = 7B1B39E62B88430B00D3F1BB /* eXtenderZ-dynamic-visionOS */;
+			targetProxy = 7B1B3A092B88451300D3F1BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
