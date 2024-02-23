@@ -47,6 +47,8 @@ struct Main : AsyncParsableCommand {
 		 *   - xcodebuild -scheme eXtenderZ-dynamic-iOS -showdestinations */
 		let targets = [
 			(sdk: "macOS", platform: "macOS"),
+			(sdk: "visionOS", platform: "visionOS"),
+			(sdk: "visionOS", platform: "visionOS Simulator"),
 			(sdk: "iOS", platform: "iOS"),
 			(sdk: "iOS", platform: "iOS Simulator"),
 			(sdk: "iOS", platform: "macOS"),
