@@ -18,8 +18,8 @@ let logger: Logger = {
 }()
 
 
-_ = await Task{ await Main.main() }.value
-struct Main : AsyncParsableCommand {
+_ = await Task{ await CreateXcframeworks.main() }.value
+struct CreateXcframeworks : AsyncParsableCommand {
 	
 	@Argument(help: "If version is set, the generated Package.swift file will contain the path to the GitHub release. Should be used by CI pipelines only.")
 	var version: String?
