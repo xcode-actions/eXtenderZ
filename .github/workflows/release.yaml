@@ -18,14 +18,12 @@ env:
 jobs:
    bump-version-compile-and-tag:
       name: Bump Build Version, Build and Tag
-      runs-on: [macos-10.15]
+      runs-on: [macos-14]
       
       steps:
          - name: Install hagvtool and swift-sh
-           # If brew is not up-to-date, `brew install --cask` might not exist.
            run: |
-              brew install --cask happn-app/public/hagvtool || brew cask install happn-app/public/hagvtool
-              brew install mxcl/made/swift-sh
+              brew install xcode-actions/tap/xct xcode-actions/tap/swift-sh
          
          - name: Import GPG Signing Key
            run: gpg --import --pinentry-mode=loopback --passphrase '' <<<'${{ secrets.GPG_PRIVATE_KEY }}'
@@ -62,14 +60,14 @@ jobs:
               NEW_BUILD_VERSION="$(cat ../new_build_version)"
               rm -f ../new_build_version
               
-              eval hagvtool set-build-version     --targets\ eXtenderZ-{static,dynamic}-{macOS,iOS,tvOS,watchOS} "$NEW_BUILD_VERSION"
-              eval hagvtool set-marketing-version --targets\ eXtenderZ-{static,dynamic}-{macOS,iOS,tvOS,watchOS} "$NEW_MARKETING_VERSION"
+              eval xct versions set-build-version     --targets\ eXtenderZ-{static,dynamic}-{macOS,iOS,tvOS,watchOS} "$NEW_BUILD_VERSION"
+              eval xct versions set-marketing-version --targets\ eXtenderZ-{static,dynamic}-{macOS,iOS,tvOS,watchOS} "$NEW_MARKETING_VERSION"
               
               TAG_NAME="$NEW_MARKETING_VERSION"
               
-              git commit --allow-empty -am "Set build version to $NEW_BUILD_VERSION and marketing version to $NEW_MARKETING_VERSION with hagvtool"
+              git commit --allow-empty -am "Set build version to $NEW_BUILD_VERSION and marketing version to $NEW_MARKETING_VERSION with xct"
               
-              ./Scripts/create_xcframeworks.swift "$NEW_MARKETING_VERSION"
+              ./Scripts/create-xcframeworks.swift "$NEW_MARKETING_VERSION"
               git add Package.swift
               git commit -am "Create the Package.swift file for SPM-compatibility"
               
