@@ -21,12 +21,12 @@ jobs:
       runs-on: [macos-14]
       
       steps:
+         - name: Import GPG Signing Key
+           run: gpg --import --pinentry-mode=loopback --passphrase "${{ secrets.GPG_PRIVATE_KEY_PASS }}" <<<'${{ secrets.GPG_PRIVATE_KEY }}'
+         
          - name: Install xct and swift-sh
            run: |
               brew install xcode-actions/tap/xct xcode-actions/tap/swift-sh
-         
-         - name: Import GPG Signing Key
-           run: gpg --import --pinentry-mode=loopback --passphrase '' <<<'${{ secrets.GPG_PRIVATE_KEY }}'
          
          - name: Checkout eXtenderZ versioning
            uses: actions/checkout@v2
