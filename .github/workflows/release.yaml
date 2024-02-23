@@ -21,7 +21,7 @@ jobs:
       runs-on: [macos-14]
       
       steps:
-         - name: Install hagvtool and swift-sh
+         - name: Install xct and swift-sh
            run: |
               brew install xcode-actions/tap/xct xcode-actions/tap/swift-sh
          
