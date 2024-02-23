@@ -29,13 +29,13 @@ limitations under the License. */
 + (void)hpn_helptenderHasBeenAdded:(NSObject <HPNHelptender> *)helptender
 {
 #pragma unused(helptender)
-	/* Nothing do to here */
+	/* Nothing do to here. */
 }
 
 + (void)hpn_helptenderWillBeRemoved:(NSObject <HPNHelptender> *)helptender
 {
 #pragma unused(helptender)
-	/* Nothing do to here */
+	/* Nothing do to here. */
 }
 
 - (void)doTest1

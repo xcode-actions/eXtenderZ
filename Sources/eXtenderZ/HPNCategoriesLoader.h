@@ -24,24 +24,23 @@ NS_ASSUME_NONNULL_BEGIN
 @interface HPNCategoriesLoader : NSObject
 
 /* This method can be used in order to prevent the need for the `-ObjC` flag.
- * Simply call it before calling anything else in the library (before all the
- * `hpn_registerClass:asHelptenderForProtocol:` is probably the best place).
+ * Simply call it before calling anything else in the library
+ *  (before all the `hpn_registerClass:asHelptenderForProtocol:` is probably the best place).
  *
- * Usually, for static xcframeworks containing category code, this flag is
- * required in order to avoid an `unrecognized selector sent to class` exception
- * when trying to use the method in one of the category. This was all and well
- * before SPM. Now we do have SPM, and this flag is unknown to it. Which means
- * it has to be defined as an “unsafe” flag. No big deal, you might say… and you
- * would be right! If you’re not writing a library… When you are, using an
- * unsafe flag is not really possible, as SPM will refuse to use a dependency
- * which has an unsafe flag instruction (unless the dep is declared using a
- * commit hash instead of a tag).
- * Using this method you can still have the eXtenderZ as a dependency in your
- * SPM library.
+ * Usually, for static xcframeworks containing category code, this flag is required
+ *  in order to avoid an `unrecognized selector sent to class` exception when trying to use the method in one of the category.
+ * This was all and well before SPM.
+ * Now we do have SPM, and this flag is unknown to it.
+ * Which means it has to be defined as an “unsafe” flag.
+ * No big deal, you might say… and you would be right!
+ * If you’re not writing a library…
+ * When you are, using an unsafe flag is not really possible, as SPM will refuse
+ *  to use a dependency which has an unsafe flag instruction (unless the dep is declared using a commit hash instead of a tag).
+ * Using this method you can still have the eXtenderZ as a dependency in your SPM library.
  *
  * A few links:
- *    - https://github.com/mapbox/mapbox-gl-native/issues/2966
- *    - https://github.com/mapbox/mapbox-gl-native/commit/7a38e568191a68e3311d36296e14c105b12c051c */
+ *    - <https://github.com/mapbox/mapbox-gl-native/issues/2966>
+ *    - <https://github.com/mapbox/mapbox-gl-native/commit/7a38e568191a68e3311d36296e14c105b12c051c> */
 + (void)loadCategories;
 
 @end

@@ -5,10 +5,9 @@ import Foundation
 import SwiftShell // @kareman ~> 5.1.0
 
 
-/* swift-sh creates a binary whose path is not one we expect, so we cannot use
- * main.path directly.
+/* swift-sh creates a binary whose path is not one we expect, so we cannot use main.path directly.
  * Using the _ env variable is **extremely** hacky, but seems to do the job…
- * See https://github.com/mxcl/swift-sh/issues/101 */
+ * See <https://github.com/mxcl/swift-sh/issues/101>. */
 let filepath = ProcessInfo.processInfo.environment["_"] ?? main.path
 main.currentdirectory = URL(fileURLWithPath: filepath).deletingLastPathComponent().appendingPathComponent("..").path
 
@@ -36,8 +35,8 @@ do {
 	]
 	
 	/* Hints:
-	 *    - https://mokacoding.com/blog/xcodebuild-destination-options/
-	 *    - xcodebuild -scheme eXtenderZ-dynamic-iOS -showdestinations */
+	 *   - <https://mokacoding.com/blog/xcodebuild-destination-options/>
+	 *   - xcodebuild -scheme eXtenderZ-dynamic-iOS -showdestinations */
 	let targets = [
 		(sdk: "macOS", platform: "macOS"),
 		(sdk: "iOS", platform: "iOS"),
@@ -105,9 +104,8 @@ func writePackageFile(version: String?, checksums: [String: String?]) throws {
 		let package = Package(
 			name: "eXtenderZ",
 			products: [
-				/* Sadly the line below does not work. The idea was to have a
-				 * library where SPM chooses whether to take the dynamic or static
-				 * version of the target, but it fails (Xcode 12B5044c). */
+				/* Sadly the line below does not work.
+				 * The idea was to have a library where SPM chooses whether to take the dynamic or static version of the target, but it fails (Xcode 12B5044c). */
 		//		.library(name: "eXtenderZ", targets: [
 		"""
 	

@@ -14,13 +14,11 @@ See the License for the specific language governing permissions and
 limitations under the License. */
 
 /*
- * Use this file to import your target's public headers that you would like to
- * expose to Swift.
+ * Use this file to import your target’s public headers that you would like to expose to Swift.
  *
- * “Funny” note: This file (it is presumably this file) must not be along a file
- * called module.modulemap or the test target will use it as its own module map,
- * and compilation will fail.
- */
+ * “Funny” note:
+ * This file (it is presumably this file) must not be along a file called module.modulemap
+ *  or the test target will use it as its own module map, and compilation will fail. */
 
 #import "HPNSimpleObject.h"
 #import "HPNSimpleObjectHelptender.h"
