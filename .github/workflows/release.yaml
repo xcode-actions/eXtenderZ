@@ -6,34 +6,34 @@ on:
          - "release/*"
 
 env:
-   DEVELOPER_DIR: /Applications/Xcode_12.1.app/Contents/Developer
+   DEVELOPER_DIR: "/Applications/Xcode_14.3.1.app/Contents/Developer"
    # FYI diff between author and committer: <https://stackoverflow.com/a/18754896>.
    # For commits
-   GIT_AUTHOR_EMAIL: github@happn.com
-   GIT_AUTHOR_NAME: GitHub Runner (eXtenderZ)
+   GIT_AUTHOR_EMAIL: "github@happn.com"
+   GIT_AUTHOR_NAME: "GitHub Runner (eXtenderZ)"
    # For tags
-   GIT_COMMITTER_EMAIL: github@happn.com
-   GIT_COMMITTER_NAME: GitHub Runner (eXtenderZ)
+   GIT_COMMITTER_EMAIL: "github@happn.com"
+   GIT_COMMITTER_NAME: "GitHub Runner (eXtenderZ)"
 
 jobs:
    bump-version-compile-and-tag:
-      name: Bump Build Version, Build and Tag
-      runs-on: [macos-14]
+      name: "Bump Build Version, Build and Tag"
+      runs-on: ["macos-14"]
       
       steps:
-         - name: Import GPG Signing Key
+         - name: "Import GPG Signing Key"
            run: gpg --import --pinentry-mode=loopback --passphrase "${{ secrets.GPG_PRIVATE_KEY_PASS }}" <<<'${{ secrets.GPG_PRIVATE_KEY }}'
          
-         - name: Install xct and swift-sh
+         - name: "Install xct and swift-sh"
            run: |
               brew install xcode-actions/tap/xct xcode-actions/tap/swift-sh
          
-         - name: Checkout eXtenderZ versioning
+         - name: "Checkout eXtenderZ versioning"
            uses: actions/checkout@v2
            with:
               ref: "versioning"
          
-         - name: Bump Build Version in versioning Branch
+         - name: "Bump Build Version in versioning Branch"
            run: |
               set -euo pipefail
               
@@ -47,10 +47,10 @@ jobs:
               
               cp -f "$BUILD_VERSION_FILE" ../new_build_version
          
-         - name: Checkout eXtenderZ
+         - name: "Checkout eXtenderZ"
            uses: actions/checkout@v2
          
-         - name: Set Build Versions, Build xcframeworks and Push Tag
+         - name: "Set Build Versions, Build xcframeworks and Push Tag"
            run: |
               set -euo pipefail
               
