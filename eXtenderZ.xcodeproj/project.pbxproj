@@ -444,10 +444,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B0E933E255ACFAC002E8F1F /* eXtenderZ.h in Headers */,
+				7B0E9340255ACFAC002E8F1F /* HelptenderUtils.h in Headers */,
 				7B0E933F255ACFAC002E8F1F /* HPNExtenderConfig.h in Headers */,
 				7B0E9342255ACFAC002E8F1F /* NSObject+eXtenderZ.h in Headers */,
 				7B0E9341255ACFAC002E8F1F /* NSObject+Utils.h in Headers */,
-				7B0E9340255ACFAC002E8F1F /* HelptenderUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,10 +456,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B0E9359255ACFC8002E8F1F /* eXtenderZ.h in Headers */,
+				7B0E935B255ACFC8002E8F1F /* HelptenderUtils.h in Headers */,
 				7B0E935A255ACFC8002E8F1F /* HPNExtenderConfig.h in Headers */,
 				7B0E935D255ACFC8002E8F1F /* NSObject+eXtenderZ.h in Headers */,
 				7B0E935C255ACFC8002E8F1F /* NSObject+Utils.h in Headers */,
-				7B0E935B255ACFC8002E8F1F /* HelptenderUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,10 +468,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B0E935E255ACFD4002E8F1F /* eXtenderZ.h in Headers */,
+				7B0E9360255ACFD4002E8F1F /* HelptenderUtils.h in Headers */,
 				7B0E935F255ACFD4002E8F1F /* HPNExtenderConfig.h in Headers */,
 				7B0E9362255ACFD4002E8F1F /* NSObject+eXtenderZ.h in Headers */,
 				7B0E9361255ACFD4002E8F1F /* NSObject+Utils.h in Headers */,
-				7B0E9360255ACFD4002E8F1F /* HelptenderUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,10 +480,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B0E9363255ACFDE002E8F1F /* eXtenderZ.h in Headers */,
+				7B0E9365255ACFDE002E8F1F /* HelptenderUtils.h in Headers */,
 				7B0E9364255ACFDE002E8F1F /* HPNExtenderConfig.h in Headers */,
 				7B0E9367255ACFDE002E8F1F /* NSObject+eXtenderZ.h in Headers */,
 				7B0E9366255ACFDE002E8F1F /* NSObject+Utils.h in Headers */,
-				7B0E9365255ACFDE002E8F1F /* HelptenderUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,14 +491,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B1B39D42B88429900D3F1BB /* module.modulemap in Headers */,
 				7B1B39D52B88429900D3F1BB /* eXtenderZ-static.h in Headers */,
 				7B1B39D62B88429900D3F1BB /* eXtenderZ.h in Headers */,
+				7B1B39DB2B88429900D3F1BB /* HelptenderUtils.h in Headers */,
+				7B1B39DA2B88429900D3F1BB /* HPNCategoriesLoader.h in Headers */,
 				7B1B39D72B88429900D3F1BB /* HPNExtenderConfig.h in Headers */,
+				7B1B39D42B88429900D3F1BB /* module.modulemap in Headers */,
 				7B1B39D82B88429900D3F1BB /* NSObject+eXtenderZ.h in Headers */,
 				7B1B39D92B88429900D3F1BB /* NSObject+Utils.h in Headers */,
-				7B1B39DA2B88429900D3F1BB /* HPNCategoriesLoader.h in Headers */,
-				7B1B39DB2B88429900D3F1BB /* HelptenderUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,10 +507,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B1B39E82B88430B00D3F1BB /* eXtenderZ.h in Headers */,
+				7B1B39EC2B88430B00D3F1BB /* HelptenderUtils.h in Headers */,
 				7B1B39E92B88430B00D3F1BB /* HPNExtenderConfig.h in Headers */,
 				7B1B39EA2B88430B00D3F1BB /* NSObject+eXtenderZ.h in Headers */,
 				7B1B39EB2B88430B00D3F1BB /* NSObject+Utils.h in Headers */,
-				7B1B39EC2B88430B00D3F1BB /* HelptenderUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,14 +518,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B390008255AB18E008AF2C5 /* module.modulemap in Headers */,
 				7B390038255AC659008AF2C5 /* eXtenderZ-static.h in Headers */,
 				7B39000D255AB190008AF2C5 /* eXtenderZ.h in Headers */,
+				7B390021255AB19D008AF2C5 /* HelptenderUtils.h in Headers */,
+				7B256EBE264C745F00840604 /* HPNCategoriesLoader.h in Headers */,
 				7B390012255AB194008AF2C5 /* HPNExtenderConfig.h in Headers */,
+				7B390008255AB18E008AF2C5 /* module.modulemap in Headers */,
 				7B390017255AB197008AF2C5 /* NSObject+eXtenderZ.h in Headers */,
 				7B39001C255AB19B008AF2C5 /* NSObject+Utils.h in Headers */,
-				7B256EBE264C745F00840604 /* HPNCategoriesLoader.h in Headers */,
-				7B390021255AB19D008AF2C5 /* HelptenderUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,14 +533,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B39FF51255AAAC4008AF2C5 /* module.modulemap in Headers */,
 				7B390029255AC64E008AF2C5 /* eXtenderZ-static.h in Headers */,
 				7B39FF56255AAB27008AF2C5 /* eXtenderZ.h in Headers */,
+				7B39FF60255AAB38008AF2C5 /* HelptenderUtils.h in Headers */,
+				7B256EBB264C745F00840604 /* HPNCategoriesLoader.h in Headers */,
 				7B39FF5B255AAB33008AF2C5 /* HPNExtenderConfig.h in Headers */,
+				7B39FF51255AAAC4008AF2C5 /* module.modulemap in Headers */,
 				7B39FF65255AAB3E008AF2C5 /* NSObject+eXtenderZ.h in Headers */,
 				7B39FF6A255AAB42008AF2C5 /* NSObject+Utils.h in Headers */,
-				7B256EBB264C745F00840604 /* HPNCategoriesLoader.h in Headers */,
-				7B39FF60255AAB38008AF2C5 /* HelptenderUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,14 +548,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B39FFCA255AB0E2008AF2C5 /* module.modulemap in Headers */,
 				7B39002E255AC651008AF2C5 /* eXtenderZ-static.h in Headers */,
 				7B39FFCF255AB0EC008AF2C5 /* eXtenderZ.h in Headers */,
+				7B39FFE3255AB11D008AF2C5 /* HelptenderUtils.h in Headers */,
+				7B256EBC264C745F00840604 /* HPNCategoriesLoader.h in Headers */,
 				7B39FFD4255AB0F4008AF2C5 /* HPNExtenderConfig.h in Headers */,
+				7B39FFCA255AB0E2008AF2C5 /* module.modulemap in Headers */,
 				7B39FFD9255AB0FB008AF2C5 /* NSObject+eXtenderZ.h in Headers */,
 				7B39FFDE255AB116008AF2C5 /* NSObject+Utils.h in Headers */,
-				7B256EBC264C745F00840604 /* HPNCategoriesLoader.h in Headers */,
-				7B39FFE3255AB11D008AF2C5 /* HelptenderUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,14 +563,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B39FFE9255AB160008AF2C5 /* module.modulemap in Headers */,
 				7B390033255AC655008AF2C5 /* eXtenderZ-static.h in Headers */,
 				7B39FFEE255AB163008AF2C5 /* eXtenderZ.h in Headers */,
+				7B390002255AB181008AF2C5 /* HelptenderUtils.h in Headers */,
+				7B256EBD264C745F00840604 /* HPNCategoriesLoader.h in Headers */,
 				7B39FFF3255AB169008AF2C5 /* HPNExtenderConfig.h in Headers */,
+				7B39FFE9255AB160008AF2C5 /* module.modulemap in Headers */,
 				7B39FFF8255AB16B008AF2C5 /* NSObject+eXtenderZ.h in Headers */,
 				7B39FFFD255AB178008AF2C5 /* NSObject+Utils.h in Headers */,
-				7B256EBD264C745F00840604 /* HPNCategoriesLoader.h in Headers */,
-				7B390002255AB181008AF2C5 /* HelptenderUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -983,11 +983,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B0E93DB255AD139002E8F1F /* ObjcCategoryLibrary.c in Sources */,
+				7B0E93AE255AD093002E8F1F /* eXtenderZTests.swift in Sources */,
 				7B0E938A255AD08B002E8F1F /* HPNSimpleObject.m in Sources */,
 				7B0E9396255AD08E002E8F1F /* HPNSimpleObjectHelptender.m in Sources */,
+				7B0E93DB255AD139002E8F1F /* ObjcCategoryLibrary.c in Sources */,
 				7B0E93A2255AD090002E8F1F /* SimpleObjectExtender.swift in Sources */,
-				7B0E93AE255AD093002E8F1F /* eXtenderZTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1005,11 +1005,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B2FA004255AD8880094DFB4 /* ObjcCategoryLibrary.c in Sources */,
+				7B2FA034255AD8B20094DFB4 /* eXtenderZTests.swift in Sources */,
 				7B2FA010255AD8A50094DFB4 /* HPNSimpleObject.m in Sources */,
 				7B2FA01C255AD8A80094DFB4 /* HPNSimpleObjectHelptender.m in Sources */,
+				7B2FA004255AD8880094DFB4 /* ObjcCategoryLibrary.c in Sources */,
 				7B2FA028255AD8AE0094DFB4 /* SimpleObjectExtender.swift in Sources */,
-				7B2FA034255AD8B20094DFB4 /* eXtenderZTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1027,11 +1027,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B2FA056255AD9080094DFB4 /* ObjcCategoryLibrary.c in Sources */,
+				7B2FA086255AD9130094DFB4 /* eXtenderZTests.swift in Sources */,
 				7B2FA062255AD90B0094DFB4 /* HPNSimpleObject.m in Sources */,
 				7B2FA06E255AD90D0094DFB4 /* HPNSimpleObjectHelptender.m in Sources */,
+				7B2FA056255AD9080094DFB4 /* ObjcCategoryLibrary.c in Sources */,
 				7B2FA07A255AD9100094DFB4 /* SimpleObjectExtender.swift in Sources */,
-				7B2FA086255AD9130094DFB4 /* eXtenderZTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1049,10 +1049,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B1B39E02B88429900D3F1BB /* HPNCategoriesLoader.m in Sources */,
 				7B1B39DD2B88429900D3F1BB /* HPNExtenderConfig.m in Sources */,
 				7B1B39DE2B88429900D3F1BB /* NSObject+eXtenderZ.m in Sources */,
 				7B1B39DF2B88429900D3F1BB /* NSObject+Utils.m in Sources */,
-				7B1B39E02B88429900D3F1BB /* HPNCategoriesLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1070,11 +1070,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B1B39FC2B8843ED00D3F1BB /* ObjcCategoryLibrary.c in Sources */,
+				7B1B3A002B8843ED00D3F1BB /* eXtenderZTests.swift in Sources */,
 				7B1B39FD2B8843ED00D3F1BB /* HPNSimpleObject.m in Sources */,
 				7B1B39FE2B8843ED00D3F1BB /* HPNSimpleObjectHelptender.m in Sources */,
+				7B1B39FC2B8843ED00D3F1BB /* ObjcCategoryLibrary.c in Sources */,
 				7B1B39FF2B8843ED00D3F1BB /* SimpleObjectExtender.swift in Sources */,
-				7B1B3A002B8843ED00D3F1BB /* eXtenderZTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1082,10 +1082,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B256EBF264C745F00840604 /* HPNCategoriesLoader.m in Sources */,
 				7B39FFA2255AAE92008AF2C5 /* HPNExtenderConfig.m in Sources */,
 				7B39FFA3255AAE92008AF2C5 /* NSObject+eXtenderZ.m in Sources */,
 				7B39FFA1255AAE92008AF2C5 /* NSObject+Utils.m in Sources */,
-				7B256EBF264C745F00840604 /* HPNCategoriesLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1093,10 +1093,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B256EC0264C745F00840604 /* HPNCategoriesLoader.m in Sources */,
 				7B39FFA9255AAE93008AF2C5 /* HPNExtenderConfig.m in Sources */,
 				7B39FFAA255AAE93008AF2C5 /* NSObject+eXtenderZ.m in Sources */,
 				7B39FFA8255AAE93008AF2C5 /* NSObject+Utils.m in Sources */,
-				7B256EC0264C745F00840604 /* HPNCategoriesLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1104,10 +1104,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B256EC1264C745F00840604 /* HPNCategoriesLoader.m in Sources */,
 				7B39FFB0255AAE93008AF2C5 /* HPNExtenderConfig.m in Sources */,
 				7B39FFB1255AAE93008AF2C5 /* NSObject+eXtenderZ.m in Sources */,
 				7B39FFAF255AAE93008AF2C5 /* NSObject+Utils.m in Sources */,
-				7B256EC1264C745F00840604 /* HPNCategoriesLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1115,10 +1115,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B256EC2264C745F00840604 /* HPNCategoriesLoader.m in Sources */,
 				7B39FFB7255AAE94008AF2C5 /* HPNExtenderConfig.m in Sources */,
 				7B39FFB8255AAE94008AF2C5 /* NSObject+eXtenderZ.m in Sources */,
 				7B39FFB6255AAE94008AF2C5 /* NSObject+Utils.m in Sources */,
-				7B256EC2264C745F00840604 /* HPNCategoriesLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
