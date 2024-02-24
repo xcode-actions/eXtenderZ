@@ -431,7 +431,10 @@
 				7B83A9C0255D127F00791D17 /* .github */,
 				7B39FE73255AA43B008AF2C5 /* Products */,
 			);
+			indentWidth = 3;
 			sourceTree = "<group>";
+			tabWidth = 3;
+			usesTabs = 1;
 		};
 /* End PBXGroup section */
 
