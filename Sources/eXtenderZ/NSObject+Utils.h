@@ -20,7 +20,7 @@ limitations under the License. */
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (HPNUtils)
+@interface HPN_NSObject (HPNUtils)
 
 + (void)hpn_forwardInvocationLikeNil:(NSInvocation *)invocation;
 

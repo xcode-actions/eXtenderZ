@@ -1,5 +1,5 @@
 /*
-Copyright 2021 happn
+Copyright 2024 happn
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -14,23 +14,13 @@ See the License for the specific language governing permissions and
 limitations under the License. */
 
 #import "NSObject_WorkaroundForDoc.h"
-#import "HPNCategoriesLoader.h"
-
-#import "NSObject+Utils.h"
-#import "NSObject+eXtenderZ.h"
 
 
 
-#ifdef HPN_eXtenderZ_STATIC
+#ifndef __DOC_WORKAROUND__
+static_assert(false, "__DOC_WORKAROUND__ should be defined here!");
+#endif
 
-@implementation HPNCategoriesLoader
-
-+ (void)loadCategories
-{
-	__hpn_linkNSObjectUtilsCategory();
-	__hpn_linkNSObjectExtenderzCategory();
-}
+@implementation NSObject_WorkaroundForDoc
 
 @end
-
-#endif

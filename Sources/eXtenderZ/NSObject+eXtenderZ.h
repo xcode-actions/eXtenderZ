@@ -29,9 +29,9 @@ NS_ASSUME_NONNULL_BEGIN
   or is added then removed then re-added to/from/to an object.
  
  Must return `NO` if the extender cannot be added to the object. */
-- (BOOL)prepareObjectForExtender:(NSObject *)object;
+- (BOOL)prepareObjectForExtender:(HPN_NSObject *)object;
 /** Called when the extender is removed from the extended object. */
-- (void)prepareObjectForRemovalOfExtender:(NSObject *)object;
+- (void)prepareObjectForRemovalOfExtender:(HPN_NSObject *)object;
 
 @end
 
@@ -48,20 +48,20 @@ NS_ASSUME_NONNULL_BEGIN
  Called the first time a runtime-generated helptender class replaces the runtime class of an object.
  
  This is a good place to init the helptender. */
-+ (void)hpn_helptenderHasBeenAdded:(NSObject <HPNHelptender> *)helptender;
++ (void)hpn_helptenderHasBeenAdded:(HPN_NSObject <HPNHelptender> *)helptender;
 /**
  Called when the helptender will be removed from an extended object (because no more extenders are using the helptender).
  
  This is the place to remove everything your helptender used in the object.
  This will **always** be called _before_ the actual object reaches `dealloc`. */
-+ (void)hpn_helptenderWillBeRemoved:(NSObject <HPNHelptender> *)helptender;
++ (void)hpn_helptenderWillBeRemoved:(HPN_NSObject <HPNHelptender> *)helptender;
 
 @end
 
 
 
 /* WARNING: Adding/removing an extender is **not** thread-safe. */
-@interface NSObject (eXtenderZ)
+@interface HPN_NSObject (eXtenderZ)
 
 /**
  Must be called in the `+load` method of any extender helper (helptender) class.
@@ -84,29 +84,28 @@ NS_ASSUME_NONNULL_BEGIN
  The protocols to which the extender responds to will determine which helptenders will be added to the object.
  
  - IMPORTANT: All added extenders are removed from the object just the moment _before_ `+dealloc` is called.
- Do **not** try to access extensions properties or call extensions methods in `+dealloc`!
- 
- You can however _prepare_ the deallocation of said object by overriding ``NSObject/hpn_prepareDeallocationOfExtendedObject``.
+ Do **not** try to access extensions properties or call extensions methods in `+dealloc`!  
+ You can however _prepare_ the deallocation of said object by overriding ``NSObject_WorkaroundForDoc/hpn_prepareDeallocationOfExtendedObject``.
  You must call `super` when overriding this method.
  It is called when the object is being dealloced, _before_ the extenders are removed from the object.
  
  This method should not be overridden (it might be called twice for the same extender).
- If you want to be called when an extender is added to an object, see ``NSObject/hpn_prepareForExtender:``. */
-- (BOOL)hpn_addExtender:(NSObject <HPNExtender> *)extender;
+ If you want to be called when an extender is added to an object, see ``NSObject_WorkaroundForDoc/hpn_prepareForExtender:``. */
+- (BOOL)hpn_addExtender:(HPN_NSObject <HPNExtender> *)extender;
 /**
  Removes the given extender.
  Returns `YES` if found (and removed), `NO` if not.
  
  This method cannot fail.
- It shouldn’t be overridden (override ``NSObject/hpn_removeExtender:atIndex:`` instead). */
-- (BOOL)hpn_removeExtender:(NSObject <HPNExtender> *)extender;
+ It shouldn’t be overridden (override ``NSObject_WorkaroundForDoc/hpn_removeExtender:atIndex:`` instead). */
+- (BOOL)hpn_removeExtender:(HPN_NSObject <HPNExtender> *)extender;
 /** Removes the extenders in the given array and returns the number of extenders actually removed. */
 - (NSUInteger)hpn_removeExtenders:(NSArray *)extenders;
 /**
  Removes all extenders with a given class from the extended object.
  Returns the number of extenders removed.
  
- This method shouldn’t be overridden (override ``NSObject/hpn_removeExtender:atIndex:`` instead if needed). */
+ This method shouldn’t be overridden (override ``NSObject_WorkaroundForDoc/hpn_removeExtender:atIndex:`` instead if needed). */
 - (NSUInteger)hpn_removeExtendersOfClass:(Class <HPNExtender>)extenderClass;
 /**
  Removes all of the extenders of the object.
@@ -114,7 +113,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSUInteger)hpn_removeAllExtenders;
 
 /**
- Called in ``NSObject/hpn_addExtender:``, _after_ the helptender(s) have been added to the object.
+ Called in ``NSObject_WorkaroundForDoc/hpn_addExtender:``, _after_ the helptender(s) have been added to the object.
  Returns `YES` if the preparation was successful, `NO` otherwise (in which case the addition of the extender is cancelled).
  
  Do **NOT** call this method directly.
@@ -122,7 +121,7 @@ NS_ASSUME_NONNULL_BEGIN
  However, you can override the method.
  You must check whether calling `super` (don’t forget to use the `HELPTENDER_CALL_SUPER_*` methods to call `super`) returns `YES` or `NO`.
  If it returns `NO`, you must return `NO` right away. */
-- (BOOL)hpn_prepareForExtender:(NSObject <HPNExtender> *)extender;
+- (BOOL)hpn_prepareForExtender:(HPN_NSObject <HPNExtender> *)extender;
 
 /**
  Removes the given extender at the given index.
@@ -134,12 +133,12 @@ NS_ASSUME_NONNULL_BEGIN
  Use one of the alternatives above instead.
  
  This is the override point if you want to act just before or after an extender is removed. */
-- (void)hpn_removeExtender:(NSObject <HPNExtender> *)extender atIndex:(NSUInteger)idx;
+- (void)hpn_removeExtender:(HPN_NSObject <HPNExtender> *)extender atIndex:(NSUInteger)idx;
 
-- (nullable NSObject <HPNExtender> *)hpn_firstExtenderOfClass:(Class <HPNExtender>)extenderClass;
+- (nullable HPN_NSObject <HPNExtender> *)hpn_firstExtenderOfClass:(Class <HPNExtender>)extenderClass;
 
 /** Returns `YES` if the extender was added to the object, else `NO`. */
-- (BOOL)hpn_isExtenderAdded:(NSObject <HPNExtender> *)extender;
+- (BOOL)hpn_isExtenderAdded:(HPN_NSObject <HPNExtender> *)extender;
 
 /**
  Called when the object is being dealloced, just _before_ the extenders are removed from the object.
@@ -154,7 +153,8 @@ void __hpn_linkNSObjectExtenderzCategory(void);
 @end
 
 /** Same as the ``CHECKED_ADD_EXTENDER`` preprocessor macro, but available in Swift. */
-void HPNCheckedAddExtender(_Nullable id receiver, NSObject <HPNExtender> *extender);
+void HPNCheckedAddExtender(_Nullable id receiver, HPN_NSObject <HPNExtender> *extender);
+/** Calls ``NSObject_WorkaroundForDoc/hpn_addExtender:`` and raises an exception if the call returns `NO`. */
 #define CHECKED_ADD_EXTENDER(receiver, extender) \
 	{ \
 		id receiverVar = (receiver); \

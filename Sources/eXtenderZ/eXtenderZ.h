@@ -15,12 +15,16 @@ limitations under the License. */
 
 #ifndef HPN_eXtenderZ_STATIC
 
+# import <eXtenderZ/NSObject_WorkaroundForDoc.h>
+
 # import <eXtenderZ/HPNExtenderConfig.h>
 
 # import <eXtenderZ/NSObject+Utils.h>
 # import <eXtenderZ/NSObject+eXtenderZ.h>
 
 #else
+
+# import "NSObject_WorkaroundForDoc.h"
 
 # import "HPNExtenderConfig.h"
 
