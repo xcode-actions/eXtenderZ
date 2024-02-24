@@ -26,7 +26,7 @@ jobs:
          
          - name: "Install xct and swift-sh"
            run: |
-              brew install xcode-actions/tap/xct xcode-actions/tap/swift-sh
+              brew install xcode-actions/tap/xct xcode-actions/tap/swift-sh frizlab/perso/gpg-pass-from
          
          - name: "Checkout eXtenderZ versioning"
            uses: actions/checkout@v2
@@ -71,7 +71,7 @@ jobs:
               git add Package.swift
               git commit -am "Create the Package.swift file for SPM-compatibility"
               
-              git tag -sm "eXtenderZ $NEW_MARKETING_VERSION" "$TAG_NAME"
+              git -c gpg.program="gpg-pass-from-fd7" tag -sm "eXtenderZ $NEW_MARKETING_VERSION" "$TAG_NAME" 7<<<"${{ secrets.GPG_PRIVATE_KEY_PASS }}"
               git push origin "$TAG_NAME"
          
          - uses: actions/upload-artifact@v2
