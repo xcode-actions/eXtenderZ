@@ -33,6 +33,7 @@
 		7B39FFA1255AAE92008AF2C5 /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB4255AA577008AF2C5 /* NSObject+Utils.m */; };
 		7B39FFA2255AAE92008AF2C5 /* HPNExtenderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB8255AA577008AF2C5 /* HPNExtenderConfig.m */; };
 		7B39FFA3255AAE92008AF2C5 /* NSObject+eXtenderZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB5255AA577008AF2C5 /* NSObject+eXtenderZ.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7B56FE3D2B8AB94C00AF034D /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 7BA760DA2B8A7F2C002B11DE /* Documentation.docc */; };
 		7BA760DF2B8A8718002B11DE /* eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB2255AA577008AF2C5 /* eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BA760E02B8A8718002B11DE /* HelptenderUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB6255AA577008AF2C5 /* HelptenderUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BA760E12B8A8718002B11DE /* HPNExtenderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB3255AA577008AF2C5 /* HPNExtenderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -437,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B56FE3D2B8AB94C00AF034D /* Documentation.docc in Sources */,
 				7B0E9371255AD032002E8F1F /* HPNExtenderConfig.m in Sources */,
 				7B0E9373255AD032002E8F1F /* NSObject+eXtenderZ.m in Sources */,
 				7B0E9372255AD032002E8F1F /* NSObject+Utils.m in Sources */,

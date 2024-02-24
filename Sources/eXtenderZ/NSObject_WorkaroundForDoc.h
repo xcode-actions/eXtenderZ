@@ -26,8 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
  *   - Remove the `eXtenderZ-docWorkaround` target and scheme;
  *   - Remove this file and its implementation counterpart;
  *   - Fix the compilation errors (basically remove some imports and replace all instances of `NSObject_WorkaroundForDoc` and `HPN_NSObject` by `NSObject`);
- *   - Add the Documentation.docc file to the `eXtenderZ-dynamic` (or static) target;
- *   - If documentation generation is automated (not done at time of writing) use the `eXtenderZ-dynamic` (or static) scheme instead of `eXtenderZ-docWorkaround` one. */
+ *   - If documentation generation is automated (not done at time of writing) use the `eXtenderZ-dynamic` scheme instead of `eXtenderZ-docWorkaround` one. */
 
 /**
  An entity representing `NSObject` for the documentation.
