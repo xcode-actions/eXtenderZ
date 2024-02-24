@@ -64,7 +64,9 @@ struct CreateXcframeworks : AsyncParsableCommand {
 			(platform: "watchOS Simulator",  variant: nil),
 		]
 		
-		try writePackageFile(version: version, checksums: Dictionary(uniqueKeysWithValues: types.map{ ($0.name, nil) }))
+		if version != nil {
+			try writePackageFile(version: version, checksums: Dictionary(uniqueKeysWithValues: types.map{ ($0.name, nil) }))
+		}
 		
 		var checksums = [String: String]()
 		for type in types {
