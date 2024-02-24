@@ -34,6 +34,13 @@ We set the same versions in both fields because this lib is not meant to be shar
 
 == Notes About the Documentation
 
+The doc compiler (`docc`) now supports Objective-C modules! \o/
+
+There are still some missing entries, especially for the `NSObject` extension, which is a shame as it’s the core of the project…
+I’m not sure what to do to have these methods show up in the compiled documentation.
+
+=== Previously
+
 I tried having a proper inline documentation.
 It was not trivial because the project is in Objective-C.
 
@@ -42,8 +49,6 @@ I used http://www.cocoanutsdev.com/resources/headerdoc-reference-by-justin-loew[
 
 I tried to build the HTML documentation with `appledoc`.
 It does not know more about the `@c` tag than `headerdoc2html` sadly.
-
-There is still a lot of work to be done to have something fully good.
 
 == Credits
 This project was originally created by {frizlab}[François Lamboley] while working at {happn}[happn].

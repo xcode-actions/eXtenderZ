@@ -40,11 +40,11 @@ static Class classForObjectExtendedWith(NSObject *object, NSArray *extenders);
 static Class changeClassOfObjectNotifyingHelptenders(NSObject *object, Class newClass);
 
 /**
- Returns a concatenation of @c str, @c str2 and @c str3. @c str3 can be @c NULL (not the others).
- The returned string should be free’d using @c free()@endc.
+ Returns a concatenation of `str`, `str2` and `str3`. `str3` can be `NULL` (not the others).
+ The returned string should be free’d using `free()`.
  
  The implementation is not optimized.
- This function is intended to be used in @c classForObjectExtendedWith() to create the selector name and type for the added selector. */
+ This function is intended to be used in `classForObjectExtendedWith()` to create the selector name and type for the added selector. */
 static char *copyStrs(const char * restrict str1, const char * restrict str2, const char * restrict str3);
 static char *auto_sprintf(char * restrict buffer, size_t buffer_size, BOOL * restrict has_malloced, const char * restrict format, ...);
 
@@ -682,7 +682,7 @@ static CFMutableDictionaryRef sharedClassLevelFromOriginalAndRuntimeHelptender(v
 }
 
 /**
- Returns @c NO if the baseProtocol conforms to protocol @c HPNExtender, but the helptender is not kind of the class of the ref object. */
+ Returns `NO` if the baseProtocol conforms to protocol ``HPNExtender``, but the helptender is not kind of the class of the ref object. */
 static BOOL recAddProtocolsHelptendersToSet(Protocol *baseProtocol, CFMutableSetRef set, NSObject *refObject) {
 	if (!protocol_conformsToProtocol(baseProtocol, @protocol(HPNExtender)))
 		return YES;

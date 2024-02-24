@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (os_log_t)oslog;
 + (void)setOslog:(os_log_t)newOslog;
 
-/** This object is simply a container for static configuration properties. */
+/** This object is a container for static configuration properties and should not be instantiated. */
 - (instancetype)init NS_UNAVAILABLE;
 
 @end
