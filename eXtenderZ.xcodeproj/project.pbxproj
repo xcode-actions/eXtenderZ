@@ -496,7 +496,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
@@ -508,7 +508,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
+				MARKETING_VERSION = 1.0.9;
 				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
@@ -524,7 +524,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
@@ -536,7 +536,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
+				MARKETING_VERSION = 1.0.9;
 				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
@@ -589,7 +589,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
 				EXECUTABLE_PREFIX = lib;
@@ -597,7 +597,7 @@
 					HPN_eXtenderZ_STATIC,
 					"$(inherited)",
 				);
-				MARKETING_VERSION = 1.0.8;
+				MARKETING_VERSION = 1.0.9;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = eXtenderZ;
 				SKIP_INSTALL = YES;
@@ -608,7 +608,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
 				EXECUTABLE_PREFIX = lib;
@@ -616,7 +616,7 @@
 					HPN_eXtenderZ_STATIC,
 					"$(inherited)",
 				);
-				MARKETING_VERSION = 1.0.8;
+				MARKETING_VERSION = 1.0.9;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = eXtenderZ;
 				SKIP_INSTALL = YES;
