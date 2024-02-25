@@ -13,24 +13,22 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. */
 
-#import "NSObject_WorkaroundForDoc.h"
-#import "HPNCategoriesLoader.h"
+@import Foundation;
 
-#import "NSObject+Utils.h"
-#import "NSObject+eXtenderZ.h"
+#import "HPNResponderExtender.h"
 
 
 
-#ifdef HPN_eXtenderZ_STATIC
+@interface HPNCustomInputViewsRE : NSObject <HPNResponderExtender>
 
-@implementation HPNCategoriesLoader
+/* All three are YES by default. */
+@property(nonatomic, assign) BOOL overrideInputView;
+@property(nonatomic, assign) BOOL overrideInputAccessoryView;
+@property(nonatomic, assign) BOOL overrideTextInputContextIdentifier;
 
-+ (void)loadCategories
-{
-	__hpn_linkNSObjectUtilsCategory();
-	__hpn_linkNSObjectExtenderzCategory();
-}
+@property(nonatomic, retain) UIView *inputView;
+@property(nonatomic, retain) UIView *inputAccessoryView;
+
+@property(nonatomic, retain) NSString *textInputContextIdentifier;
 
 @end
-
-#endif

@@ -13,24 +13,15 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. */
 
-#import "NSObject_WorkaroundForDoc.h"
-#import "HPNCategoriesLoader.h"
-
-#import "NSObject+Utils.h"
-#import "NSObject+eXtenderZ.h"
+#ifndef ThreeValuedLogic_h
+# define ThreeValuedLogic_h
 
 
+typedef NS_ENUM(signed char, TVL) {
+	TVL_YES = 1,
+	TVL_NO = 0,
+	TVL_MAYBE = -1
+};
 
-#ifdef HPN_eXtenderZ_STATIC
 
-@implementation HPNCategoriesLoader
-
-+ (void)loadCategories
-{
-	__hpn_linkNSObjectUtilsCategory();
-	__hpn_linkNSObjectExtenderzCategory();
-}
-
-@end
-
-#endif
+#endif /* ThreeValuedLogic_h */

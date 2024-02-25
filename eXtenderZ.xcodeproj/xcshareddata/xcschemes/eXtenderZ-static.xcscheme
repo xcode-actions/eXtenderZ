@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7B1B39E62B88430B00D3F1BB"
-               BuildableName = "eXtenderZ.framework"
-               BlueprintName = "eXtenderZ-dynamic-visionOS"
+               BlueprintIdentifier = "7B39FF0F255AA9F7008AF2C5"
+               BuildableName = "libeXtenderZ.a"
+               BlueprintName = "eXtenderZ-static"
                ReferencedContainer = "container:eXtenderZ.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,18 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       shouldAutocreateTestPlan = "YES">
-      <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7B1B39F82B8843ED00D3F1BB"
-               BuildableName = "eXtenderZTests.xctest"
-               BlueprintName = "eXtenderZ-dynamic-visionOSTests"
-               ReferencedContainer = "container:eXtenderZ.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -61,9 +49,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7B1B39E62B88430B00D3F1BB"
-            BuildableName = "eXtenderZ.framework"
-            BlueprintName = "eXtenderZ-dynamic-visionOS"
+            BlueprintIdentifier = "7B39FF0F255AA9F7008AF2C5"
+            BuildableName = "libeXtenderZ.a"
+            BlueprintName = "eXtenderZ-static"
             ReferencedContainer = "container:eXtenderZ.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

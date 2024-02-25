@@ -42,34 +42,43 @@ struct CreateXcframeworks : AsyncParsableCommand {
 			] })
 		]
 		
-		/* Hints:
-		 *   - <https://mokacoding.com/blog/xcodebuild-destination-options/>
-		 *   - xcodebuild -scheme eXtenderZ-dynamic-iOS -showdestinations */
-		let targets = [
-			(sdk: "macOS", platform: "macOS"),
-			(sdk: "visionOS", platform: "visionOS"),
-			(sdk: "visionOS", platform: "visionOS Simulator"),
-			(sdk: "iOS", platform: "iOS"),
-			(sdk: "iOS", platform: "iOS Simulator"),
-			(sdk: "iOS", platform: "macOS"),
-			(sdk: "tvOS", platform: "tvOS"),
-			(sdk: "tvOS", platform: "tvOS Simulator"),
-			(sdk: "watchOS", platform: "watchOS"),
-			(sdk: "watchOS", platform: "watchOS Simulator")
+		/* This list was created from the following command: `xcodebuild -showdestinations -scheme eXtenderZ-dynamic | grep name:Any`.
+		 * In theory the destinations should be the same for the dynamic and static targets, but you should verify that.
+		 *
+		 * For now we do not parse the output of the xcodebuild command automatically, but we might later.
+		 * If we do, we have to be aware the output of this command cannot be parsed reliably as
+		 *  the devices names (which can be user-defined and seem to have close to no restrictions) are _not_ escaped **at all** in the output of this command!
+		 *
+		 * An interesting link: <https://mokacoding.com/blog/xcodebuild-destination-options/>. */
+		let destinations = [
+//			(platform: "DriverKit",          variant: nil), /* <- Does not compile for some reason; won’t try to fix as I can’t see how anybody would need this. */
+			(platform: "iOS",                variant: nil),
+			(platform: "iOS Simulator",      variant: nil),
+			(platform: "macOS",              variant: nil),
+			(platform: "macOS",              variant: "Mac Catalyst"),
+			(platform: "tvOS",               variant: nil),
+			(platform: "tvOS Simulator",     variant: nil),
+			(platform: "visionOS",           variant: nil),
+			(platform: "visionOS Simulator", variant: nil),
+			(platform: "watchOS",            variant: nil),
+			(platform: "watchOS Simulator",  variant: nil),
 		]
 		
-		try writePackageFile(version: version, checksums: Dictionary(uniqueKeysWithValues: types.map{ ($0.name, nil) }))
+		if version != nil {
+			try writePackageFile(version: version, checksums: Dictionary(uniqueKeysWithValues: types.map{ ($0.name, nil) }))
+		}
 		
 		var checksums = [String: String]()
 		for type in types {
 			var xcframeworkArgs = ["-create-xcframework"]
-			for target in targets {
-				let archiveURL = archivesFolderURL.appendingPathComponent("eXtenderZ-\(type.name)-\(target.sdk)-\(target.platform).xcarchive")
+			for (platform, variant) in destinations {
+				let destinationName = platform + (variant.flatMap{ " (\($0))" } ?? "")
+				let archiveURL = archivesFolderURL.appendingPathComponent("eXtenderZ-\(type.name)-\(destinationName).xcarchive")
 				_ = try await ProcessInvocation(
 					"xcodebuild", "archive",
 					"-project", "eXtenderZ.xcodeproj",
-					"-scheme", "eXtenderZ-\(type.name)-\(target.sdk)",
-					"-destination", "generic/platform=\(target.platform)",
+					"-scheme", "eXtenderZ-\(type.name)",
+					"-destination", "generic/platform=\(platform)" + (variant.flatMap{ ",variant=" + $0 } ?? ""),
 					"-archivePath", "\(archiveURL.absoluteURL.path)",
 					"SKIP_INSTALL=NO", "BUILD_LIBRARY_FOR_DISTRIBUTION=YES",
 					stdoutRedirect: .none, stderrRedirect: .none

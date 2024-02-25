@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 	class_getMethodImplementation([self hpn_getSuperClassWithOriginalHelptenderClass:className.class], @selector(sel_name)))(self, @selector(sel_name), __VA_ARGS__
 
 
-@interface NSObject (ForHelptendersOnly)
+@interface HPN_NSObject (ForHelptendersOnly)
 
 - (Class)hpn_getSuperClassWithOriginalHelptenderClass:(Class)originalHelptenderClass;
 

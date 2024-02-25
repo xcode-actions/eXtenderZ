@@ -13,24 +13,18 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. */
 
-#import "NSObject_WorkaroundForDoc.h"
-#import "HPNCategoriesLoader.h"
+@import Foundation;
 
-#import "NSObject+Utils.h"
-#import "NSObject+eXtenderZ.h"
+#import "HPNViewExtender.h"
 
 
 
-#ifdef HPN_eXtenderZ_STATIC
+@interface HPNAutoStretchMaskLayerVE : NSObject <HPNViewExtender>
 
-@implementation HPNCategoriesLoader
++ (void)applyMaskEdges:(UIEdgeInsets)edges toView:(UIView *)layer;
 
-+ (void)loadCategories
-{
-	__hpn_linkNSObjectUtilsCategory();
-	__hpn_linkNSObjectExtenderzCategory();
-}
+/* Changing this does NOT update the frame of the mask immediatly.
+ * You can call the class method above to force a refresh. */
+@property(nonatomic, assign) UIEdgeInsets maskEdges;
 
 @end
-
-#endif

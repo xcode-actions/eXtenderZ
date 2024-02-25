@@ -8,37 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7B0E91F7255ACC03002E8F1F /* eXtenderZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0E91EE255ACC03002E8F1F /* eXtenderZ.framework */; };
-		7B0E9219255ACC59002E8F1F /* eXtenderZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0E9210255ACC59002E8F1F /* eXtenderZ.framework */; };
-		7B0E923D255ACC74002E8F1F /* eXtenderZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0E9234255ACC73002E8F1F /* eXtenderZ.framework */; };
 		7B0E933E255ACFAC002E8F1F /* eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB2255AA577008AF2C5 /* eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B0E933F255ACFAC002E8F1F /* HPNExtenderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB3255AA577008AF2C5 /* HPNExtenderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B0E9340255ACFAC002E8F1F /* HelptenderUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB6255AA577008AF2C5 /* HelptenderUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B0E9341255ACFAC002E8F1F /* NSObject+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB7255AA577008AF2C5 /* NSObject+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B0E9342255ACFAC002E8F1F /* NSObject+eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB1255AA577008AF2C5 /* NSObject+eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B0E9359255ACFC8002E8F1F /* eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB2255AA577008AF2C5 /* eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B0E935A255ACFC8002E8F1F /* HPNExtenderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB3255AA577008AF2C5 /* HPNExtenderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B0E935B255ACFC8002E8F1F /* HelptenderUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB6255AA577008AF2C5 /* HelptenderUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B0E935C255ACFC8002E8F1F /* NSObject+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB7255AA577008AF2C5 /* NSObject+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B0E935D255ACFC8002E8F1F /* NSObject+eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB1255AA577008AF2C5 /* NSObject+eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B0E935E255ACFD4002E8F1F /* eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB2255AA577008AF2C5 /* eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B0E935F255ACFD4002E8F1F /* HPNExtenderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB3255AA577008AF2C5 /* HPNExtenderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B0E9360255ACFD4002E8F1F /* HelptenderUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB6255AA577008AF2C5 /* HelptenderUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B0E9361255ACFD4002E8F1F /* NSObject+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB7255AA577008AF2C5 /* NSObject+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B0E9362255ACFD4002E8F1F /* NSObject+eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB1255AA577008AF2C5 /* NSObject+eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B0E9363255ACFDE002E8F1F /* eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB2255AA577008AF2C5 /* eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B0E9364255ACFDE002E8F1F /* HPNExtenderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB3255AA577008AF2C5 /* HPNExtenderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B0E9365255ACFDE002E8F1F /* HelptenderUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB6255AA577008AF2C5 /* HelptenderUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B0E9366255ACFDE002E8F1F /* NSObject+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB7255AA577008AF2C5 /* NSObject+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B0E9367255ACFDE002E8F1F /* NSObject+eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB1255AA577008AF2C5 /* NSObject+eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B0E9368255AD028002E8F1F /* HPNExtenderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB8255AA577008AF2C5 /* HPNExtenderConfig.m */; };
-		7B0E9369255AD028002E8F1F /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB4255AA577008AF2C5 /* NSObject+Utils.m */; };
-		7B0E936A255AD028002E8F1F /* NSObject+eXtenderZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB5255AA577008AF2C5 /* NSObject+eXtenderZ.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7B0E936B255AD02B002E8F1F /* HPNExtenderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB8255AA577008AF2C5 /* HPNExtenderConfig.m */; };
-		7B0E936C255AD02B002E8F1F /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB4255AA577008AF2C5 /* NSObject+Utils.m */; };
-		7B0E936D255AD02B002E8F1F /* NSObject+eXtenderZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB5255AA577008AF2C5 /* NSObject+eXtenderZ.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7B0E936E255AD02E002E8F1F /* HPNExtenderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB8255AA577008AF2C5 /* HPNExtenderConfig.m */; };
-		7B0E936F255AD02E002E8F1F /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB4255AA577008AF2C5 /* NSObject+Utils.m */; };
-		7B0E9370255AD02E002E8F1F /* NSObject+eXtenderZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB5255AA577008AF2C5 /* NSObject+eXtenderZ.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7B0E9371255AD032002E8F1F /* HPNExtenderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB8255AA577008AF2C5 /* HPNExtenderConfig.m */; };
 		7B0E9372255AD032002E8F1F /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB4255AA577008AF2C5 /* NSObject+Utils.m */; };
 		7B0E9373255AD032002E8F1F /* NSObject+eXtenderZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB5255AA577008AF2C5 /* NSObject+eXtenderZ.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -47,61 +21,9 @@
 		7B0E93A2255AD090002E8F1F /* SimpleObjectExtender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEC0255AA577008AF2C5 /* SimpleObjectExtender.swift */; };
 		7B0E93AE255AD093002E8F1F /* eXtenderZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEBB255AA577008AF2C5 /* eXtenderZTests.swift */; };
 		7B0E93DB255AD139002E8F1F /* ObjcCategoryLibrary.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEAD255AA577008AF2C5 /* ObjcCategoryLibrary.c */; };
-		7B1B39D42B88429900D3F1BB /* module.modulemap in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEC6255AA8E2008AF2C5 /* module.modulemap */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B1B39D52B88429900D3F1BB /* eXtenderZ-static.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B390028255AC5BC008AF2C5 /* eXtenderZ-static.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B1B39D62B88429900D3F1BB /* eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB2255AA577008AF2C5 /* eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B1B39D72B88429900D3F1BB /* HPNExtenderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB3255AA577008AF2C5 /* HPNExtenderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B1B39D82B88429900D3F1BB /* NSObject+eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB1255AA577008AF2C5 /* NSObject+eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B1B39D92B88429900D3F1BB /* NSObject+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB7255AA577008AF2C5 /* NSObject+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B1B39DA2B88429900D3F1BB /* HPNCategoriesLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B256EB9264C745F00840604 /* HPNCategoriesLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B1B39DB2B88429900D3F1BB /* HelptenderUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB6255AA577008AF2C5 /* HelptenderUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B1B39DD2B88429900D3F1BB /* HPNExtenderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB8255AA577008AF2C5 /* HPNExtenderConfig.m */; };
-		7B1B39DE2B88429900D3F1BB /* NSObject+eXtenderZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB5255AA577008AF2C5 /* NSObject+eXtenderZ.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7B1B39DF2B88429900D3F1BB /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB4255AA577008AF2C5 /* NSObject+Utils.m */; };
-		7B1B39E02B88429900D3F1BB /* HPNCategoriesLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B256EBA264C745F00840604 /* HPNCategoriesLoader.m */; };
-		7B1B39E82B88430B00D3F1BB /* eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB2255AA577008AF2C5 /* eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B1B39E92B88430B00D3F1BB /* HPNExtenderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB3255AA577008AF2C5 /* HPNExtenderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B1B39EA2B88430B00D3F1BB /* NSObject+eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB1255AA577008AF2C5 /* NSObject+eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B1B39EB2B88430B00D3F1BB /* NSObject+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB7255AA577008AF2C5 /* NSObject+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B1B39EC2B88430B00D3F1BB /* HelptenderUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB6255AA577008AF2C5 /* HelptenderUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B1B39EE2B88430B00D3F1BB /* HPNExtenderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB8255AA577008AF2C5 /* HPNExtenderConfig.m */; };
-		7B1B39EF2B88430B00D3F1BB /* NSObject+eXtenderZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB5255AA577008AF2C5 /* NSObject+eXtenderZ.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7B1B39F02B88430B00D3F1BB /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB4255AA577008AF2C5 /* NSObject+Utils.m */; };
-		7B1B39FC2B8843ED00D3F1BB /* ObjcCategoryLibrary.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEAD255AA577008AF2C5 /* ObjcCategoryLibrary.c */; };
-		7B1B39FD2B8843ED00D3F1BB /* HPNSimpleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEBE255AA577008AF2C5 /* HPNSimpleObject.m */; };
-		7B1B39FE2B8843ED00D3F1BB /* HPNSimpleObjectHelptender.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEBD255AA577008AF2C5 /* HPNSimpleObjectHelptender.m */; };
-		7B1B39FF2B8843ED00D3F1BB /* SimpleObjectExtender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEC0255AA577008AF2C5 /* SimpleObjectExtender.swift */; };
-		7B1B3A002B8843ED00D3F1BB /* eXtenderZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEBB255AA577008AF2C5 /* eXtenderZTests.swift */; };
-		7B1B3A022B8843ED00D3F1BB /* eXtenderZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0E9210255ACC59002E8F1F /* eXtenderZ.framework */; };
 		7B256EBB264C745F00840604 /* HPNCategoriesLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B256EB9264C745F00840604 /* HPNCategoriesLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B256EBC264C745F00840604 /* HPNCategoriesLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B256EB9264C745F00840604 /* HPNCategoriesLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B256EBD264C745F00840604 /* HPNCategoriesLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B256EB9264C745F00840604 /* HPNCategoriesLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B256EBE264C745F00840604 /* HPNCategoriesLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B256EB9264C745F00840604 /* HPNCategoriesLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B256EBF264C745F00840604 /* HPNCategoriesLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B256EBA264C745F00840604 /* HPNCategoriesLoader.m */; };
-		7B256EC0264C745F00840604 /* HPNCategoriesLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B256EBA264C745F00840604 /* HPNCategoriesLoader.m */; };
-		7B256EC1264C745F00840604 /* HPNCategoriesLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B256EBA264C745F00840604 /* HPNCategoriesLoader.m */; };
-		7B256EC2264C745F00840604 /* HPNCategoriesLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B256EBA264C745F00840604 /* HPNCategoriesLoader.m */; };
-		7B2FA004255AD8880094DFB4 /* ObjcCategoryLibrary.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEAD255AA577008AF2C5 /* ObjcCategoryLibrary.c */; };
-		7B2FA010255AD8A50094DFB4 /* HPNSimpleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEBE255AA577008AF2C5 /* HPNSimpleObject.m */; };
-		7B2FA01C255AD8A80094DFB4 /* HPNSimpleObjectHelptender.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEBD255AA577008AF2C5 /* HPNSimpleObjectHelptender.m */; };
-		7B2FA028255AD8AE0094DFB4 /* SimpleObjectExtender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEC0255AA577008AF2C5 /* SimpleObjectExtender.swift */; };
-		7B2FA034255AD8B20094DFB4 /* eXtenderZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEBB255AA577008AF2C5 /* eXtenderZTests.swift */; };
-		7B2FA056255AD9080094DFB4 /* ObjcCategoryLibrary.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEAD255AA577008AF2C5 /* ObjcCategoryLibrary.c */; };
-		7B2FA062255AD90B0094DFB4 /* HPNSimpleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEBE255AA577008AF2C5 /* HPNSimpleObject.m */; };
-		7B2FA06E255AD90D0094DFB4 /* HPNSimpleObjectHelptender.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEBD255AA577008AF2C5 /* HPNSimpleObjectHelptender.m */; };
-		7B2FA07A255AD9100094DFB4 /* SimpleObjectExtender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEC0255AA577008AF2C5 /* SimpleObjectExtender.swift */; };
-		7B2FA086255AD9130094DFB4 /* eXtenderZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEBB255AA577008AF2C5 /* eXtenderZTests.swift */; };
-		7B390002255AB181008AF2C5 /* HelptenderUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB6255AA577008AF2C5 /* HelptenderUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B390008255AB18E008AF2C5 /* module.modulemap in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEC6255AA8E2008AF2C5 /* module.modulemap */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B39000D255AB190008AF2C5 /* eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB2255AA577008AF2C5 /* eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B390012255AB194008AF2C5 /* HPNExtenderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB3255AA577008AF2C5 /* HPNExtenderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B390017255AB197008AF2C5 /* NSObject+eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB1255AA577008AF2C5 /* NSObject+eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B39001C255AB19B008AF2C5 /* NSObject+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB7255AA577008AF2C5 /* NSObject+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B390021255AB19D008AF2C5 /* HelptenderUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB6255AA577008AF2C5 /* HelptenderUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B390029255AC64E008AF2C5 /* eXtenderZ-static.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B390028255AC5BC008AF2C5 /* eXtenderZ-static.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B39002E255AC651008AF2C5 /* eXtenderZ-static.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B390028255AC5BC008AF2C5 /* eXtenderZ-static.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B390033255AC655008AF2C5 /* eXtenderZ-static.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B390028255AC5BC008AF2C5 /* eXtenderZ-static.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B390038255AC659008AF2C5 /* eXtenderZ-static.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B390028255AC5BC008AF2C5 /* eXtenderZ-static.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B39FF51255AAAC4008AF2C5 /* module.modulemap in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEC6255AA8E2008AF2C5 /* module.modulemap */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B39FF56255AAB27008AF2C5 /* eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB2255AA577008AF2C5 /* eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B39FF5B255AAB33008AF2C5 /* HPNExtenderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB3255AA577008AF2C5 /* HPNExtenderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -111,26 +33,20 @@
 		7B39FFA1255AAE92008AF2C5 /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB4255AA577008AF2C5 /* NSObject+Utils.m */; };
 		7B39FFA2255AAE92008AF2C5 /* HPNExtenderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB8255AA577008AF2C5 /* HPNExtenderConfig.m */; };
 		7B39FFA3255AAE92008AF2C5 /* NSObject+eXtenderZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB5255AA577008AF2C5 /* NSObject+eXtenderZ.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7B39FFA8255AAE93008AF2C5 /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB4255AA577008AF2C5 /* NSObject+Utils.m */; };
-		7B39FFA9255AAE93008AF2C5 /* HPNExtenderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB8255AA577008AF2C5 /* HPNExtenderConfig.m */; };
-		7B39FFAA255AAE93008AF2C5 /* NSObject+eXtenderZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB5255AA577008AF2C5 /* NSObject+eXtenderZ.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7B39FFAF255AAE93008AF2C5 /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB4255AA577008AF2C5 /* NSObject+Utils.m */; };
-		7B39FFB0255AAE93008AF2C5 /* HPNExtenderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB8255AA577008AF2C5 /* HPNExtenderConfig.m */; };
-		7B39FFB1255AAE93008AF2C5 /* NSObject+eXtenderZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB5255AA577008AF2C5 /* NSObject+eXtenderZ.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7B39FFB6255AAE94008AF2C5 /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB4255AA577008AF2C5 /* NSObject+Utils.m */; };
-		7B39FFB7255AAE94008AF2C5 /* HPNExtenderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB8255AA577008AF2C5 /* HPNExtenderConfig.m */; };
-		7B39FFB8255AAE94008AF2C5 /* NSObject+eXtenderZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB5255AA577008AF2C5 /* NSObject+eXtenderZ.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7B39FFCA255AB0E2008AF2C5 /* module.modulemap in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEC6255AA8E2008AF2C5 /* module.modulemap */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B39FFCF255AB0EC008AF2C5 /* eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB2255AA577008AF2C5 /* eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B39FFD4255AB0F4008AF2C5 /* HPNExtenderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB3255AA577008AF2C5 /* HPNExtenderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B39FFD9255AB0FB008AF2C5 /* NSObject+eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB1255AA577008AF2C5 /* NSObject+eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B39FFDE255AB116008AF2C5 /* NSObject+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB7255AA577008AF2C5 /* NSObject+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B39FFE3255AB11D008AF2C5 /* HelptenderUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB6255AA577008AF2C5 /* HelptenderUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B39FFE9255AB160008AF2C5 /* module.modulemap in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEC6255AA8E2008AF2C5 /* module.modulemap */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B39FFEE255AB163008AF2C5 /* eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB2255AA577008AF2C5 /* eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B39FFF3255AB169008AF2C5 /* HPNExtenderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB3255AA577008AF2C5 /* HPNExtenderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B39FFF8255AB16B008AF2C5 /* NSObject+eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB1255AA577008AF2C5 /* NSObject+eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B39FFFD255AB178008AF2C5 /* NSObject+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB7255AA577008AF2C5 /* NSObject+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B56FE3D2B8AB94C00AF034D /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 7BA760DA2B8A7F2C002B11DE /* Documentation.docc */; };
+		7BA760DF2B8A8718002B11DE /* eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB2255AA577008AF2C5 /* eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BA760E02B8A8718002B11DE /* HelptenderUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB6255AA577008AF2C5 /* HelptenderUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BA760E12B8A8718002B11DE /* HPNExtenderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB3255AA577008AF2C5 /* HPNExtenderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BA760E22B8A8718002B11DE /* NSObject+eXtenderZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB1255AA577008AF2C5 /* NSObject+eXtenderZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BA760E32B8A8718002B11DE /* NSObject+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B39FEB7255AA577008AF2C5 /* NSObject+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BA760E52B8A8718002B11DE /* HPNExtenderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB8255AA577008AF2C5 /* HPNExtenderConfig.m */; };
+		7BA760E62B8A8718002B11DE /* NSObject+eXtenderZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB5255AA577008AF2C5 /* NSObject+eXtenderZ.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7BA760E72B8A8718002B11DE /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B39FEB4255AA577008AF2C5 /* NSObject+Utils.m */; };
+		7BA760E82B8A8718002B11DE /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 7BA760DA2B8A7F2C002B11DE /* Documentation.docc */; };
+		7BA760F22B8A88C9002B11DE /* NSObject_WorkaroundForDoc.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BA760F02B8A88C9002B11DE /* NSObject_WorkaroundForDoc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BA760F32B8A88C9002B11DE /* NSObject_WorkaroundForDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA760F12B8A88C9002B11DE /* NSObject_WorkaroundForDoc.m */; };
+		7BA760F42B8A8E8A002B11DE /* NSObject_WorkaroundForDoc.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BA760F02B8A88C9002B11DE /* NSObject_WorkaroundForDoc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BA760F52B8A8E8A002B11DE /* NSObject_WorkaroundForDoc.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BA760F02B8A88C9002B11DE /* NSObject_WorkaroundForDoc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,40 +57,12 @@
 			remoteGlobalIDString = 7B0E91ED255ACC03002E8F1F;
 			remoteInfo = "eXtenderZ-dynamic-macOS";
 		};
-		7B0E921A255ACC59002E8F1F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7BDF6459255AA34F00CA77DF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7B0E920F255ACC59002E8F1F;
-			remoteInfo = "eXtenderZ-dynamic-iOS";
-		};
-		7B0E923E255ACC74002E8F1F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7BDF6459255AA34F00CA77DF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7B0E9233255ACC73002E8F1F;
-			remoteInfo = "eXtenderZ-dynamic-tvOS";
-		};
-		7B1B3A092B88451300D3F1BB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7BDF6459255AA34F00CA77DF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7B1B39E62B88430B00D3F1BB;
-			remoteInfo = "eXtenderZ-dynamic-visionOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B0751B2274414B0006E13DA /* Examples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Examples; sourceTree = "<group>"; };
 		7B0E91EE255ACC03002E8F1F /* eXtenderZ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = eXtenderZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B0E91F6255ACC03002E8F1F /* eXtenderZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eXtenderZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B0E9210255ACC59002E8F1F /* eXtenderZ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = eXtenderZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B0E9218255ACC59002E8F1F /* eXtenderZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eXtenderZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B0E9234255ACC73002E8F1F /* eXtenderZ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = eXtenderZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B0E923C255ACC74002E8F1F /* eXtenderZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eXtenderZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B0E925A255ACC8B002E8F1F /* eXtenderZ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = eXtenderZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B1B39E52B88429900D3F1BB /* libeXtenderZ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libeXtenderZ.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B1B39F62B88430B00D3F1BB /* eXtenderZ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = eXtenderZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B1B3A072B8843ED00D3F1BB /* eXtenderZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eXtenderZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B256EB9264C745F00840604 /* HPNCategoriesLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPNCategoriesLoader.h; sourceTree = "<group>"; };
 		7B256EBA264C745F00840604 /* HPNCategoriesLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPNCategoriesLoader.m; sourceTree = "<group>"; };
 		7B390028255AC5BC008AF2C5 /* eXtenderZ-static.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eXtenderZ-static.h"; sourceTree = "<group>"; };
@@ -201,11 +89,12 @@
 		7B39FEC1255AA577008AF2C5 /* HPNSimpleObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPNSimpleObject.h; sourceTree = "<group>"; };
 		7B39FEC6255AA8E2008AF2C5 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		7B39FF10255AA9F7008AF2C5 /* libeXtenderZ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libeXtenderZ.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B39FF1F255AAA08008AF2C5 /* libeXtenderZ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libeXtenderZ.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B39FF30255AAA3A008AF2C5 /* libeXtenderZ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libeXtenderZ.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B39FF40255AAA8D008AF2C5 /* libeXtenderZ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libeXtenderZ.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B83A9C0255D127F00791D17 /* .github */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .github; sourceTree = "<group>"; };
 		7B91F9EB255AEE3E00D5E6E0 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
+		7BA760DA2B8A7F2C002B11DE /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
+		7BA760EE2B8A8718002B11DE /* eXtenderZ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = eXtenderZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BA760F02B8A88C9002B11DE /* NSObject_WorkaroundForDoc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_WorkaroundForDoc.h; sourceTree = "<group>"; };
+		7BA760F12B8A88C9002B11DE /* NSObject_WorkaroundForDoc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_WorkaroundForDoc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,65 +113,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B0E920D255ACC59002E8F1F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B0E9215255ACC59002E8F1F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B0E9219255ACC59002E8F1F /* eXtenderZ.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B0E9231255ACC73002E8F1F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B0E9239255ACC74002E8F1F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B0E923D255ACC74002E8F1F /* eXtenderZ.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B0E9257255ACC8B002E8F1F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B1B39E12B88429900D3F1BB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B1B39F12B88430B00D3F1BB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B1B3A012B8843ED00D3F1BB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B1B3A022B8843ED00D3F1BB /* eXtenderZ.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7B39FF0E255AA9F7008AF2C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,21 +120,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B39FF1C255AAA08008AF2C5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B39FF2D255AAA3A008AF2C5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B39FF3D255AAA8D008AF2C5 /* Frameworks */ = {
+		7BA760E92B8A8718002B11DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -318,19 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				7B39FF10255AA9F7008AF2C5 /* libeXtenderZ.a */,
-				7B39FF1F255AAA08008AF2C5 /* libeXtenderZ.a */,
-				7B39FF30255AAA3A008AF2C5 /* libeXtenderZ.a */,
-				7B39FF40255AAA8D008AF2C5 /* libeXtenderZ.a */,
 				7B0E91EE255ACC03002E8F1F /* eXtenderZ.framework */,
-				7B0E9210255ACC59002E8F1F /* eXtenderZ.framework */,
-				7B0E9234255ACC73002E8F1F /* eXtenderZ.framework */,
-				7B0E925A255ACC8B002E8F1F /* eXtenderZ.framework */,
 				7B0E91F6255ACC03002E8F1F /* eXtenderZTests.xctest */,
-				7B0E9218255ACC59002E8F1F /* eXtenderZTests.xctest */,
-				7B0E923C255ACC74002E8F1F /* eXtenderZTests.xctest */,
-				7B1B39E52B88429900D3F1BB /* libeXtenderZ.a */,
-				7B1B39F62B88430B00D3F1BB /* eXtenderZ.framework */,
-				7B1B3A072B8843ED00D3F1BB /* eXtenderZTests.xctest */,
+				7BA760EE2B8A8718002B11DE /* eXtenderZ.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -365,6 +171,8 @@
 				7B39FEB8255AA577008AF2C5 /* HPNExtenderConfig.m */,
 				7B256EB9264C745F00840604 /* HPNCategoriesLoader.h */,
 				7B256EBA264C745F00840604 /* HPNCategoriesLoader.m */,
+				7BA760F02B8A88C9002B11DE /* NSObject_WorkaroundForDoc.h */,
+				7BA760F12B8A88C9002B11DE /* NSObject_WorkaroundForDoc.m */,
 			);
 			path = eXtenderZ;
 			sourceTree = "<group>";
@@ -426,7 +234,9 @@
 				7B39FEA8255AA50B008AF2C5 /* License.txt */,
 				7B39FEAF255AA577008AF2C5 /* Sources */,
 				7B39FEB9255AA577008AF2C5 /* Tests */,
+				7BA760DA2B8A7F2C002B11DE /* Documentation.docc */,
 				7B39FEA9255AA577008AF2C5 /* Xcode Supporting Files */,
+				7B0751B2274414B0006E13DA /* Examples */,
 				7B91F9EB255AEE3E00D5E6E0 /* Scripts */,
 				7B83A9C0255D127F00791D17 /* .github */,
 				7B39FE73255AA43B008AF2C5 /* Products */,
@@ -446,86 +256,9 @@
 				7B0E933E255ACFAC002E8F1F /* eXtenderZ.h in Headers */,
 				7B0E9340255ACFAC002E8F1F /* HelptenderUtils.h in Headers */,
 				7B0E933F255ACFAC002E8F1F /* HPNExtenderConfig.h in Headers */,
+				7BA760F42B8A8E8A002B11DE /* NSObject_WorkaroundForDoc.h in Headers */,
 				7B0E9342255ACFAC002E8F1F /* NSObject+eXtenderZ.h in Headers */,
 				7B0E9341255ACFAC002E8F1F /* NSObject+Utils.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B0E920B255ACC59002E8F1F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B0E9359255ACFC8002E8F1F /* eXtenderZ.h in Headers */,
-				7B0E935B255ACFC8002E8F1F /* HelptenderUtils.h in Headers */,
-				7B0E935A255ACFC8002E8F1F /* HPNExtenderConfig.h in Headers */,
-				7B0E935D255ACFC8002E8F1F /* NSObject+eXtenderZ.h in Headers */,
-				7B0E935C255ACFC8002E8F1F /* NSObject+Utils.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B0E922F255ACC73002E8F1F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B0E935E255ACFD4002E8F1F /* eXtenderZ.h in Headers */,
-				7B0E9360255ACFD4002E8F1F /* HelptenderUtils.h in Headers */,
-				7B0E935F255ACFD4002E8F1F /* HPNExtenderConfig.h in Headers */,
-				7B0E9362255ACFD4002E8F1F /* NSObject+eXtenderZ.h in Headers */,
-				7B0E9361255ACFD4002E8F1F /* NSObject+Utils.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B0E9255255ACC8B002E8F1F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B0E9363255ACFDE002E8F1F /* eXtenderZ.h in Headers */,
-				7B0E9365255ACFDE002E8F1F /* HelptenderUtils.h in Headers */,
-				7B0E9364255ACFDE002E8F1F /* HPNExtenderConfig.h in Headers */,
-				7B0E9367255ACFDE002E8F1F /* NSObject+eXtenderZ.h in Headers */,
-				7B0E9366255ACFDE002E8F1F /* NSObject+Utils.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B1B39D32B88429900D3F1BB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B1B39D52B88429900D3F1BB /* eXtenderZ-static.h in Headers */,
-				7B1B39D62B88429900D3F1BB /* eXtenderZ.h in Headers */,
-				7B1B39DB2B88429900D3F1BB /* HelptenderUtils.h in Headers */,
-				7B1B39DA2B88429900D3F1BB /* HPNCategoriesLoader.h in Headers */,
-				7B1B39D72B88429900D3F1BB /* HPNExtenderConfig.h in Headers */,
-				7B1B39D42B88429900D3F1BB /* module.modulemap in Headers */,
-				7B1B39D82B88429900D3F1BB /* NSObject+eXtenderZ.h in Headers */,
-				7B1B39D92B88429900D3F1BB /* NSObject+Utils.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B1B39E72B88430B00D3F1BB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B1B39E82B88430B00D3F1BB /* eXtenderZ.h in Headers */,
-				7B1B39EC2B88430B00D3F1BB /* HelptenderUtils.h in Headers */,
-				7B1B39E92B88430B00D3F1BB /* HPNExtenderConfig.h in Headers */,
-				7B1B39EA2B88430B00D3F1BB /* NSObject+eXtenderZ.h in Headers */,
-				7B1B39EB2B88430B00D3F1BB /* NSObject+Utils.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B390007255AB18B008AF2C5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B390038255AC659008AF2C5 /* eXtenderZ-static.h in Headers */,
-				7B39000D255AB190008AF2C5 /* eXtenderZ.h in Headers */,
-				7B390021255AB19D008AF2C5 /* HelptenderUtils.h in Headers */,
-				7B256EBE264C745F00840604 /* HPNCategoriesLoader.h in Headers */,
-				7B390012255AB194008AF2C5 /* HPNExtenderConfig.h in Headers */,
-				7B390008255AB18E008AF2C5 /* module.modulemap in Headers */,
-				7B390017255AB197008AF2C5 /* NSObject+eXtenderZ.h in Headers */,
-				7B39001C255AB19B008AF2C5 /* NSObject+Utils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,47 +272,31 @@
 				7B256EBB264C745F00840604 /* HPNCategoriesLoader.h in Headers */,
 				7B39FF5B255AAB33008AF2C5 /* HPNExtenderConfig.h in Headers */,
 				7B39FF51255AAAC4008AF2C5 /* module.modulemap in Headers */,
+				7BA760F52B8A8E8A002B11DE /* NSObject_WorkaroundForDoc.h in Headers */,
 				7B39FF65255AAB3E008AF2C5 /* NSObject+eXtenderZ.h in Headers */,
 				7B39FF6A255AAB42008AF2C5 /* NSObject+Utils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B39FFC9255AB0D6008AF2C5 /* Headers */ = {
+		7BA760DE2B8A8718002B11DE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B39002E255AC651008AF2C5 /* eXtenderZ-static.h in Headers */,
-				7B39FFCF255AB0EC008AF2C5 /* eXtenderZ.h in Headers */,
-				7B39FFE3255AB11D008AF2C5 /* HelptenderUtils.h in Headers */,
-				7B256EBC264C745F00840604 /* HPNCategoriesLoader.h in Headers */,
-				7B39FFD4255AB0F4008AF2C5 /* HPNExtenderConfig.h in Headers */,
-				7B39FFCA255AB0E2008AF2C5 /* module.modulemap in Headers */,
-				7B39FFD9255AB0FB008AF2C5 /* NSObject+eXtenderZ.h in Headers */,
-				7B39FFDE255AB116008AF2C5 /* NSObject+Utils.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B39FFE8255AB157008AF2C5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B390033255AC655008AF2C5 /* eXtenderZ-static.h in Headers */,
-				7B39FFEE255AB163008AF2C5 /* eXtenderZ.h in Headers */,
-				7B390002255AB181008AF2C5 /* HelptenderUtils.h in Headers */,
-				7B256EBD264C745F00840604 /* HPNCategoriesLoader.h in Headers */,
-				7B39FFF3255AB169008AF2C5 /* HPNExtenderConfig.h in Headers */,
-				7B39FFE9255AB160008AF2C5 /* module.modulemap in Headers */,
-				7B39FFF8255AB16B008AF2C5 /* NSObject+eXtenderZ.h in Headers */,
-				7B39FFFD255AB178008AF2C5 /* NSObject+Utils.h in Headers */,
+				7BA760DF2B8A8718002B11DE /* eXtenderZ.h in Headers */,
+				7BA760E02B8A8718002B11DE /* HelptenderUtils.h in Headers */,
+				7BA760E12B8A8718002B11DE /* HPNExtenderConfig.h in Headers */,
+				7BA760F22B8A88C9002B11DE /* NSObject_WorkaroundForDoc.h in Headers */,
+				7BA760E22B8A8718002B11DE /* NSObject+eXtenderZ.h in Headers */,
+				7BA760E32B8A8718002B11DE /* NSObject+Utils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7B0E91ED255ACC03002E8F1F /* eXtenderZ-dynamic-macOS */ = {
+		7B0E91ED255ACC03002E8F1F /* eXtenderZ-dynamic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B0E91FF255ACC03002E8F1F /* Build configuration list for PBXNativeTarget "eXtenderZ-dynamic-macOS" */;
+			buildConfigurationList = 7B0E91FF255ACC03002E8F1F /* Build configuration list for PBXNativeTarget "eXtenderZ-dynamic" */;
 			buildPhases = (
 				7B0E91E9255ACC03002E8F1F /* Headers */,
 				7B0E91EA255ACC03002E8F1F /* Sources */,
@@ -590,14 +307,14 @@
 			);
 			dependencies = (
 			);
-			name = "eXtenderZ-dynamic-macOS";
+			name = "eXtenderZ-dynamic";
 			productName = "eXtenderZ-dynamic-macOS";
 			productReference = 7B0E91EE255ACC03002E8F1F /* eXtenderZ.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7B0E91F5255ACC03002E8F1F /* eXtenderZ-dynamic-macOSTests */ = {
+		7B0E91F5255ACC03002E8F1F /* eXtenderZTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B0E9202255ACC03002E8F1F /* Build configuration list for PBXNativeTarget "eXtenderZ-dynamic-macOSTests" */;
+			buildConfigurationList = 7B0E9202255ACC03002E8F1F /* Build configuration list for PBXNativeTarget "eXtenderZTests" */;
 			buildPhases = (
 				7B0E91F2255ACC03002E8F1F /* Sources */,
 				7B0E91F3255ACC03002E8F1F /* Frameworks */,
@@ -608,157 +325,14 @@
 			dependencies = (
 				7B0E91F9255ACC03002E8F1F /* PBXTargetDependency */,
 			);
-			name = "eXtenderZ-dynamic-macOSTests";
+			name = eXtenderZTests;
 			productName = "eXtenderZ-dynamic-macOSTests";
 			productReference = 7B0E91F6255ACC03002E8F1F /* eXtenderZTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7B0E920F255ACC59002E8F1F /* eXtenderZ-dynamic-iOS */ = {
+		7B39FF0F255AA9F7008AF2C5 /* eXtenderZ-static */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B0E9221255ACC59002E8F1F /* Build configuration list for PBXNativeTarget "eXtenderZ-dynamic-iOS" */;
-			buildPhases = (
-				7B0E920B255ACC59002E8F1F /* Headers */,
-				7B0E920C255ACC59002E8F1F /* Sources */,
-				7B0E920D255ACC59002E8F1F /* Frameworks */,
-				7B0E920E255ACC59002E8F1F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "eXtenderZ-dynamic-iOS";
-			productName = "eXtenderZ-dynamic-iOS";
-			productReference = 7B0E9210255ACC59002E8F1F /* eXtenderZ.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7B0E9217255ACC59002E8F1F /* eXtenderZ-dynamic-iOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B0E9224255ACC59002E8F1F /* Build configuration list for PBXNativeTarget "eXtenderZ-dynamic-iOSTests" */;
-			buildPhases = (
-				7B0E9214255ACC59002E8F1F /* Sources */,
-				7B0E9215255ACC59002E8F1F /* Frameworks */,
-				7B0E9216255ACC59002E8F1F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7B0E921B255ACC59002E8F1F /* PBXTargetDependency */,
-			);
-			name = "eXtenderZ-dynamic-iOSTests";
-			productName = "eXtenderZ-dynamic-iOSTests";
-			productReference = 7B0E9218255ACC59002E8F1F /* eXtenderZTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7B0E9233255ACC73002E8F1F /* eXtenderZ-dynamic-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B0E9245255ACC74002E8F1F /* Build configuration list for PBXNativeTarget "eXtenderZ-dynamic-tvOS" */;
-			buildPhases = (
-				7B0E922F255ACC73002E8F1F /* Headers */,
-				7B0E9230255ACC73002E8F1F /* Sources */,
-				7B0E9231255ACC73002E8F1F /* Frameworks */,
-				7B0E9232255ACC73002E8F1F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "eXtenderZ-dynamic-tvOS";
-			productName = "eXtenderZ-dynamic-tvOS";
-			productReference = 7B0E9234255ACC73002E8F1F /* eXtenderZ.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7B0E923B255ACC74002E8F1F /* eXtenderZ-dynamic-tvOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B0E9248255ACC74002E8F1F /* Build configuration list for PBXNativeTarget "eXtenderZ-dynamic-tvOSTests" */;
-			buildPhases = (
-				7B0E9238255ACC74002E8F1F /* Sources */,
-				7B0E9239255ACC74002E8F1F /* Frameworks */,
-				7B0E923A255ACC74002E8F1F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7B0E923F255ACC74002E8F1F /* PBXTargetDependency */,
-			);
-			name = "eXtenderZ-dynamic-tvOSTests";
-			productName = "eXtenderZ-dynamic-tvOSTests";
-			productReference = 7B0E923C255ACC74002E8F1F /* eXtenderZTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7B0E9259255ACC8B002E8F1F /* eXtenderZ-dynamic-watchOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B0E925F255ACC8B002E8F1F /* Build configuration list for PBXNativeTarget "eXtenderZ-dynamic-watchOS" */;
-			buildPhases = (
-				7B0E9255255ACC8B002E8F1F /* Headers */,
-				7B0E9256255ACC8B002E8F1F /* Sources */,
-				7B0E9257255ACC8B002E8F1F /* Frameworks */,
-				7B0E9258255ACC8B002E8F1F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "eXtenderZ-dynamic-watchOS";
-			productName = "eXtenderZ-dynamic-watchOS";
-			productReference = 7B0E925A255ACC8B002E8F1F /* eXtenderZ.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7B1B39D22B88429900D3F1BB /* eXtenderZ-static-visionOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B1B39E22B88429900D3F1BB /* Build configuration list for PBXNativeTarget "eXtenderZ-static-visionOS" */;
-			buildPhases = (
-				7B1B39D32B88429900D3F1BB /* Headers */,
-				7B1B39DC2B88429900D3F1BB /* Sources */,
-				7B1B39E12B88429900D3F1BB /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "eXtenderZ-static-visionOS";
-			productName = "eXtenderZ-watchOS";
-			productReference = 7B1B39E52B88429900D3F1BB /* libeXtenderZ.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		7B1B39E62B88430B00D3F1BB /* eXtenderZ-dynamic-visionOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B1B39F32B88430B00D3F1BB /* Build configuration list for PBXNativeTarget "eXtenderZ-dynamic-visionOS" */;
-			buildPhases = (
-				7B1B39E72B88430B00D3F1BB /* Headers */,
-				7B1B39ED2B88430B00D3F1BB /* Sources */,
-				7B1B39F12B88430B00D3F1BB /* Frameworks */,
-				7B1B39F22B88430B00D3F1BB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "eXtenderZ-dynamic-visionOS";
-			productName = "eXtenderZ-dynamic-watchOS";
-			productReference = 7B1B39F62B88430B00D3F1BB /* eXtenderZ.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7B1B39F82B8843ED00D3F1BB /* eXtenderZ-dynamic-visionOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B1B3A042B8843ED00D3F1BB /* Build configuration list for PBXNativeTarget "eXtenderZ-dynamic-visionOSTests" */;
-			buildPhases = (
-				7B1B39FB2B8843ED00D3F1BB /* Sources */,
-				7B1B3A012B8843ED00D3F1BB /* Frameworks */,
-				7B1B3A032B8843ED00D3F1BB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7B1B3A0A2B88451300D3F1BB /* PBXTargetDependency */,
-			);
-			name = "eXtenderZ-dynamic-visionOSTests";
-			productName = "eXtenderZ-dynamic-iOSTests";
-			productReference = 7B1B3A072B8843ED00D3F1BB /* eXtenderZTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7B39FF0F255AA9F7008AF2C5 /* eXtenderZ-static-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B39FF16255AA9F7008AF2C5 /* Build configuration list for PBXNativeTarget "eXtenderZ-static-macOS" */;
+			buildConfigurationList = 7B39FF16255AA9F7008AF2C5 /* Build configuration list for PBXNativeTarget "eXtenderZ-static" */;
 			buildPhases = (
 				7B39FF0C255AA9F7008AF2C5 /* Headers */,
 				7B39FF0D255AA9F7008AF2C5 /* Sources */,
@@ -768,61 +342,28 @@
 			);
 			dependencies = (
 			);
-			name = "eXtenderZ-static-macOS";
+			name = "eXtenderZ-static";
 			productName = "eXtenderZ-macOS";
 			productReference = 7B39FF10255AA9F7008AF2C5 /* libeXtenderZ.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		7B39FF1E255AAA08008AF2C5 /* eXtenderZ-static-iOS */ = {
+		7BA760DD2B8A8718002B11DE /* eXtenderZ-docWorkaround */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B39FF25255AAA08008AF2C5 /* Build configuration list for PBXNativeTarget "eXtenderZ-static-iOS" */;
+			buildConfigurationList = 7BA760EB2B8A8718002B11DE /* Build configuration list for PBXNativeTarget "eXtenderZ-docWorkaround" */;
 			buildPhases = (
-				7B39FFC9255AB0D6008AF2C5 /* Headers */,
-				7B39FF1B255AAA08008AF2C5 /* Sources */,
-				7B39FF1C255AAA08008AF2C5 /* Frameworks */,
+				7BA760DE2B8A8718002B11DE /* Headers */,
+				7BA760E42B8A8718002B11DE /* Sources */,
+				7BA760E92B8A8718002B11DE /* Frameworks */,
+				7BA760EA2B8A8718002B11DE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "eXtenderZ-static-iOS";
-			productName = "eXtenderZ-iOS";
-			productReference = 7B39FF1F255AAA08008AF2C5 /* libeXtenderZ.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		7B39FF2F255AAA3A008AF2C5 /* eXtenderZ-static-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B39FF36255AAA3A008AF2C5 /* Build configuration list for PBXNativeTarget "eXtenderZ-static-tvOS" */;
-			buildPhases = (
-				7B39FFE8255AB157008AF2C5 /* Headers */,
-				7B39FF2C255AAA3A008AF2C5 /* Sources */,
-				7B39FF2D255AAA3A008AF2C5 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "eXtenderZ-static-tvOS";
-			productName = "eXtenderZ-tvOS";
-			productReference = 7B39FF30255AAA3A008AF2C5 /* libeXtenderZ.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		7B39FF3F255AAA8D008AF2C5 /* eXtenderZ-static-watchOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B39FF46255AAA8D008AF2C5 /* Build configuration list for PBXNativeTarget "eXtenderZ-static-watchOS" */;
-			buildPhases = (
-				7B390007255AB18B008AF2C5 /* Headers */,
-				7B39FF3C255AAA8D008AF2C5 /* Sources */,
-				7B39FF3D255AAA8D008AF2C5 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "eXtenderZ-static-watchOS";
-			productName = "eXtenderZ-watchOS";
-			productReference = 7B39FF40255AAA8D008AF2C5 /* libeXtenderZ.a */;
-			productType = "com.apple.product-type.library.static";
+			name = "eXtenderZ-docWorkaround";
+			productName = "eXtenderZ-dynamic-macOS";
+			productReference = 7BA760EE2B8A8718002B11DE /* eXtenderZ.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -842,31 +383,7 @@
 					7B0E91F5255ACC03002E8F1F = {
 						CreatedOnToolsVersion = 12.2;
 					};
-					7B0E920F255ACC59002E8F1F = {
-						CreatedOnToolsVersion = 12.2;
-					};
-					7B0E9217255ACC59002E8F1F = {
-						CreatedOnToolsVersion = 12.2;
-					};
-					7B0E9233255ACC73002E8F1F = {
-						CreatedOnToolsVersion = 12.2;
-					};
-					7B0E923B255ACC74002E8F1F = {
-						CreatedOnToolsVersion = 12.2;
-					};
-					7B0E9259255ACC8B002E8F1F = {
-						CreatedOnToolsVersion = 12.2;
-					};
 					7B39FF0F255AA9F7008AF2C5 = {
-						CreatedOnToolsVersion = 12.2;
-					};
-					7B39FF1E255AAA08008AF2C5 = {
-						CreatedOnToolsVersion = 12.2;
-					};
-					7B39FF2F255AAA3A008AF2C5 = {
-						CreatedOnToolsVersion = 12.2;
-					};
-					7B39FF3F255AAA8D008AF2C5 = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
@@ -884,20 +401,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B39FF0F255AA9F7008AF2C5 /* eXtenderZ-static-macOS */,
-				7B1B39D22B88429900D3F1BB /* eXtenderZ-static-visionOS */,
-				7B39FF1E255AAA08008AF2C5 /* eXtenderZ-static-iOS */,
-				7B39FF2F255AAA3A008AF2C5 /* eXtenderZ-static-tvOS */,
-				7B39FF3F255AAA8D008AF2C5 /* eXtenderZ-static-watchOS */,
-				7B0E91ED255ACC03002E8F1F /* eXtenderZ-dynamic-macOS */,
-				7B1B39E62B88430B00D3F1BB /* eXtenderZ-dynamic-visionOS */,
-				7B0E920F255ACC59002E8F1F /* eXtenderZ-dynamic-iOS */,
-				7B0E9233255ACC73002E8F1F /* eXtenderZ-dynamic-tvOS */,
-				7B0E9259255ACC8B002E8F1F /* eXtenderZ-dynamic-watchOS */,
-				7B0E91F5255ACC03002E8F1F /* eXtenderZ-dynamic-macOSTests */,
-				7B1B39F82B8843ED00D3F1BB /* eXtenderZ-dynamic-visionOSTests */,
-				7B0E9217255ACC59002E8F1F /* eXtenderZ-dynamic-iOSTests */,
-				7B0E923B255ACC74002E8F1F /* eXtenderZ-dynamic-tvOSTests */,
+				7B39FF0F255AA9F7008AF2C5 /* eXtenderZ-static */,
+				7B0E91ED255ACC03002E8F1F /* eXtenderZ-dynamic */,
+				7B0E91F5255ACC03002E8F1F /* eXtenderZTests */,
+				7BA760DD2B8A8718002B11DE /* eXtenderZ-docWorkaround */,
 			);
 		};
 /* End PBXProject section */
@@ -917,49 +424,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B0E920E255ACC59002E8F1F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B0E9216255ACC59002E8F1F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B0E9232255ACC73002E8F1F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B0E923A255ACC74002E8F1F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B0E9258255ACC8B002E8F1F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B1B39F22B88430B00D3F1BB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B1B3A032B8843ED00D3F1BB /* Resources */ = {
+		7BA760EA2B8A8718002B11DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -973,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B56FE3D2B8AB94C00AF034D /* Documentation.docc in Sources */,
 				7B0E9371255AD032002E8F1F /* HPNExtenderConfig.m in Sources */,
 				7B0E9373255AD032002E8F1F /* NSObject+eXtenderZ.m in Sources */,
 				7B0E9372255AD032002E8F1F /* NSObject+Utils.m in Sources */,
@@ -991,93 +457,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B0E920C255ACC59002E8F1F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B0E936E255AD02E002E8F1F /* HPNExtenderConfig.m in Sources */,
-				7B0E9370255AD02E002E8F1F /* NSObject+eXtenderZ.m in Sources */,
-				7B0E936F255AD02E002E8F1F /* NSObject+Utils.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B0E9214255ACC59002E8F1F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B2FA034255AD8B20094DFB4 /* eXtenderZTests.swift in Sources */,
-				7B2FA010255AD8A50094DFB4 /* HPNSimpleObject.m in Sources */,
-				7B2FA01C255AD8A80094DFB4 /* HPNSimpleObjectHelptender.m in Sources */,
-				7B2FA004255AD8880094DFB4 /* ObjcCategoryLibrary.c in Sources */,
-				7B2FA028255AD8AE0094DFB4 /* SimpleObjectExtender.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B0E9230255ACC73002E8F1F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B0E936B255AD02B002E8F1F /* HPNExtenderConfig.m in Sources */,
-				7B0E936D255AD02B002E8F1F /* NSObject+eXtenderZ.m in Sources */,
-				7B0E936C255AD02B002E8F1F /* NSObject+Utils.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B0E9238255ACC74002E8F1F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B2FA086255AD9130094DFB4 /* eXtenderZTests.swift in Sources */,
-				7B2FA062255AD90B0094DFB4 /* HPNSimpleObject.m in Sources */,
-				7B2FA06E255AD90D0094DFB4 /* HPNSimpleObjectHelptender.m in Sources */,
-				7B2FA056255AD9080094DFB4 /* ObjcCategoryLibrary.c in Sources */,
-				7B2FA07A255AD9100094DFB4 /* SimpleObjectExtender.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B0E9256255ACC8B002E8F1F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B0E9368255AD028002E8F1F /* HPNExtenderConfig.m in Sources */,
-				7B0E936A255AD028002E8F1F /* NSObject+eXtenderZ.m in Sources */,
-				7B0E9369255AD028002E8F1F /* NSObject+Utils.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B1B39DC2B88429900D3F1BB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B1B39E02B88429900D3F1BB /* HPNCategoriesLoader.m in Sources */,
-				7B1B39DD2B88429900D3F1BB /* HPNExtenderConfig.m in Sources */,
-				7B1B39DE2B88429900D3F1BB /* NSObject+eXtenderZ.m in Sources */,
-				7B1B39DF2B88429900D3F1BB /* NSObject+Utils.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B1B39ED2B88430B00D3F1BB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B1B39EE2B88430B00D3F1BB /* HPNExtenderConfig.m in Sources */,
-				7B1B39EF2B88430B00D3F1BB /* NSObject+eXtenderZ.m in Sources */,
-				7B1B39F02B88430B00D3F1BB /* NSObject+Utils.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B1B39FB2B8843ED00D3F1BB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B1B3A002B8843ED00D3F1BB /* eXtenderZTests.swift in Sources */,
-				7B1B39FD2B8843ED00D3F1BB /* HPNSimpleObject.m in Sources */,
-				7B1B39FE2B8843ED00D3F1BB /* HPNSimpleObjectHelptender.m in Sources */,
-				7B1B39FC2B8843ED00D3F1BB /* ObjcCategoryLibrary.c in Sources */,
-				7B1B39FF2B8843ED00D3F1BB /* SimpleObjectExtender.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7B39FF0D255AA9F7008AF2C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1089,36 +468,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B39FF1B255AAA08008AF2C5 /* Sources */ = {
+		7BA760E42B8A8718002B11DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B256EC0264C745F00840604 /* HPNCategoriesLoader.m in Sources */,
-				7B39FFA9255AAE93008AF2C5 /* HPNExtenderConfig.m in Sources */,
-				7B39FFAA255AAE93008AF2C5 /* NSObject+eXtenderZ.m in Sources */,
-				7B39FFA8255AAE93008AF2C5 /* NSObject+Utils.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B39FF2C255AAA3A008AF2C5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B256EC1264C745F00840604 /* HPNCategoriesLoader.m in Sources */,
-				7B39FFB0255AAE93008AF2C5 /* HPNExtenderConfig.m in Sources */,
-				7B39FFB1255AAE93008AF2C5 /* NSObject+eXtenderZ.m in Sources */,
-				7B39FFAF255AAE93008AF2C5 /* NSObject+Utils.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B39FF3C255AAA8D008AF2C5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B256EC2264C745F00840604 /* HPNCategoriesLoader.m in Sources */,
-				7B39FFB7255AAE94008AF2C5 /* HPNExtenderConfig.m in Sources */,
-				7B39FFB8255AAE94008AF2C5 /* NSObject+eXtenderZ.m in Sources */,
-				7B39FFB6255AAE94008AF2C5 /* NSObject+Utils.m in Sources */,
+				7BA760E82B8A8718002B11DE /* Documentation.docc in Sources */,
+				7BA760E52B8A8718002B11DE /* HPNExtenderConfig.m in Sources */,
+				7BA760F32B8A88C9002B11DE /* NSObject_WorkaroundForDoc.m in Sources */,
+				7BA760E62B8A8718002B11DE /* NSObject+eXtenderZ.m in Sources */,
+				7BA760E72B8A8718002B11DE /* NSObject+Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1127,23 +485,8 @@
 /* Begin PBXTargetDependency section */
 		7B0E91F9255ACC03002E8F1F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7B0E91ED255ACC03002E8F1F /* eXtenderZ-dynamic-macOS */;
+			target = 7B0E91ED255ACC03002E8F1F /* eXtenderZ-dynamic */;
 			targetProxy = 7B0E91F8255ACC03002E8F1F /* PBXContainerItemProxy */;
-		};
-		7B0E921B255ACC59002E8F1F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7B0E920F255ACC59002E8F1F /* eXtenderZ-dynamic-iOS */;
-			targetProxy = 7B0E921A255ACC59002E8F1F /* PBXContainerItemProxy */;
-		};
-		7B0E923F255ACC74002E8F1F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7B0E9233255ACC73002E8F1F /* eXtenderZ-dynamic-tvOS */;
-			targetProxy = 7B0E923E255ACC74002E8F1F /* PBXContainerItemProxy */;
-		};
-		7B1B3A0A2B88451300D3F1BB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7B1B39E62B88430B00D3F1BB /* eXtenderZ-dynamic-visionOS */;
-			targetProxy = 7B1B3A092B88451300D3F1BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1154,7 +497,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 14;
-				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
@@ -1170,11 +512,8 @@
 				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.happn.eXtenderZ;
 				PRODUCT_NAME = eXtenderZ;
-				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1186,7 +525,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 14;
-				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
@@ -1202,11 +540,8 @@
 				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.happn.eXtenderZ;
 				PRODUCT_NAME = eXtenderZ;
-				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1217,7 +552,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
 				INFOPLIST_FILE = "Xcode Supporting Files/Tests/Test-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1225,11 +559,8 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.happn.eXtenderZTests;
 				PRODUCT_NAME = eXtenderZTests;
-				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "Xcode Supporting Files/Tests/eXtenderZTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1240,7 +571,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
 				INFOPLIST_FILE = "Xcode Supporting Files/Tests/Test-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1248,435 +578,8 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.happn.eXtenderZTests;
 				PRODUCT_NAME = eXtenderZTests;
-				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "Xcode Supporting Files/Tests/eXtenderZTests-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		7B0E9222255ACC59002E8F1F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = "Xcode Supporting Files/Products/Framework-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0.8;
-				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.happn.eXtenderZ;
-				PRODUCT_NAME = eXtenderZ;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2,6";
-				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Debug;
-		};
-		7B0E9223255ACC59002E8F1F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = "Xcode Supporting Files/Products/Framework-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0.8;
-				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.happn.eXtenderZ;
-				PRODUCT_NAME = eXtenderZ;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2,6";
-				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Release;
-		};
-		7B0E9225255ACC59002E8F1F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Xcode Supporting Files/Tests/Test-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.happn.eXtenderZTests;
-				PRODUCT_NAME = eXtenderZTests;
-				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "Xcode Supporting Files/Tests/eXtenderZTests-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,6";
-			};
-			name = Debug;
-		};
-		7B0E9226255ACC59002E8F1F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Xcode Supporting Files/Tests/Test-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.happn.eXtenderZTests;
-				PRODUCT_NAME = eXtenderZTests;
-				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "Xcode Supporting Files/Tests/eXtenderZTests-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,6";
-			};
-			name = Release;
-		};
-		7B0E9246255ACC74002E8F1F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = "Xcode Supporting Files/Products/Framework-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0.8;
-				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.happn.eXtenderZ;
-				PRODUCT_NAME = eXtenderZ;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Debug;
-		};
-		7B0E9247255ACC74002E8F1F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = "Xcode Supporting Files/Products/Framework-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0.8;
-				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.happn.eXtenderZ;
-				PRODUCT_NAME = eXtenderZ;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Release;
-		};
-		7B0E9249255ACC74002E8F1F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Xcode Supporting Files/Tests/Test-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.happn.eXtenderZTests;
-				PRODUCT_NAME = eXtenderZTests;
-				SDKROOT = appletvos;
-				SWIFT_OBJC_BRIDGING_HEADER = "Xcode Supporting Files/Tests/eXtenderZTests-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-			};
-			name = Debug;
-		};
-		7B0E924A255ACC74002E8F1F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Xcode Supporting Files/Tests/Test-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.happn.eXtenderZTests;
-				PRODUCT_NAME = eXtenderZTests;
-				SDKROOT = appletvos;
-				SWIFT_OBJC_BRIDGING_HEADER = "Xcode Supporting Files/Tests/eXtenderZTests-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-			};
-			name = Release;
-		};
-		7B0E9260255ACC8B002E8F1F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = "Xcode Supporting Files/Products/Framework-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0.8;
-				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.happn.eXtenderZ;
-				PRODUCT_NAME = eXtenderZ;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Debug;
-		};
-		7B0E9261255ACC8B002E8F1F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = "Xcode Supporting Files/Products/Framework-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0.8;
-				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.happn.eXtenderZ;
-				PRODUCT_NAME = eXtenderZ;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Release;
-		};
-		7B1B39E32B88429900D3F1BB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
-				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HPN_eXtenderZ_STATIC,
-					"$(inherited)",
-				);
-				MARKETING_VERSION = 1.0.8;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = eXtenderZ;
-				SDKROOT = xros;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		7B1B39E42B88429900D3F1BB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
-				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HPN_eXtenderZ_STATIC,
-					"$(inherited)",
-				);
-				MARKETING_VERSION = 1.0.8;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = eXtenderZ;
-				SDKROOT = xros;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		7B1B39F42B88430B00D3F1BB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = "Xcode Supporting Files/Products/Framework-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0.8;
-				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.happn.eXtenderZ;
-				PRODUCT_NAME = eXtenderZ;
-				SDKROOT = xros;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Debug;
-		};
-		7B1B39F52B88430B00D3F1BB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = "Xcode Supporting Files/Products/Framework-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0.8;
-				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.happn.eXtenderZ;
-				PRODUCT_NAME = eXtenderZ;
-				SDKROOT = xros;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Release;
-		};
-		7B1B3A052B8843ED00D3F1BB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Xcode Supporting Files/Tests/Test-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.happn.eXtenderZTests;
-				PRODUCT_NAME = eXtenderZTests;
-				SDKROOT = xros;
-				SWIFT_OBJC_BRIDGING_HEADER = "Xcode Supporting Files/Tests/eXtenderZTests-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		7B1B3A062B8843ED00D3F1BB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Xcode Supporting Files/Tests/Test-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.happn.eXtenderZTests;
-				PRODUCT_NAME = eXtenderZTests;
-				SDKROOT = xros;
 				SWIFT_OBJC_BRIDGING_HEADER = "Xcode Supporting Files/Tests/eXtenderZTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1687,7 +590,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 14;
-				DEAD_CODE_STRIPPING = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
 				EXECUTABLE_PREFIX = lib;
@@ -1696,11 +598,8 @@
 					"$(inherited)",
 				);
 				MARKETING_VERSION = 1.0.8;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = eXtenderZ;
-				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1710,7 +609,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 14;
-				DEAD_CODE_STRIPPING = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
 				EXECUTABLE_PREFIX = lib;
@@ -1719,150 +617,80 @@
 					"$(inherited)",
 				);
 				MARKETING_VERSION = 1.0.8;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = eXtenderZ;
-				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		7B39FF26255AAA08008AF2C5 /* Debug */ = {
+		7BA760EC2B8A8718002B11DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 14;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					HPN_eXtenderZ_STATIC,
+					__DOC_WORKAROUND__,
 					"$(inherited)",
 				);
+				INFOPLIST_FILE = "Xcode Supporting Files/Products/Framework-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0.8;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_BUNDLE_IDENTIFIER = com.happn.eXtenderZ;
 				PRODUCT_NAME = eXtenderZ;
-				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2,6";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
-		7B39FF27255AAA08008AF2C5 /* Release */ = {
+		7BA760ED2B8A8718002B11DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 14;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					HPN_eXtenderZ_STATIC,
+					__DOC_WORKAROUND__,
 					"$(inherited)",
 				);
-				MARKETING_VERSION = 1.0.8;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = eXtenderZ;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2,6";
-			};
-			name = Release;
-		};
-		7B39FF37255AAA3A008AF2C5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
-				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HPN_eXtenderZ_STATIC,
+				INFOPLIST_FILE = "Xcode Supporting Files/Products/Framework-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.8;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				MODULEMAP_FILE = "Xcode Supporting Files/Products/module-framework.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_BUNDLE_IDENTIFIER = com.happn.eXtenderZ;
 				PRODUCT_NAME = eXtenderZ;
-				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-			};
-			name = Debug;
-		};
-		7B39FF38255AAA3A008AF2C5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
-				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HPN_eXtenderZ_STATIC,
-					"$(inherited)",
-				);
-				MARKETING_VERSION = 1.0.8;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = eXtenderZ;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-			};
-			name = Release;
-		};
-		7B39FF47255AAA8D008AF2C5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
-				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HPN_eXtenderZ_STATIC,
-					"$(inherited)",
-				);
-				MARKETING_VERSION = 1.0.8;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = eXtenderZ;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-			};
-			name = Debug;
-		};
-		7B39FF48255AAA8D008AF2C5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
-				DYLIB_COMPATIBILITY_VERSION = "$(MARKETING_VERSION)";
-				DYLIB_CURRENT_VERSION = "$(MARKETING_VERSION)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HPN_eXtenderZ_STATIC,
-					"$(inherited)",
-				);
-				MARKETING_VERSION = 1.0.8;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = eXtenderZ;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		7BDF645D255AA34F00CA77DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1897,6 +725,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -1917,6 +746,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				ONLY_ACTIVE_ARCH = YES;
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
 				VERSION_INFO_PREFIX = HPN;
 				WATCHOS_DEPLOYMENT_TARGET = 4.0;
@@ -1927,6 +758,7 @@
 		7BDF645E255AA34F00CA77DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1961,6 +793,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -1975,6 +808,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
 				VALIDATE_PRODUCT = YES;
@@ -1987,7 +822,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B0E91FF255ACC03002E8F1F /* Build configuration list for PBXNativeTarget "eXtenderZ-dynamic-macOS" */ = {
+		7B0E91FF255ACC03002E8F1F /* Build configuration list for PBXNativeTarget "eXtenderZ-dynamic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B0E9200255ACC03002E8F1F /* Debug */,
@@ -1996,7 +831,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B0E9202255ACC03002E8F1F /* Build configuration list for PBXNativeTarget "eXtenderZ-dynamic-macOSTests" */ = {
+		7B0E9202255ACC03002E8F1F /* Build configuration list for PBXNativeTarget "eXtenderZTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B0E9203255ACC03002E8F1F /* Debug */,
@@ -2005,79 +840,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B0E9221255ACC59002E8F1F /* Build configuration list for PBXNativeTarget "eXtenderZ-dynamic-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B0E9222255ACC59002E8F1F /* Debug */,
-				7B0E9223255ACC59002E8F1F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7B0E9224255ACC59002E8F1F /* Build configuration list for PBXNativeTarget "eXtenderZ-dynamic-iOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B0E9225255ACC59002E8F1F /* Debug */,
-				7B0E9226255ACC59002E8F1F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7B0E9245255ACC74002E8F1F /* Build configuration list for PBXNativeTarget "eXtenderZ-dynamic-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B0E9246255ACC74002E8F1F /* Debug */,
-				7B0E9247255ACC74002E8F1F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7B0E9248255ACC74002E8F1F /* Build configuration list for PBXNativeTarget "eXtenderZ-dynamic-tvOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B0E9249255ACC74002E8F1F /* Debug */,
-				7B0E924A255ACC74002E8F1F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7B0E925F255ACC8B002E8F1F /* Build configuration list for PBXNativeTarget "eXtenderZ-dynamic-watchOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B0E9260255ACC8B002E8F1F /* Debug */,
-				7B0E9261255ACC8B002E8F1F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7B1B39E22B88429900D3F1BB /* Build configuration list for PBXNativeTarget "eXtenderZ-static-visionOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B1B39E32B88429900D3F1BB /* Debug */,
-				7B1B39E42B88429900D3F1BB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7B1B39F32B88430B00D3F1BB /* Build configuration list for PBXNativeTarget "eXtenderZ-dynamic-visionOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B1B39F42B88430B00D3F1BB /* Debug */,
-				7B1B39F52B88430B00D3F1BB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7B1B3A042B8843ED00D3F1BB /* Build configuration list for PBXNativeTarget "eXtenderZ-dynamic-visionOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B1B3A052B8843ED00D3F1BB /* Debug */,
-				7B1B3A062B8843ED00D3F1BB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7B39FF16255AA9F7008AF2C5 /* Build configuration list for PBXNativeTarget "eXtenderZ-static-macOS" */ = {
+		7B39FF16255AA9F7008AF2C5 /* Build configuration list for PBXNativeTarget "eXtenderZ-static" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B39FF17255AA9F7008AF2C5 /* Debug */,
@@ -2086,29 +849,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B39FF25255AAA08008AF2C5 /* Build configuration list for PBXNativeTarget "eXtenderZ-static-iOS" */ = {
+		7BA760EB2B8A8718002B11DE /* Build configuration list for PBXNativeTarget "eXtenderZ-docWorkaround" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B39FF26255AAA08008AF2C5 /* Debug */,
-				7B39FF27255AAA08008AF2C5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7B39FF36255AAA3A008AF2C5 /* Build configuration list for PBXNativeTarget "eXtenderZ-static-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B39FF37255AAA3A008AF2C5 /* Debug */,
-				7B39FF38255AAA3A008AF2C5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7B39FF46255AAA8D008AF2C5 /* Build configuration list for PBXNativeTarget "eXtenderZ-static-watchOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B39FF47255AAA8D008AF2C5 /* Debug */,
-				7B39FF48255AAA8D008AF2C5 /* Release */,
+				7BA760EC2B8A8718002B11DE /* Debug */,
+				7BA760ED2B8A8718002B11DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

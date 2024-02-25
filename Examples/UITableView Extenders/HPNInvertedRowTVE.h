@@ -13,24 +13,13 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. */
 
-#import "NSObject_WorkaroundForDoc.h"
-#import "HPNCategoriesLoader.h"
+@import Foundation;
 
-#import "NSObject+Utils.h"
-#import "NSObject+eXtenderZ.h"
-
+#import "HPNInvertedSVE.h"
+#import "HPNTableViewExtender.h"
 
 
-#ifdef HPN_eXtenderZ_STATIC
 
-@implementation HPNCategoriesLoader
-
-+ (void)loadCategories
-{
-	__hpn_linkNSObjectUtilsCategory();
-	__hpn_linkNSObjectExtenderzCategory();
-}
+@interface HPNInvertedRowTVE : HPNInvertedSVE <HPNTableViewExtender>
 
 @end
-
-#endif
