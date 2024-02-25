@@ -22,6 +22,12 @@ limitations under the License. */
 
 static os_log_t oslog = nil;
 
++ (void)load
+{
+	NSCAssert(oslog == nil, @"INTERNAL ERROR: Unexpected non-nil value for oslog at load time.");
+	oslog = os_log_create("me.frizlab.eXtenderZ", "Main");
+}
+
 + (os_log_t)oslog
 {
 	return oslog;
