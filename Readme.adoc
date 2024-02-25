@@ -12,7 +12,7 @@ Use the full-extent of Objective-C’s runtime dynamicity.
 This module allows changing the behavior of objects at runtime by creating custom classes on the fly and
  using `isa-swizzling` to change the class of the object instances whose behavior you want changed.
 
-See https://frizlab.github.io/eXtenderZ/documentation/eXtenderZ[the documentation] for more inforation.
+See https://frizlab.github.io/eXtenderZ/documentation/extenderz[the documentation] for more inforation.
 
 == Installation
 Even though there is no Package.swift file in this project in the main branch,
