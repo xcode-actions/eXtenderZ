@@ -1,5 +1,6 @@
 /*
 Copyright 2019 happn
+Copyright 2024 François Lamboley
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -20,9 +21,9 @@ limitations under the License. */
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HPN_NSObject (HPNUtils)
+@interface XTZ_NSObject (XTZUtils)
 
-+ (void)hpn_forwardInvocationLikeNil:(NSInvocation *)invocation;
++ (void)xtz_forwardInvocationLikeNil:(NSInvocation *)invocation;
 
 /**
  Convenient method to get associated object with automatic creation if the object does not exist.
@@ -33,17 +34,17 @@ NS_ASSUME_NONNULL_BEGIN
  The return value won’t necessarily be the object returned by the creator block (in case for instance the association policy is `OBJC_ASSOCIATION_COPY`).
  
  Using this method is thread-safe. */
-- (nullable id)hpn_getAssociatedObjectWithKey:(void *)key
+- (nullable id)xtz_getAssociatedObjectWithKey:(void *)key
 						  createIfNotExistWithBlock:(id (^_Nullable)(void))objectCreator
 									 associationPolicy:(objc_AssociationPolicy)associationPolicy;
 
 /** Same as above, with `releaseAfterCreation` set to `YES`, `associationPolicy` set to `OBJC_ASSOCIATION_RETAIN_NONATOMIC`. */
-- (nullable id)hpn_getAssociatedObjectWithKey:(void *)key createIfNotExistWithBlock:(id (^_Nullable)(void))objectCreator;
+- (nullable id)xtz_getAssociatedObjectWithKey:(void *)key createIfNotExistWithBlock:(id (^_Nullable)(void))objectCreator;
 /** Get the associated object for the given key (same as calling `objc_getAssociatedObject`). */
-- (nullable id)hpn_getAssociatedObjectWithKey:(void *)key;
+- (nullable id)xtz_getAssociatedObjectWithKey:(void *)key;
 
-#ifdef HPN_eXtenderZ_STATIC
-void __hpn_linkNSObjectUtilsCategory(void);
+#ifdef eXtenderZ_STATIC
+void __xtz_linkNSObjectUtilsCategory(void);
 #endif
 
 @end

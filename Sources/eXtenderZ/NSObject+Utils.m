@@ -1,5 +1,6 @@
 /*
 Copyright 2019 happn
+Copyright 2024 François Lamboley
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -20,9 +21,9 @@ limitations under the License. */
 
 #define DEFAULT_BUFFER_LENGTH (16)
 
-@implementation NSObject (HPNUtils)
+@implementation NSObject (XTZUtils)
 
-+ (void)hpn_forwardInvocationLikeNil:(NSInvocation *)invocation
++ (void)xtz_forwardInvocationLikeNil:(NSInvocation *)invocation
 {
 	if (invocation.methodSignature.methodReturnLength == 0)
 		return;
@@ -42,7 +43,7 @@ limitations under the License. */
 	if (dynamicBuffer != NULL) free(dynamicBuffer);
 }
 
-- (nullable id)hpn_getAssociatedObjectWithKey:(void *)key
+- (nullable id)xtz_getAssociatedObjectWithKey:(void *)key
 			  createIfNotExistWithBlock:(id (^_Nullable)(void))objectCreator
 						 associationPolicy:(objc_AssociationPolicy)associationPolicy
 {
@@ -63,18 +64,18 @@ limitations under the License. */
 	return ret;
 }
 
-- (nullable id)hpn_getAssociatedObjectWithKey:(void *)key createIfNotExistWithBlock:(id (^_Nullable)(void))objectCreator
+- (nullable id)xtz_getAssociatedObjectWithKey:(void *)key createIfNotExistWithBlock:(id (^_Nullable)(void))objectCreator
 {
-	return [self hpn_getAssociatedObjectWithKey:key createIfNotExistWithBlock:objectCreator associationPolicy:OBJC_ASSOCIATION_RETAIN_NONATOMIC];
+	return [self xtz_getAssociatedObjectWithKey:key createIfNotExistWithBlock:objectCreator associationPolicy:OBJC_ASSOCIATION_RETAIN_NONATOMIC];
 }
 
-- (nullable id)hpn_getAssociatedObjectWithKey:(void *)key
+- (nullable id)xtz_getAssociatedObjectWithKey:(void *)key
 {
-	return [self hpn_getAssociatedObjectWithKey:key createIfNotExistWithBlock:NULL associationPolicy:OBJC_ASSOCIATION_RETAIN_NONATOMIC];
+	return [self xtz_getAssociatedObjectWithKey:key createIfNotExistWithBlock:NULL associationPolicy:OBJC_ASSOCIATION_RETAIN_NONATOMIC];
 }
 
-#ifdef HPN_eXtenderZ_STATIC
-void __hpn_linkNSObjectUtilsCategory(void) {
+#ifdef eXtenderZ_STATIC
+void __xtz_linkNSObjectUtilsCategory(void) {
 }
 #endif
 

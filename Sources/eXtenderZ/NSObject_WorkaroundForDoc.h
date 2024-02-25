@@ -1,5 +1,5 @@
 /*
-Copyright 2024 happn
+Copyright 2024 François Lamboley
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
  * To do so:
  *   - Remove the `eXtenderZ-docWorkaround` target and scheme;
  *   - Remove this file and its implementation counterpart;
- *   - Fix the compilation errors (basically remove some imports and replace all instances of `NSObject_WorkaroundForDoc` and `HPN_NSObject` by `NSObject`);
+ *   - Fix the compilation errors (basically remove some imports and replace all instances of `NSObject_WorkaroundForDoc` and `XTZ_NSObject` by `NSObject`);
  *   - If documentation generation is automated (not done at time of writing) use the `eXtenderZ-dynamic` scheme instead of `eXtenderZ-docWorkaround` one. */
 
 /**
@@ -42,10 +42,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_END
 
-# define HPN_NSObject NSObject_WorkaroundForDoc
+# define XTZ_NSObject NSObject_WorkaroundForDoc
 
 #else /* __DOC_WORKAROUND__ */
 
-# define HPN_NSObject NSObject
+# define XTZ_NSObject NSObject
 
 #endif /* __DOC_WORKAROUND__ */

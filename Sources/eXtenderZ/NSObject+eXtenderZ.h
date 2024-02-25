@@ -1,5 +1,6 @@
 /*
 Copyright 2019 happn
+Copyright 2024 François Lamboley
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -19,7 +20,7 @@ limitations under the License. */
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol HPNExtender <NSObject>
+@protocol XTZExtender <NSObject>
 @required
 
 /**
@@ -29,54 +30,54 @@ NS_ASSUME_NONNULL_BEGIN
   or is added then removed then re-added to/from/to an object.
  
  Must return `NO` if the extender cannot be added to the object. */
-- (BOOL)prepareObjectForExtender:(HPN_NSObject *)object;
+- (BOOL)prepareObjectForExtender:(XTZ_NSObject *)object;
 /** Called when the extender is removed from the extended object. */
-- (void)prepareObjectForRemovalOfExtender:(HPN_NSObject *)object;
+- (void)prepareObjectForRemovalOfExtender:(XTZ_NSObject *)object;
 
 @end
 
 
 
-/* Use HELPTENDER_CALL_SUPER_* macros (see HPNHelptenderUtils.h) to call super in a helptender.
+/* Use HELPTENDER_CALL_SUPER_* macros (see XTZHelptenderUtils.h) to call super in a helptender.
  * Do *NOT* call [super method].
  * Ever. */
 
-@protocol HPNHelptender <NSObject>
+@protocol XTZHelptender <NSObject>
 @required
 
 /**
  Called the first time a runtime-generated helptender class replaces the runtime class of an object.
  
  This is a good place to init the helptender. */
-+ (void)hpn_helptenderHasBeenAdded:(HPN_NSObject <HPNHelptender> *)helptender;
++ (void)xtz_helptenderHasBeenAdded:(XTZ_NSObject <XTZHelptender> *)helptender;
 /**
  Called when the helptender will be removed from an extended object (because no more extenders are using the helptender).
  
  This is the place to remove everything your helptender used in the object.
  This will **always** be called _before_ the actual object reaches `dealloc`. */
-+ (void)hpn_helptenderWillBeRemoved:(HPN_NSObject <HPNHelptender> *)helptender;
++ (void)xtz_helptenderWillBeRemoved:(XTZ_NSObject <XTZHelptender> *)helptender;
 
 @end
 
 
 
 /* WARNING: Adding/removing an extender is **not** thread-safe. */
-@interface HPN_NSObject (eXtenderZ)
+@interface XTZ_NSObject (eXtenderZ)
 
 /**
  Must be called in the `+load` method of any extender helper (helptender) class.
- The protocol must conform to the protocol ``HPNExtender``, the registered class must respond to protocol ``HPNHelptender``. */
-+ (BOOL)hpn_registerClass:(Class)c asHelptenderForProtocol:(Protocol *)protocol;
+ The protocol must conform to the protocol ``XTZExtender``, the registered class must respond to protocol ``XTZHelptender``. */
++ (BOOL)xtz_registerClass:(Class)c asHelptenderForProtocol:(Protocol *)protocol;
 
 
 
-- (BOOL)hpn_isExtended;
+- (BOOL)xtz_isExtended;
 /**
  Returns all of the extenders that have been added to the object in the order they have been added.
  
  Might return `nil` if there were no extenders added to the object. */
-- (NSArray *)hpn_extenders;
-- (NSArray *)hpn_extendersConformingToProtocol:(Protocol *)p; /* Cached, don’t worry about performance. */
+- (NSArray *)xtz_extenders;
+- (NSArray *)xtz_extendersConformingToProtocol:(Protocol *)p; /* Cached, don’t worry about performance. */
 /**
  This method is the only way to add an extender to an object.
  It returns `YES` if the extender was added, `NO` if it was not (the extender refused to be added or it was already added to the object).
@@ -85,35 +86,35 @@ NS_ASSUME_NONNULL_BEGIN
  
  - IMPORTANT: All added extenders are removed from the object just the moment _before_ `+dealloc` is called.
  Do **not** try to access extensions properties or call extensions methods in `+dealloc`!  
- You can however _prepare_ the deallocation of said object by overriding ``NSObject_WorkaroundForDoc/hpn_prepareDeallocationOfExtendedObject``.
+ You can however _prepare_ the deallocation of said object by overriding ``NSObject_WorkaroundForDoc/xtz_prepareDeallocationOfExtendedObject``.
  You must call `super` when overriding this method.
  It is called when the object is being dealloced, _before_ the extenders are removed from the object.
  
  This method should not be overridden (it might be called twice for the same extender).
- If you want to be called when an extender is added to an object, see ``NSObject_WorkaroundForDoc/hpn_prepareForExtender:``. */
-- (BOOL)hpn_addExtender:(HPN_NSObject <HPNExtender> *)extender;
+ If you want to be called when an extender is added to an object, see ``NSObject_WorkaroundForDoc/xtz_prepareForExtender:``. */
+- (BOOL)xtz_addExtender:(XTZ_NSObject <XTZExtender> *)extender;
 /**
  Removes the given extender.
  Returns `YES` if found (and removed), `NO` if not.
  
  This method cannot fail.
- It shouldn’t be overridden (override ``NSObject_WorkaroundForDoc/hpn_removeExtender:atIndex:`` instead). */
-- (BOOL)hpn_removeExtender:(HPN_NSObject <HPNExtender> *)extender;
+ It shouldn’t be overridden (override ``NSObject_WorkaroundForDoc/xtz_removeExtender:atIndex:`` instead). */
+- (BOOL)xtz_removeExtender:(XTZ_NSObject <XTZExtender> *)extender;
 /** Removes the extenders in the given array and returns the number of extenders actually removed. */
-- (NSUInteger)hpn_removeExtenders:(NSArray *)extenders;
+- (NSUInteger)xtz_removeExtenders:(NSArray *)extenders;
 /**
  Removes all extenders with a given class from the extended object.
  Returns the number of extenders removed.
  
- This method shouldn’t be overridden (override ``NSObject_WorkaroundForDoc/hpn_removeExtender:atIndex:`` instead if needed). */
-- (NSUInteger)hpn_removeExtendersOfClass:(Class <HPNExtender>)extenderClass;
+ This method shouldn’t be overridden (override ``NSObject_WorkaroundForDoc/xtz_removeExtender:atIndex:`` instead if needed). */
+- (NSUInteger)xtz_removeExtendersOfClass:(Class <XTZExtender>)extenderClass;
 /**
  Removes all of the extenders of the object.
  Returns the number of extenders removed (always equal to the number of extenders there was on the object). */
-- (NSUInteger)hpn_removeAllExtenders;
+- (NSUInteger)xtz_removeAllExtenders;
 
 /**
- Called in ``NSObject_WorkaroundForDoc/hpn_addExtender:``, _after_ the helptender(s) have been added to the object.
+ Called in ``NSObject_WorkaroundForDoc/xtz_addExtender:``, _after_ the helptender(s) have been added to the object.
  Returns `YES` if the preparation was successful, `NO` otherwise (in which case the addition of the extender is cancelled).
  
  Do **NOT** call this method directly.
@@ -121,7 +122,7 @@ NS_ASSUME_NONNULL_BEGIN
  However, you can override the method.
  You must check whether calling `super` (don’t forget to use the `HELPTENDER_CALL_SUPER_*` methods to call `super`) returns `YES` or `NO`.
  If it returns `NO`, you must return `NO` right away. */
-- (BOOL)hpn_prepareForExtender:(HPN_NSObject <HPNExtender> *)extender;
+- (BOOL)xtz_prepareForExtender:(XTZ_NSObject <XTZExtender> *)extender;
 
 /**
  Removes the given extender at the given index.
@@ -133,33 +134,33 @@ NS_ASSUME_NONNULL_BEGIN
  Use one of the alternatives above instead.
  
  This is the override point if you want to act just before or after an extender is removed. */
-- (void)hpn_removeExtender:(HPN_NSObject <HPNExtender> *)extender atIndex:(NSUInteger)idx;
+- (void)xtz_removeExtender:(XTZ_NSObject <XTZExtender> *)extender atIndex:(NSUInteger)idx;
 
-- (nullable HPN_NSObject <HPNExtender> *)hpn_firstExtenderOfClass:(Class <HPNExtender>)extenderClass;
+- (nullable XTZ_NSObject <XTZExtender> *)xtz_firstExtenderOfClass:(Class <XTZExtender>)extenderClass;
 
 /** Returns `YES` if the extender was added to the object, else `NO`. */
-- (BOOL)hpn_isExtenderAdded:(HPN_NSObject <HPNExtender> *)extender;
+- (BOOL)xtz_isExtenderAdded:(XTZ_NSObject <XTZExtender> *)extender;
 
 /**
  Called when the object is being dealloced, just _before_ the extenders are removed from the object.
  
  - Warning: This method is **NOT** called when a non-extended object is dealloced! */
-- (void)hpn_prepareDeallocationOfExtendedObject;
+- (void)xtz_prepareDeallocationOfExtendedObject;
 
-#ifdef HPN_eXtenderZ_STATIC
-void __hpn_linkNSObjectExtenderzCategory(void);
+#ifdef eXtenderZ_STATIC
+void __xtz_linkNSObjectExtenderzCategory(void);
 #endif
 
 @end
 
-/** Same as the ``CHECKED_ADD_EXTENDER`` preprocessor macro, but available in Swift. */
-void HPNCheckedAddExtender(_Nullable id receiver, HPN_NSObject <HPNExtender> *extender);
-/** Calls ``NSObject_WorkaroundForDoc/hpn_addExtender:`` and raises an exception if the call returns `NO`. */
-#define CHECKED_ADD_EXTENDER(receiver, extender) \
+/** Same as the ``XTZ_CHECKED_ADD_EXTENDER`` preprocessor macro, but available in Swift. */
+void XTZCheckedAddExtender(_Nullable id receiver, XTZ_NSObject <XTZExtender> *extender);
+/** Calls ``NSObject_WorkaroundForDoc/xtz_addExtender:`` and raises an exception if the call returns `NO`. */
+#define XTZ_CHECKED_ADD_EXTENDER(receiver, extender) \
 	{ \
 		id receiverVar = (receiver); \
 		id extenderVar = (extender); \
-		if ((receiverVar != nil) && ![receiverVar hpn_addExtender:extenderVar]) \
+		if ((receiverVar != nil) && ![receiverVar xtz_addExtender:extenderVar]) \
 			[NSException raise:@"Cannot add extender" format:@"Tried to add extender %@ to %@, but it failed.", extenderVar, receiverVar]; \
 	}
 

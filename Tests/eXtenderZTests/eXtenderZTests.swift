@@ -1,5 +1,6 @@
 /*
 Copyright 2019 happn
+Copyright 2024 François Lamboley
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -33,18 +34,18 @@ class eXtenderZTests : XCTestCase {
 		assert(witnesses.count == 0)
 		
 		let extender = SimpleObject0Extender()
-		let object = HPNSimpleObject0()
+		let object = XTZSimpleObject0()
 		
 		object.doTest1()
 		XCTAssertEqual(witnesses, ["test1": 1])
 		
-		XCTAssertTrue(object.hpn_add(extender))
+		XCTAssertTrue(object.xtz_add(extender))
 		object.doTest1()
-		XCTAssertEqual(witnesses, ["test1": 2, "HPNSimpleObject0Helptender-test1": 1, "SimpleObject0Extender-test1": 1])
+		XCTAssertEqual(witnesses, ["test1": 2, "XTZSimpleObject0Helptender-test1": 1, "SimpleObject0Extender-test1": 1])
 		
-		XCTAssertTrue(object.hpn_remove(extender))
+		XCTAssertTrue(object.xtz_remove(extender))
 		object.doTest1()
-		XCTAssertEqual(witnesses, ["test1": 3, "HPNSimpleObject0Helptender-test1": 1, "SimpleObject0Extender-test1": 1])
+		XCTAssertEqual(witnesses, ["test1": 3, "XTZSimpleObject0Helptender-test1": 1, "SimpleObject0Extender-test1": 1])
 	}
 	
 }

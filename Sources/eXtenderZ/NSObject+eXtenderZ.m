@@ -1,5 +1,6 @@
 /*
 Copyright 2019 happn
+Copyright 2024 François Lamboley
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -19,7 +20,7 @@ limitations under the License. */
 @import os.log;
 @import ObjectiveC.runtime;
 
-#import "HPNExtenderConfig.h"
+#import "XTZExtenderConfig.h"
 
 #import "NSObject+Utils.h"
 #import "HelptenderUtils.h"
@@ -37,8 +38,8 @@ static CFMutableDictionaryRef sharedHelptendersByProtocol(void);
 static CFMutableDictionaryRef sharedRuntimeHelptendersByHierarchy(void);
 static CFMutableDictionaryRef sharedOriginalHelptendersFromRuntimeHelptender(void);
 static CFMutableDictionaryRef sharedClassLevelFromOriginalAndRuntimeHelptender(void);
-static Class classForObjectExtendedWith(HPN_NSObject *object, NSArray *extenders);
-static Class changeClassOfObjectNotifyingHelptenders(HPN_NSObject *object, Class newClass);
+static Class classForObjectExtendedWith(XTZ_NSObject *object, NSArray *extenders);
+static Class changeClassOfObjectNotifyingHelptenders(XTZ_NSObject *object, Class newClass);
 
 /**
  Returns a concatenation of `str`, `str2` and `str3`. `str3` can be `NULL` (not the others).
@@ -319,36 +320,36 @@ static CFHashCode classPairHash(const void *value) {
 
 #pragma mark -
 
-@interface HPN_NSObject ()
+@interface XTZ_NSObject ()
 
-- (NSMutableArray *)hpn_extenders;
-- (NSMutableArray *)hpn_extendersCreateIfNotExist:(BOOL)createIfNeeded;
+- (NSMutableArray *)xtz_extenders;
+- (NSMutableArray *)xtz_extendersCreateIfNotExist:(BOOL)createIfNeeded;
 
-- (BOOL)hpn_addExtender:(HPN_NSObject <HPNExtender> *)extender withOriginalClass:(Class)originalClass;
+- (BOOL)xtz_addExtender:(XTZ_NSObject <XTZExtender> *)extender withOriginalClass:(Class)originalClass;
 
 @end
 
 /* ************* Mandatory NSObject Helptender ************* */
 #pragma mark - Base NSObject Helptender
 
-@interface HPNObjectBaseHelptender : HPN_NSObject <HPNHelptender>
+@interface XTZObjectBaseHelptender : XTZ_NSObject <XTZHelptender>
 
 @end
 
-@implementation HPNObjectBaseHelptender
+@implementation XTZObjectBaseHelptender
 
 + (void)load
 {
-	[HPN_NSObject hpn_registerClass:self asHelptenderForProtocol:@protocol(HPNExtender)];
+	[XTZ_NSObject xtz_registerClass:self asHelptenderForProtocol:@protocol(XTZExtender)];
 }
 
-+ (void)hpn_helptenderHasBeenAdded:(id <HPNHelptender>)helptender
++ (void)xtz_helptenderHasBeenAdded:(id <XTZHelptender>)helptender
 {
 #pragma unused(helptender)
 	/* Nothing do to here */
 }
 
-+ (void)hpn_helptenderWillBeRemoved:(id <HPNHelptender>)helptender
++ (void)xtz_helptenderWillBeRemoved:(id <XTZHelptender>)helptender
 {
 #pragma unused(helptender)
 	/* Nothing do to here */
@@ -364,29 +365,29 @@ static CFHashCode classPairHash(const void *value) {
 
 - (void)dealloc
 {
-	[self hpn_prepareDeallocationOfExtendedObject];
+	[self xtz_prepareDeallocationOfExtendedObject];
 	
 	NSUInteger n;
-	while ((n = self.hpn_extenders.count) > 0)
-		[self hpn_removeExtender:self.hpn_extenders[n-1] atIndex:n-1];
+	while ((n = self.xtz_extenders.count) > 0)
+		[self xtz_removeExtender:self.xtz_extenders[n-1] atIndex:n-1];
 	
-	((void (*)(id, SEL))HPN_HELPTENDER_CALL_SUPER_NO_ARGS(HPNObjectBaseHelptender));
+	((void (*)(id, SEL))XTZ_HELPTENDER_CALL_SUPER_NO_ARGS(XTZObjectBaseHelptender));
 	if (/* DISABLED CODE */(NO)) [super dealloc]; /* Happy compiler is happy */
 }
 
-- (BOOL)hpn_isExtended
+- (BOOL)xtz_isExtended
 {
 	return YES;
 }
 
-- (NSMutableArray *)hpn_extenders
+- (NSMutableArray *)xtz_extenders
 {
-	return [self hpn_extendersCreateIfNotExist:NO];
+	return [self xtz_extendersCreateIfNotExist:NO];
 }
 
-- (NSMutableArray *)hpn_extendersCreateIfNotExist:(BOOL)createIfNeeded
+- (NSMutableArray *)xtz_extendersCreateIfNotExist:(BOOL)createIfNeeded
 {
-	id ret = [self hpn_getAssociatedObjectWithKey:&EXTENDERS_KEY createIfNotExistWithBlock:(createIfNeeded? ^id{
+	id ret = [self xtz_getAssociatedObjectWithKey:&EXTENDERS_KEY createIfNotExistWithBlock:(createIfNeeded? ^id{
 		return [[[NSMutableArray alloc] initWithCapacity:7] autorelease];
 	}: NULL)];
 	
@@ -394,9 +395,9 @@ static CFHashCode classPairHash(const void *value) {
 	return ret;
 }
 
-- (CFMutableDictionaryRef)hpn_extendersByProtocolCreateIfNotExist:(BOOL)createIfNeeded
+- (CFMutableDictionaryRef)xtz_extendersByProtocolCreateIfNotExist:(BOOL)createIfNeeded
 {
-	id ret = [self hpn_getAssociatedObjectWithKey:&EXTENDERS_BY_PROTOCOL_KEY createIfNotExistWithBlock:(createIfNeeded? ^id{
+	id ret = [self xtz_getAssociatedObjectWithKey:&EXTENDERS_BY_PROTOCOL_KEY createIfNotExistWithBlock:(createIfNeeded? ^id{
 		CFDictionaryKeyCallBacks keyCallBacks = {
 			.version         = 0,
 			.retain          = NULL,
@@ -412,14 +413,14 @@ static CFHashCode classPairHash(const void *value) {
 	return (CFMutableDictionaryRef)ret;
 }
 
-- (NSArray *)hpn_extendersConformingToProtocol:(Protocol *)p
+- (NSArray *)xtz_extendersConformingToProtocol:(Protocol *)p
 {
-	CFMutableDictionaryRef extendersByProtocol = [self hpn_extendersByProtocolCreateIfNotExist:YES];
+	CFMutableDictionaryRef extendersByProtocol = [self xtz_extendersByProtocolCreateIfNotExist:YES];
 	NSMutableArray *ret = CFDictionaryGetValue(extendersByProtocol, p);
 	if (ret != nil) return (NSArray *)ret;
 	
-	ret = [NSMutableArray arrayWithCapacity:self.hpn_extenders.count];
-	for (HPN_NSObject <HPNExtender> *extender in self.hpn_extenders)
+	ret = [NSMutableArray arrayWithCapacity:self.xtz_extenders.count];
+	for (XTZ_NSObject <XTZExtender> *extender in self.xtz_extenders)
 		if ([extender conformsToProtocol:p])
 			[ret addObject:extender];
 	
@@ -427,35 +428,35 @@ static CFHashCode classPairHash(const void *value) {
 	return ret;
 }
 
-- (BOOL)hpn_addExtender:(HPN_NSObject <HPNExtender> *)extender
+- (BOOL)xtz_addExtender:(XTZ_NSObject <XTZExtender> *)extender
 {
-	Class c = classForObjectExtendedWith(self, (self.hpn_extenders? [self.hpn_extenders arrayByAddingObject:extender]: @[extender]));
+	Class c = classForObjectExtendedWith(self, (self.xtz_extenders? [self.xtz_extenders arrayByAddingObject:extender]: @[extender]));
 	if (c == Nil) {
-//		HPNTLogW(kLTExtenders, @"Can’t get the class to extend object %@.", self);
-		if (@available(macOS 10.11, iOS 9.0, *)) os_log_info(HPNExtenderConfig.oslog, "Can’t get the class to extend object %{public}@.", self);
+//		FRZTLogW(kLTExtenders, @"Can’t get the class to extend object %@.", self);
+		if (@available(macOS 10.11, iOS 9.0, *)) os_log_info(XTZExtenderConfig.oslog, "Can’t get the class to extend object %{public}@.", self);
 		else                                     NSLog(@"*** Can’t get the class to extend object %@.", self);
 		return NO;
 	}
 	if (c != object_getClass(self)) {
 		Class originalClass = changeClassOfObjectNotifyingHelptenders(self, c);
-		return [self hpn_addExtender:extender withOriginalClass:originalClass];
+		return [self xtz_addExtender:extender withOriginalClass:originalClass];
 	}
 	
-	if (![self hpn_prepareForExtender:extender])
+	if (![self xtz_prepareForExtender:extender])
 		return NO;
 	
-	[[self hpn_extendersCreateIfNotExist:YES] addObject:extender];
+	[[self xtz_extendersCreateIfNotExist:YES] addObject:extender];
 	objc_setAssociatedObject(self, &EXTENDERS_BY_PROTOCOL_KEY, nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC); /* Clear the extenders by protocol cache. */
-//	HPNTLogI(kLTExtenders, @"Added extender %@ to object %@", extender, self);
-	if (@available(macOS 10.11, iOS 9.0, *)) os_log(HPNExtenderConfig.oslog, "Added extender %{public}@ to object %{public}@", extender, self);
+//	FRZTLogI(kLTExtenders, @"Added extender %@ to object %@", extender, self);
+	if (@available(macOS 10.11, iOS 9.0, *)) os_log(XTZExtenderConfig.oslog, "Added extender %{public}@ to object %{public}@", extender, self);
 	else                                     NSLog(@"Added extender %@ to object %@", extender, self);
 
 	return YES;
 }
 
-- (BOOL)hpn_addExtender:(HPN_NSObject <HPNExtender> *)extender withOriginalClass:(Class)originalClass
+- (BOOL)xtz_addExtender:(XTZ_NSObject <XTZExtender> *)extender withOriginalClass:(Class)originalClass
 {
-	if (![self hpn_addExtender:extender]) {
+	if (![self xtz_addExtender:extender]) {
 		/* We revert the object to its original class. */
 		changeClassOfObjectNotifyingHelptenders(self, originalClass);
 		return NO;
@@ -464,18 +465,18 @@ static CFHashCode classPairHash(const void *value) {
 	return YES;
 }
 
-- (BOOL)hpn_prepareForExtender:(HPN_NSObject <HPNExtender> *)extender
+- (BOOL)xtz_prepareForExtender:(XTZ_NSObject <XTZExtender> *)extender
 {
-	if ([self hpn_isExtenderAdded:extender]) {
-//		HPNTLogW(kLTExtenders, @"Tried to add extender %@ to extended object %@, but this extender is already added to this object", extender, self);
-		if (@available(macOS 10.11, iOS 9.0, *)) os_log_info(HPNExtenderConfig.oslog, "Tried to add extender %{public}@ to extended object %{public}@, but this extender is already added to this object", extender, self);
+	if ([self xtz_isExtenderAdded:extender]) {
+//		FRZTLogW(kLTExtenders, @"Tried to add extender %@ to extended object %@, but this extender is already added to this object", extender, self);
+		if (@available(macOS 10.11, iOS 9.0, *)) os_log_info(XTZExtenderConfig.oslog, "Tried to add extender %{public}@ to extended object %{public}@, but this extender is already added to this object", extender, self);
 		else                                     NSLog(@"Tried to add extender %@ to extended object %@, but this extender is already added to this object", extender, self);
 		return NO;
 	}
 	
 	if (![extender prepareObjectForExtender:self]) {
-//		HPNTLogW(kLTExtenders, @"Failed to add extender %@ to extended object %@", extender, self);
-		if (@available(macOS 10.11, iOS 9.0, *)) os_log_info(HPNExtenderConfig.oslog, "Failed to add extender %{public}@ to extended object %{public}@", extender, self);
+//		FRZTLogW(kLTExtenders, @"Failed to add extender %@ to extended object %@", extender, self);
+		if (@available(macOS 10.11, iOS 9.0, *)) os_log_info(XTZExtenderConfig.oslog, "Failed to add extender %{public}@ to extended object %{public}@", extender, self);
 		else                                     NSLog(@"Failed to add extender %@ to extended object %@", extender, self);
 		return NO;
 	}
@@ -483,13 +484,13 @@ static CFHashCode classPairHash(const void *value) {
 	return YES;
 }
 
-- (void)hpn_removeExtender:(HPN_NSObject <HPNExtender> *)extender atIndex:(NSUInteger)idx
+- (void)xtz_removeExtender:(XTZ_NSObject <XTZExtender> *)extender atIndex:(NSUInteger)idx
 {
-	NSMutableArray *e = self.hpn_extenders;
+	NSMutableArray *e = self.xtz_extenders;
 	NSParameterAssert(e[idx] == extender);
 	
-//	HPNTLogI(kLTExtenders, @"Removing extender %@ from object %p <%s>", extender, self, class_getName(self.class));
-	if (@available(macOS 10.11, iOS 9.0, *)) os_log(HPNExtenderConfig.oslog, "Removing extender %{public}@ from object %{public}p <%{public}s>", extender, self, class_getName(self.class));
+//	FRZTLogI(kLTExtenders, @"Removing extender %@ from object %p <%s>", extender, self, class_getName(self.class));
+	if (@available(macOS 10.11, iOS 9.0, *)) os_log(XTZExtenderConfig.oslog, "Removing extender %{public}@ from object %{public}p <%{public}s>", extender, self, class_getName(self.class));
 	else                                     NSLog(@"Removing extender %@ from object %p <%s>", extender, self, class_getName(self.class));
 	[extender prepareObjectForRemovalOfExtender:self];
 	[e removeObjectAtIndex:idx];
@@ -503,73 +504,73 @@ static CFHashCode classPairHash(const void *value) {
 	changeClassOfObjectNotifyingHelptenders(self, c);
 }
 
-- (BOOL)hpn_removeExtender:(HPN_NSObject <HPNExtender> *)extender
+- (BOOL)xtz_removeExtender:(XTZ_NSObject <XTZExtender> *)extender
 {
-	NSMutableArray *e = self.hpn_extenders;
+	NSMutableArray *e = self.xtz_extenders;
 	if (e == nil) return NO;
 	
 	NSUInteger idx = [e indexOfObjectIdenticalTo:extender];
 	if (idx == NSNotFound) return NO;
 	
-	[self hpn_removeExtender:extender atIndex:idx];
+	[self xtz_removeExtender:extender atIndex:idx];
 	return YES;
 }
 
-- (NSUInteger)hpn_removeExtenders:(NSArray *)extenders
+- (NSUInteger)xtz_removeExtenders:(NSArray *)extenders
 {
 	NSUInteger nRemoved = 0;
 	
-	for (HPN_NSObject <HPNExtender> *extender in extenders)
-		if ([self hpn_removeExtender:extender])
+	for (XTZ_NSObject <XTZExtender> *extender in extenders)
+		if ([self xtz_removeExtender:extender])
 			++nRemoved;
 	
 	return nRemoved;
 }
 
-- (NSUInteger)hpn_removeExtendersOfClass:(Class <HPNExtender>)extenderClass
+- (NSUInteger)xtz_removeExtendersOfClass:(Class <XTZExtender>)extenderClass
 {
 	NSUInteger nRemoved = 0;
 	
-	for (NSUInteger i = 0; i < self.hpn_extenders.count; ++i) {
-		HPN_NSObject <HPNExtender> *extender = [self.hpn_extenders objectAtIndex:i];
+	for (NSUInteger i = 0; i < self.xtz_extenders.count; ++i) {
+		XTZ_NSObject <XTZExtender> *extender = [self.xtz_extenders objectAtIndex:i];
 		if (![extender isKindOfClass:extenderClass]) continue;
 		
-		[self hpn_removeExtender:extender atIndex:i--];
+		[self xtz_removeExtender:extender atIndex:i--];
 		++nRemoved;
 	}
 	
 	return nRemoved;
 }
 
-- (NSUInteger)hpn_removeAllExtenders
+- (NSUInteger)xtz_removeAllExtenders
 {
 	NSUInteger nRemoved = 0;
 	
-	while (self.hpn_extenders.count > 0) {
-		HPN_NSObject <HPNExtender> *extender = [self.hpn_extenders objectAtIndex:0];
-		[self hpn_removeExtender:extender atIndex:0];
+	while (self.xtz_extenders.count > 0) {
+		XTZ_NSObject <XTZExtender> *extender = [self.xtz_extenders objectAtIndex:0];
+		[self xtz_removeExtender:extender atIndex:0];
 		++nRemoved;
 	}
 	
 	return nRemoved;
 }
 
-- (HPN_NSObject <HPNExtender> *)hpn_firstExtenderOfClass:(Class <HPNExtender>)extenderClass
+- (XTZ_NSObject <XTZExtender> *)xtz_firstExtenderOfClass:(Class <XTZExtender>)extenderClass
 {
-	for (HPN_NSObject <HPNExtender> *extender in self.hpn_extenders)
+	for (XTZ_NSObject <XTZExtender> *extender in self.xtz_extenders)
 		if ([extender isKindOfClass:extenderClass])
 			return extender;
 	
 	return nil;
 }
 
-- (BOOL)hpn_isExtenderAdded:(HPN_NSObject <HPNExtender> *)extender
+- (BOOL)xtz_isExtenderAdded:(XTZ_NSObject <XTZExtender> *)extender
 {
-	NSMutableArray *e = self.hpn_extenders;
+	NSMutableArray *e = self.xtz_extenders;
 	return (e != nil && [e indexOfObjectIdenticalTo:extender] != NSNotFound);
 }
 
-- (Class)hpn_getSuperClassWithOriginalHelptenderClass:(Class)originalHelptenderClass
+- (Class)xtz_getSuperClassWithOriginalHelptenderClass:(Class)originalHelptenderClass
 {
 	t_class_pair classPair = {.class1 = object_getClass(self), .class2 = originalHelptenderClass, .retainCount = NSUIntegerMax};
 	
@@ -683,18 +684,18 @@ static CFMutableDictionaryRef sharedClassLevelFromOriginalAndRuntimeHelptender(v
 }
 
 /**
- Returns `NO` if the baseProtocol conforms to protocol ``HPNExtender``, but the helptender is not kind of the class of the ref object. */
-static BOOL recAddProtocolsHelptendersToSet(Protocol *baseProtocol, CFMutableSetRef set, HPN_NSObject *refObject) {
-	if (!protocol_conformsToProtocol(baseProtocol, @protocol(HPNExtender)))
+ Returns `NO` if the baseProtocol conforms to protocol ``XTZExtender``, but the helptender is not kind of the class of the ref object. */
+static BOOL recAddProtocolsHelptendersToSet(Protocol *baseProtocol, CFMutableSetRef set, XTZ_NSObject *refObject) {
+	if (!protocol_conformsToProtocol(baseProtocol, @protocol(XTZExtender)))
 		return YES;
 	
 	const t_helptender *helptender = CFDictionaryGetValue(sharedHelptendersByProtocol(), baseProtocol);
 	if (helptender == NULL)
-		[NSException raise:@"Invalid Argument" format:@"Got protocol %s, conforming to protocol HPNExtender, but not registered.", protocol_getName(baseProtocol)];
+		[NSException raise:@"Invalid Argument" format:@"Got protocol %s, conforming to protocol XTZExtender, but not registered.", protocol_getName(baseProtocol)];
 	if (![refObject.class isSubclassOfClass:helptender->extended]) {
-//		HPNTLogW(kLTExtenders, @"Got helptender class %s for protocol %s, declared to extend %s, but extended object %p (of class %s) is not kind of %s",
+//		FRZTLogW(kLTExtenders, @"Got helptender class %s for protocol %s, declared to extend %s, but extended object %p (of class %s) is not kind of %s",
 //					class_getName(helptender->helptenderClass), protocol_getName(baseProtocol), class_getName(helptender->extended), refObject, class_getName(refObject.class), class_getName(helptender->extended));
-		if (@available(macOS 10.11, iOS 9.0, *)) os_log_info(HPNExtenderConfig.oslog, "Got helptender class %{public}s for protocol %{public}s, declared to extend %{public}s, but extended object %{public}p (of class %{public}s) is not kind of %{public}s", class_getName(helptender->helptenderClass), protocol_getName(baseProtocol), class_getName(helptender->extended), refObject, class_getName(refObject.class), class_getName(helptender->extended));
+		if (@available(macOS 10.11, iOS 9.0, *)) os_log_info(XTZExtenderConfig.oslog, "Got helptender class %{public}s for protocol %{public}s, declared to extend %{public}s, but extended object %{public}p (of class %{public}s) is not kind of %{public}s", class_getName(helptender->helptenderClass), protocol_getName(baseProtocol), class_getName(helptender->extended), refObject, class_getName(refObject.class), class_getName(helptender->extended));
 		else                                     NSLog(@"Got helptender class %s for protocol %s, declared to extend %s, but extended object %p (of class %s) is not kind of %s", class_getName(helptender->helptenderClass), protocol_getName(baseProtocol), class_getName(helptender->extended), refObject, class_getName(refObject.class), class_getName(helptender->extended));
 		return NO;
 	}
@@ -715,14 +716,14 @@ end:
 }
 
 /** Computes which helptenders are needed for each extenders given, then get or create the class that will have the correct hierarchy. */
-static Class classForObjectExtendedWith(HPN_NSObject *object, NSArray *extenders) {
+static Class classForObjectExtendedWith(XTZ_NSObject *object, NSArray *extenders) {
 	const char *className = class_getName(object.class);
 	
-	if (!object.hpn_isExtended &&
+	if (!object.xtz_isExtended &&
 		 (object_getClass(object) != object.class || strstr(className, "NSCF") != NULL)) {
 		/* Small protection to avoid messing around with other mechanism doing ISA-Swizzling (KVO, etc.). */
-//		HPNTLogW(kLTExtenders, @"Refusing to create runtime helptender for an object whose NSObject’s class method does not return the same value as object_getClass(), or whose class name contains \"NSCF\" (toll-free bridged objects). NSObject’s class --> %@; object_getClass() --> %@.", NSStringFromClass(object.class), NSStringFromClass(object_getClass(object)));
-		if (@available(macOS 10.11, iOS 9.0, *)) os_log_info(HPNExtenderConfig.oslog, "Refusing to create runtime helptender for an object whose NSObject’s class method does not return the same value as object_getClass(), or whose class name contains \"NSCF\" (toll-free bridged objects). NSObject’s class --> %{public}@; object_getClass() --> %{public}@.", NSStringFromClass(object.class), NSStringFromClass(object_getClass(object)));
+//		FRZTLogW(kLTExtenders, @"Refusing to create runtime helptender for an object whose NSObject’s class method does not return the same value as object_getClass(), or whose class name contains \"NSCF\" (toll-free bridged objects). NSObject’s class --> %@; object_getClass() --> %@.", NSStringFromClass(object.class), NSStringFromClass(object_getClass(object)));
+		if (@available(macOS 10.11, iOS 9.0, *)) os_log_info(XTZExtenderConfig.oslog, "Refusing to create runtime helptender for an object whose NSObject’s class method does not return the same value as object_getClass(), or whose class name contains \"NSCF\" (toll-free bridged objects). NSObject’s class --> %{public}@; object_getClass() --> %{public}@.", NSStringFromClass(object.class), NSStringFromClass(object_getClass(object)));
 		else                                     NSLog(@"Refusing to create runtime helptender for an object whose NSObject’s class method does not return the same value as object_getClass(), or whose class name contains \"NSCF\" (toll-free bridged objects). NSObject’s class --> %@; object_getClass() --> %@.", NSStringFromClass(object.class), NSStringFromClass(object_getClass(object)));
 		return Nil;
 	}
@@ -730,7 +731,7 @@ static Class classForObjectExtendedWith(HPN_NSObject *object, NSArray *extenders
 	/* General algorithm:
 	 *   - For each extender, get list of protocols it conforms to;
 	 *   - For each protocol,
-	 *      if the protocol conforms to protocol HPNExtender,
+	 *      if the protocol conforms to protocol XTZExtender,
 	 *      get the associated helptender,
 	 *      add it to the set of helptenders to add to the final class;
 	 *   - Sort the set of helptenders to get a sorted array of helptenders to add to the final class.
@@ -744,9 +745,9 @@ static Class classForObjectExtendedWith(HPN_NSObject *object, NSArray *extenders
 	 */
 	
 	t_helptenders_hierarchy *hh = createHelptendersHierarchyWithBaseClass(object.class);
-	for (HPN_NSObject <HPNExtender> *extender in extenders) {
-		if (![extender conformsToProtocol:@protocol(HPNExtender)])
-			[NSException raise:@"Invalid argument" format:@"Got extender %@, of class %s, which does not conform to protocol HPNExtender", extender, class_getName(extender.class)];
+	for (XTZ_NSObject <XTZExtender> *extender in extenders) {
+		if (![extender conformsToProtocol:@protocol(XTZExtender)])
+			[NSException raise:@"Invalid argument" format:@"Got extender %@, of class %s, which does not conform to protocol XTZExtender", extender, class_getName(extender.class)];
 		
 		for (Class curClass = extender.class; curClass != Nil; curClass = class_getSuperclass(curClass)) {
 			Protocol **protocols = class_copyProtocolList(curClass, NULL);
@@ -774,8 +775,8 @@ static Class classForObjectExtendedWith(HPN_NSObject *object, NSArray *extenders
 		CFIndex nHelptenders = CFSetGetCount(hh->helptenders);
 		CFMutableDictionaryRef ohfrh = sharedOriginalHelptendersFromRuntimeHelptender();
 		CFMutableDictionaryRef clfoarh = sharedClassLevelFromOriginalAndRuntimeHelptender();
-//		HPNTLogT(kLTExtenders, @"Creating runtime helptender for base class %s, with %ld helptender(s)", class_getName(hh->baseClass), (long)nHelptenders);
-		if (@available(macOS 10.11, iOS 9.0, *)) os_log_debug(HPNExtenderConfig.oslog, "Creating runtime helptender for base class %{public}s, with %{public}ld helptender(s)", class_getName(hh->baseClass), (long)nHelptenders);
+//		FRZTLogT(kLTExtenders, @"Creating runtime helptender for base class %s, with %ld helptender(s)", class_getName(hh->baseClass), (long)nHelptenders);
+		if (@available(macOS 10.11, iOS 9.0, *)) os_log_debug(XTZExtenderConfig.oslog, "Creating runtime helptender for base class %{public}s, with %{public}ld helptender(s)", class_getName(hh->baseClass), (long)nHelptenders);
 		else                                     NSLog(@"Creating runtime helptender for base class %s, with %ld helptender(s)", class_getName(hh->baseClass), (long)nHelptenders);
 		
 		CFArrayCallBacks objectCallbacks = {
@@ -885,14 +886,14 @@ static Class classForObjectExtendedWith(HPN_NSObject *object, NSArray *extenders
 }
 
 static void callHelptenderWillBeRemoved(const void *value, void *context) {
-	[(Class)value hpn_helptenderWillBeRemoved:context];
+	[(Class)value xtz_helptenderWillBeRemoved:context];
 }
 
 static void callHelptenderHasBeenAdded(const void *value, void *context) {
-	[(Class)value hpn_helptenderHasBeenAdded:context];
+	[(Class)value xtz_helptenderHasBeenAdded:context];
 }
 
-static Class changeClassOfObjectNotifyingHelptenders(HPN_NSObject *object, Class newClass) {
+static Class changeClassOfObjectNotifyingHelptenders(XTZ_NSObject *object, Class newClass) {
 	Class originalActualObjectClass = object_getClass(object);
 	CFDictionaryRef ohfrh = sharedOriginalHelptendersFromRuntimeHelptender();
 	
@@ -939,16 +940,16 @@ static Class changeClassOfObjectNotifyingHelptenders(HPN_NSObject *object, Class
 /* ************* Implementation of the extender NSObject category ************* */
 #pragma mark - NSObject Category
 
-@implementation HPN_NSObject (_eXtenderZ)
-/* These implementations (except for hpn_registerClass:asHelptenderForProtocol:) are only called on a non-extended object.
- * For extended objects, the implementation in HPNObjectBaseHelptender are called. */
+@implementation XTZ_NSObject (_eXtenderZ)
+/* These implementations (except for xtz_registerClass:asHelptenderForProtocol:) are only called on a non-extended object.
+ * For extended objects, the implementation in XTZObjectBaseHelptender are called. */
 
-+ (BOOL)hpn_registerClass:(Class)c asHelptenderForProtocol:(Protocol *)protocol
++ (BOOL)xtz_registerClass:(Class)c asHelptenderForProtocol:(Protocol *)protocol
 {
-	if (![c conformsToProtocol:@protocol(HPNHelptender)])
-		[NSException raise:@"Invalid Argument" format:@"The class %@ was asked to be registered as helptender for protocol %@, but it does not conform to protocol HPNHelptender", NSStringFromClass(c), NSStringFromProtocol(protocol)];
-	if (!protocol_conformsToProtocol(protocol, @protocol(HPNExtender)))
-		[NSException raise:@"Invalid Argument" format:@"The class %@ was asked to be registered as helptender for protocol %@, but protocol does not conform to protocol HPNExtender", NSStringFromClass(c), NSStringFromProtocol(protocol)];
+	if (![c conformsToProtocol:@protocol(XTZHelptender)])
+		[NSException raise:@"Invalid Argument" format:@"The class %@ was asked to be registered as helptender for protocol %@, but it does not conform to protocol XTZHelptender.", NSStringFromClass(c), NSStringFromProtocol(protocol)];
+	if (!protocol_conformsToProtocol(protocol, @protocol(XTZExtender)))
+		[NSException raise:@"Invalid Argument" format:@"The class %@ was asked to be registered as helptender for protocol %@, but protocol does not conform to protocol XTZExtender.", NSStringFromClass(c), NSStringFromProtocol(protocol)];
 	
 	Class extendedClass = class_getSuperclass(c); /* A helptender extends its direct superclass by definition. */
 	if (CFDictionaryGetValue(sharedHelptendersByProtocol(), protocol) != NULL)
@@ -962,82 +963,82 @@ static Class changeClassOfObjectNotifyingHelptenders(HPN_NSObject *object, Class
 	return YES;
 }
 
-- (BOOL)hpn_isExtended
+- (BOOL)xtz_isExtended
 {
 	return NO;
 }
 
-- (NSArray *)hpn_extenders
+- (NSArray *)xtz_extenders
 {
 	return nil;
 }
 
-- (NSArray *)hpn_extendersConformingToProtocol:(Protocol *)p
+- (NSArray *)xtz_extendersConformingToProtocol:(Protocol *)p
 {
 #pragma unused(p)
 	return nil;
 }
 
-- (BOOL)hpn_addExtender:(HPN_NSObject <HPNExtender> *)extender
+- (BOOL)xtz_addExtender:(XTZ_NSObject <XTZExtender> *)extender
 {
-	Class c = classForObjectExtendedWith(self, (self.hpn_extenders? [self.hpn_extenders arrayByAddingObject:extender]: @[extender]));
+	Class c = classForObjectExtendedWith(self, (self.xtz_extenders? [self.xtz_extenders arrayByAddingObject:extender]: @[extender]));
 	if (c == Nil) {
-//		HPNTLogW(kLTExtenders, @"Can’t get the class to extend object %@.", self);
-		if (@available(macOS 10.11, iOS 9.0, *)) os_log_info(HPNExtenderConfig.oslog, "Can’t get the class to extend object %{public}@.", self);
+//		FRZTLogW(kLTExtenders, @"Can’t get the class to extend object %@.", self);
+		if (@available(macOS 10.11, iOS 9.0, *)) os_log_info(XTZExtenderConfig.oslog, "Can’t get the class to extend object %{public}@.", self);
 		else                                     NSLog(@"Can’t get the class to extend object %@.", self);
 		return NO;
 	}
 	
 	Class originalClass = changeClassOfObjectNotifyingHelptenders(self, c);
-	return [self hpn_addExtender:extender withOriginalClass:originalClass];
+	return [self xtz_addExtender:extender withOriginalClass:originalClass];
 }
 
-- (BOOL)hpn_removeExtender:(HPN_NSObject <HPNExtender> *)extender
+- (BOOL)xtz_removeExtender:(XTZ_NSObject <XTZExtender> *)extender
 {
 #pragma unused(extender)
 	return NO;
 }
 
-- (NSUInteger)hpn_removeExtenders:(NSArray *)extenders
+- (NSUInteger)xtz_removeExtenders:(NSArray *)extenders
 {
 #pragma unused(extenders)
 	return 0;
 }
 
-- (NSUInteger)hpn_removeExtendersOfClass:(Class <HPNExtender>)extenderClass
+- (NSUInteger)xtz_removeExtendersOfClass:(Class <XTZExtender>)extenderClass
 {
 #pragma unused(extenderClass)
 	return 0;
 }
 
-- (NSUInteger)hpn_removeAllExtenders
+- (NSUInteger)xtz_removeAllExtenders
 {
 	return 0;
 }
 
-- (void)hpn_removeExtender:(HPN_NSObject <HPNExtender> *)extender atIndex:(NSUInteger)idx
+- (void)xtz_removeExtender:(XTZ_NSObject <XTZExtender> *)extender atIndex:(NSUInteger)idx
 {
 #pragma unused(extender, idx)
 	[NSException raise:@"Cannot Remove Extender" format:@"Trying to remove an extender on a non-extended object."];
 }
 
-- (HPN_NSObject <HPNExtender> *)hpn_firstExtenderOfClass:(Class <HPNExtender>)extenderClass
+- (XTZ_NSObject <XTZExtender> *)xtz_firstExtenderOfClass:(Class <XTZExtender>)extenderClass
 {
 #pragma unused(extenderClass)
 	return nil;
 }
 
-- (BOOL)hpn_isExtenderAdded:(HPN_NSObject <HPNExtender> *)extender
+- (BOOL)xtz_isExtenderAdded:(XTZ_NSObject <XTZExtender> *)extender
 {
 #pragma unused(extender)
 	return NO;
 }
 
-- (void)hpn_prepareDeallocationOfExtendedObject
+- (void)xtz_prepareDeallocationOfExtendedObject
 {
 }
 
-- (Class)hpn_getSuperClassWithOriginalHelptenderClass:(Class)originalHelptenderClass
+- (Class)xtz_getSuperClassWithOriginalHelptenderClass:(Class)originalHelptenderClass
 {
 #pragma unused(originalHelptenderClass)
 	return object_getClass(self); /* And not the superclass!
@@ -1045,8 +1046,8 @@ static Class changeClassOfObjectNotifyingHelptenders(HPN_NSObject *object, Class
 											 * We must call the original class then. */
 }
 
-#ifdef HPN_eXtenderZ_STATIC
-void __hpn_linkNSObjectExtenderzCategory(void) {
+#ifdef eXtenderZ_STATIC
+void __xtz_linkNSObjectExtenderzCategory(void) {
 }
 #endif
 
@@ -1054,6 +1055,6 @@ void __hpn_linkNSObjectExtenderzCategory(void) {
 
 
 
-void HPNCheckedAddExtender(id receiver, HPN_NSObject <HPNExtender> *extender) {
-	CHECKED_ADD_EXTENDER(receiver, extender);
+void XTZCheckedAddExtender(id receiver, XTZ_NSObject <XTZExtender> *extender) {
+	XTZ_CHECKED_ADD_EXTENDER(receiver, extender);
 }

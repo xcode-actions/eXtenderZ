@@ -1,5 +1,6 @@
 /*
 Copyright 2019 happn
+Copyright 2024 François Lamboley
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -17,7 +18,7 @@ import Foundation
 
 
 
-class SimpleObject0Extender : NSObject, HPNSimpleObject0Extender {
+class SimpleObject0Extender : NSObject, XTZSimpleObject0Extender {
 	
 	func prepareObject(forExtender object: NSObject) -> Bool {
 		return true

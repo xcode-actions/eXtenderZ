@@ -14,8 +14,25 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. */
 
-/* See <https://stackoverflow.com/q/2567498>.
- * Objective-c categories are not real symbols.
- * So a lib with only categories is seen as empty by the linker and it compiles with a warning.
- * To get rid of the warning, this symbol is added to categories-only libs. */
-void _eXtenderZ_heyTheresARealSymbolInThisLib_(void) {}
+@import Foundation;
+
+
+
+NS_ASSUME_NONNULL_BEGIN
+
+extern NSMutableDictionary<NSString *, NSNumber *> * _Null_unspecified witnesses;
+
+
+
+@interface XTZSimpleObject0 : NSObject
+
+- (void)doTest1;
+
+@end
+
+
+@interface XTZSimpleObject1 : XTZSimpleObject0
+
+@end
+
+NS_ASSUME_NONNULL_END

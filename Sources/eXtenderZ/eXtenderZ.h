@@ -1,5 +1,6 @@
 /*
 Copyright 2019 happn
+Copyright 2024 François Lamboley
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -13,11 +14,11 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. */
 
-#ifndef HPN_eXtenderZ_STATIC
+#ifndef eXtenderZ_STATIC
 
 # import <eXtenderZ/NSObject_WorkaroundForDoc.h>
 
-# import <eXtenderZ/HPNExtenderConfig.h>
+# import <eXtenderZ/XTZExtenderConfig.h>
 
 # import <eXtenderZ/NSObject+Utils.h>
 # import <eXtenderZ/NSObject+eXtenderZ.h>
@@ -26,11 +27,11 @@ limitations under the License. */
 
 # import "NSObject_WorkaroundForDoc.h"
 
-# import "HPNExtenderConfig.h"
+# import "XTZExtenderConfig.h"
 
 # import "NSObject+Utils.h"
 # import "NSObject+eXtenderZ.h"
 
-# import "HPNCategoriesLoader.h"
+# import "XTZCategoriesLoader.h"
 
 #endif

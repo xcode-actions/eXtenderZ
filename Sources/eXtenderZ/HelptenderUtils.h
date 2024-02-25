@@ -1,5 +1,6 @@
 /*
 Copyright 2019 happn
+Copyright 2024 François Lamboley
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -20,27 +21,27 @@ limitations under the License. */
 NS_ASSUME_NONNULL_BEGIN
 
 
-#define HPN_HELPTENDER_CALL_SUPER_NO_ARGS(className) \
-	class_getMethodImplementation([self hpn_getSuperClassWithOriginalHelptenderClass:className.class], _cmd))(self, _cmd
-#define HPN_HELPTENDER_CALL_SUPER(className, ...) \
-	class_getMethodImplementation([self hpn_getSuperClassWithOriginalHelptenderClass:className.class], _cmd))(self, _cmd, __VA_ARGS__
+#define XTZ_HELPTENDER_CALL_SUPER_NO_ARGS(className) \
+	class_getMethodImplementation([self xtz_getSuperClassWithOriginalHelptenderClass:className.class], _cmd))(self, _cmd
+#define XTZ_HELPTENDER_CALL_SUPER(className, ...) \
+	class_getMethodImplementation([self xtz_getSuperClassWithOriginalHelptenderClass:className.class], _cmd))(self, _cmd, __VA_ARGS__
 
-#define HPN_HELPTENDER_CALL_SUPER_NO_ARGS_WITH_SEL_NAME(className, sel_name) \
-	class_getMethodImplementation([self hpn_getSuperClassWithOriginalHelptenderClass:className.class], @selector(sel_name)))(self, @selector(sel_name)
-#define HPN_HELPTENDER_CALL_SUPER_WITH_SEL_NAME(className, sel_name, ...) \
-	class_getMethodImplementation([self hpn_getSuperClassWithOriginalHelptenderClass:className.class], @selector(sel_name)))(self, @selector(sel_name), __VA_ARGS__
+#define XTZ_HELPTENDER_CALL_SUPER_NO_ARGS_WITH_SEL_NAME(className, sel_name) \
+	class_getMethodImplementation([self xtz_getSuperClassWithOriginalHelptenderClass:className.class], @selector(sel_name)))(self, @selector(sel_name)
+#define XTZ_HELPTENDER_CALL_SUPER_WITH_SEL_NAME(className, sel_name, ...) \
+	class_getMethodImplementation([self xtz_getSuperClassWithOriginalHelptenderClass:className.class], @selector(sel_name)))(self, @selector(sel_name), __VA_ARGS__
 
 
-@interface HPN_NSObject (ForHelptendersOnly)
+@interface XTZ_NSObject (ForHelptendersOnly)
 
-- (Class)hpn_getSuperClassWithOriginalHelptenderClass:(Class)originalHelptenderClass;
+- (Class)xtz_getSuperClassWithOriginalHelptenderClass:(Class)originalHelptenderClass;
 
 @end
 
 
 /* *** */
 
-#define HPN_DYNAMIC_ACCESSOR(type, name, key)                                                                                                                                              \
+#define XTZ_DYNAMIC_ACCESSOR(type, name, key)                                                                                                                                              \
 	- (nullable type *)name                                                                                                                                                                 \
 	{                                                                                                                                                                                       \
 		return [self name##CreateIfNotExist:NO];                                                                                                                                             \
@@ -48,7 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
 	                                                                                                                                                                                        \
 	- (nullable type *)name##CreateIfNotExist:(BOOL)createIfNeeded                                                                                                                          \
 	{                                                                                                                                                                                       \
-		id ret = [self hpn_getAssociatedObjectWithKey:&key createIfNotExistWithBlock:(createIfNeeded? ^id{                                                                                   \
+		id ret = [self xtz_getAssociatedObjectWithKey:&key createIfNotExistWithBlock:(createIfNeeded? ^id{                                                                                   \
 			return [[type alloc] initWithCapacity:7];                                                                                                                                         \
 		}: NULL)];                                                                                                                                                                           \
 		                                                                                                                                                                                     \

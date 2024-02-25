@@ -16,6 +16,6 @@ These two methods will raise an exception if the extender cannot be added to the
 The third method is the underlying method called by the two conveniences.
 It is possible to call the third method directly.
 
-- ``CHECKED_ADD_EXTENDER``
-- ``HPNCheckedAddExtender``
-- ``NSObject_WorkaroundForDoc/hpn_addExtender:``
+- ``XTZ_CHECKED_ADD_EXTENDER``
+- ``XTZCheckedAddExtender``
+- ``NSObject_WorkaroundForDoc/xtz_addExtender:``

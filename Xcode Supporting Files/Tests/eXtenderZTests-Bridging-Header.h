@@ -1,5 +1,6 @@
 /*
 Copyright 2019 happn
+Copyright 2024 François Lamboley
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -20,17 +21,17 @@ limitations under the License. */
  * This file (it is presumably this file) must not be along a file called module.modulemap
  *  or the test target will use it as its own module map, and compilation will fail. */
 
-#import "HPNSimpleObject.h"
-#import "HPNSimpleObjectHelptender.h"
+#import "XTZSimpleObject.h"
+#import "XTZSimpleObjectHelptender.h"
 
 
 
 
 
-#ifndef HPN_RealSymbolFunctionForCodeCoverage_h
-# define HPN_RealSymbolFunctionForCodeCoverage_h
+#ifndef XTZ_RealSymbolFunctionForCodeCoverage_h
+# define XTZ_RealSymbolFunctionForCodeCoverage_h
 
 /* Expose this function so we can call it to have a better code coverage… */
 void _eXtenderZ_heyTheresARealSymbolInThisLib_(void);
 
-#endif /* HPN_RealSymbolFunctionForCodeCoverage_h */
+#endif /* XTZ_RealSymbolFunctionForCodeCoverage_h */

@@ -1,5 +1,6 @@
 /*
 Copyright 2019 happn
+Copyright 2024 François Lamboley
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -13,8 +14,8 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. */
 
-#ifndef __HPN_eXtenderZ__
-# define __HPN_eXtenderZ__
+#ifndef __eXtenderZ_static_h__
+# define __eXtenderZ_static_h__
 
 /* Defined here _and_ in build settings.
  * We previously did not need it in the build settings,
@@ -28,7 +29,7 @@ limitations under the License. */
  * We could easily have left the force loading of the categories in the dynamic xcframework.
  * It has _no_ performance impact (it is never called!).
  * The only different AFAIK is the addition of a few symbols. */
-# define HPN_eXtenderZ_STATIC
+# define eXtenderZ_STATIC
 # include "eXtenderZ.h"
 
-#endif /* __HPN_eXtenderZ__ */
+#endif /* __eXtenderZ_static_h__ */
