@@ -136,7 +136,10 @@ NS_ASSUME_NONNULL_BEGIN
  This is the override point if you want to act just before or after an extender is removed. */
 - (void)xtz_removeExtender:(XTZ_NSObject <XTZExtender> *)extender atIndex:(NSUInteger)idx;
 
+/** Returns the first extender on the receiver of the given class, or `nil` if there are none. */
 - (nullable XTZ_NSObject <XTZExtender> *)xtz_firstExtenderOfClass:(Class <XTZExtender>)extenderClass;
+/** Returns `YES` if an extender of the given class was added to the object, else `NO`. */
+- (BOOL)xtz_isExtendedByClass:(Class <XTZExtender>)extenderClass;
 
 /** Returns `YES` if the extender was added to the object, else `NO`. */
 - (BOOL)xtz_isExtenderAdded:(XTZ_NSObject <XTZExtender> *)extender;

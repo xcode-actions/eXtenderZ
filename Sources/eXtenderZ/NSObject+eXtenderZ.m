@@ -554,6 +554,15 @@ static CFHashCode classPairHash(const void *value) {
 	return nil;
 }
 
+- (BOOL)xtz_isExtendedByClass:(Class <XTZExtender>)extenderClass
+{
+	for (XTZ_NSObject <XTZExtender> *extender in self.xtz_extenders)
+		if ([extender isKindOfClass:extenderClass])
+			return YES;
+	
+	return NO;
+}
+
 - (BOOL)xtz_isExtenderAdded:(XTZ_NSObject <XTZExtender> *)extender
 {
 	NSMutableArray *e = self.xtz_extenders;
@@ -1007,6 +1016,12 @@ static Class changeClassOfObjectNotifyingHelptenders(XTZ_NSObject *object, Class
 {
 #pragma unused(extenderClass)
 	return nil;
+}
+
+- (BOOL)xtz_isExtendedByClass:(Class <XTZExtender>)extenderClass
+{
+#pragma unused(extenderClass)
+	return NO;
 }
 
 - (BOOL)xtz_isExtenderAdded:(XTZ_NSObject <XTZExtender> *)extender
