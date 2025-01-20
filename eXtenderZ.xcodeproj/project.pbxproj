@@ -47,6 +47,7 @@
 		7BA760F32B8A88C9002B11DE /* NSObject_WorkaroundForDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA760F12B8A88C9002B11DE /* NSObject_WorkaroundForDoc.m */; };
 		7BA760F42B8A8E8A002B11DE /* NSObject_WorkaroundForDoc.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BA760F02B8A88C9002B11DE /* NSObject_WorkaroundForDoc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BA760F52B8A8E8A002B11DE /* NSObject_WorkaroundForDoc.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BA760F02B8A88C9002B11DE /* NSObject_WorkaroundForDoc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BE3298E2D3E6BE300CDA87B /* OneShotObjectExtender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE3298D2D3E6BE300CDA87B /* OneShotObjectExtender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		7BA760EE2B8A8718002B11DE /* eXtenderZ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = eXtenderZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BA760F02B8A88C9002B11DE /* NSObject_WorkaroundForDoc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_WorkaroundForDoc.h; sourceTree = "<group>"; };
 		7BA760F12B8A88C9002B11DE /* NSObject_WorkaroundForDoc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_WorkaroundForDoc.m; sourceTree = "<group>"; };
+		7BE3298D2D3E6BE300CDA87B /* OneShotObjectExtender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneShotObjectExtender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				7B39FEBF255AA577008AF2C5 /* XTZSimpleObjectHelptender.h */,
 				7B39FEBD255AA577008AF2C5 /* XTZSimpleObjectHelptender.m */,
 				7B39FEC0255AA577008AF2C5 /* SimpleObjectExtender.swift */,
+				7BE3298D2D3E6BE300CDA87B /* OneShotObjectExtender.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 			files = (
 				7B0E93AE255AD093002E8F1F /* eXtenderZTests.swift in Sources */,
 				7B0E93DB255AD139002E8F1F /* ObjcCategoryLibrary.c in Sources */,
+				7BE3298E2D3E6BE300CDA87B /* OneShotObjectExtender.swift in Sources */,
 				7B0E93A2255AD090002E8F1F /* SimpleObjectExtender.swift in Sources */,
 				7B0E938A255AD08B002E8F1F /* XTZSimpleObject.m in Sources */,
 				7B0E9396255AD08E002E8F1F /* XTZSimpleObjectHelptender.m in Sources */,

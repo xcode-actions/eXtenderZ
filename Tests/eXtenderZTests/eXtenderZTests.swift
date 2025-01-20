@@ -48,4 +48,13 @@ class eXtenderZTests : XCTestCase {
 		XCTAssertEqual(witnesses, ["test1": 3, "XTZSimpleObject0Helptender-test1": 1, "SimpleObject0Extender-test1": 1])
 	}
 	
+	func testOneShotExtender() {
+		let extender = OneShotObject0Extender()
+		let object = XTZSimpleObject0()
+		
+		XTZCheckedAddExtenderIfNoneFromSameClass(object, extender)
+		XTZCheckedAddExtenderIfNoneFromSameClass(object, extender)
+		XCTAssertEqual(object.xtz_extenders().count(where: { $0 is OneShotObject0Extender }), 1)
+	}
+	
 }
