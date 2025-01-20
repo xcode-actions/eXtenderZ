@@ -254,11 +254,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B0E933E255ACFAC002E8F1F /* eXtenderZ.h in Headers */,
-				7B0E933F255ACFAC002E8F1F /* XTZExtenderConfig.h in Headers */,
 				7B0E9340255ACFAC002E8F1F /* HelptenderUtils.h in Headers */,
 				7BA760F42B8A8E8A002B11DE /* NSObject_WorkaroundForDoc.h in Headers */,
 				7B0E9342255ACFAC002E8F1F /* NSObject+eXtenderZ.h in Headers */,
 				7B0E9341255ACFAC002E8F1F /* NSObject+Utils.h in Headers */,
+				7B0E933F255ACFAC002E8F1F /* XTZExtenderConfig.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,13 +268,13 @@
 			files = (
 				7B390029255AC64E008AF2C5 /* eXtenderZ-static.h in Headers */,
 				7B39FF56255AAB27008AF2C5 /* eXtenderZ.h in Headers */,
-				7B256EBB264C745F00840604 /* XTZCategoriesLoader.h in Headers */,
-				7B39FF5B255AAB33008AF2C5 /* XTZExtenderConfig.h in Headers */,
 				7B39FF60255AAB38008AF2C5 /* HelptenderUtils.h in Headers */,
 				7B39FF51255AAAC4008AF2C5 /* module.modulemap in Headers */,
 				7BA760F52B8A8E8A002B11DE /* NSObject_WorkaroundForDoc.h in Headers */,
 				7B39FF65255AAB3E008AF2C5 /* NSObject+eXtenderZ.h in Headers */,
 				7B39FF6A255AAB42008AF2C5 /* NSObject+Utils.h in Headers */,
+				7B256EBB264C745F00840604 /* XTZCategoriesLoader.h in Headers */,
+				7B39FF5B255AAB33008AF2C5 /* XTZExtenderConfig.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,11 +283,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BA760DF2B8A8718002B11DE /* eXtenderZ.h in Headers */,
-				7BA760E12B8A8718002B11DE /* XTZExtenderConfig.h in Headers */,
 				7BA760E02B8A8718002B11DE /* HelptenderUtils.h in Headers */,
 				7BA760F22B8A88C9002B11DE /* NSObject_WorkaroundForDoc.h in Headers */,
 				7BA760E22B8A8718002B11DE /* NSObject+eXtenderZ.h in Headers */,
 				7BA760E32B8A8718002B11DE /* NSObject+Utils.h in Headers */,
+				7BA760E12B8A8718002B11DE /* XTZExtenderConfig.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,9 +439,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B56FE3D2B8AB94C00AF034D /* Documentation.docc in Sources */,
-				7B0E9371255AD032002E8F1F /* XTZExtenderConfig.m in Sources */,
 				7B0E9373255AD032002E8F1F /* NSObject+eXtenderZ.m in Sources */,
 				7B0E9372255AD032002E8F1F /* NSObject+Utils.m in Sources */,
+				7B0E9371255AD032002E8F1F /* XTZExtenderConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,10 +450,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B0E93AE255AD093002E8F1F /* eXtenderZTests.swift in Sources */,
-				7B0E938A255AD08B002E8F1F /* XTZSimpleObject.m in Sources */,
-				7B0E9396255AD08E002E8F1F /* XTZSimpleObjectHelptender.m in Sources */,
 				7B0E93DB255AD139002E8F1F /* ObjcCategoryLibrary.c in Sources */,
 				7B0E93A2255AD090002E8F1F /* SimpleObjectExtender.swift in Sources */,
+				7B0E938A255AD08B002E8F1F /* XTZSimpleObject.m in Sources */,
+				7B0E9396255AD08E002E8F1F /* XTZSimpleObjectHelptender.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,10 +461,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B256EBF264C745F00840604 /* XTZCategoriesLoader.m in Sources */,
-				7B39FFA2255AAE92008AF2C5 /* XTZExtenderConfig.m in Sources */,
 				7B39FFA3255AAE92008AF2C5 /* NSObject+eXtenderZ.m in Sources */,
 				7B39FFA1255AAE92008AF2C5 /* NSObject+Utils.m in Sources */,
+				7B256EBF264C745F00840604 /* XTZCategoriesLoader.m in Sources */,
+				7B39FFA2255AAE92008AF2C5 /* XTZExtenderConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,10 +473,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BA760E82B8A8718002B11DE /* Documentation.docc in Sources */,
-				7BA760E52B8A8718002B11DE /* XTZExtenderConfig.m in Sources */,
 				7BA760F32B8A88C9002B11DE /* NSObject_WorkaroundForDoc.m in Sources */,
 				7BA760E62B8A8718002B11DE /* NSObject+eXtenderZ.m in Sources */,
 				7BA760E72B8A8718002B11DE /* NSObject+Utils.m in Sources */,
+				7BA760E52B8A8718002B11DE /* XTZExtenderConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
