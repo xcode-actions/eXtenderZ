@@ -26,7 +26,7 @@ jobs:
          
          - name: "Install xct and swift-sh"
            run: |
-              brew install xcode-actions/tap/xct xcode-actions/tap/swift-sh frizlab/perso/gpg-pass-from
+              brew install xcode-actions/tap/xct xcode-actions/tap/swift-sh@3.1 frizlab/perso/gpg-pass-from
          
          - name: "Checkout eXtenderZ versioning"
            uses: actions/checkout@v2
