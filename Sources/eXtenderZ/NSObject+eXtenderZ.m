@@ -1054,3 +1054,7 @@ void __xtz_linkNSObjectExtenderzCategory(void) {
 void XTZCheckedAddExtender(id receiver, XTZ_NSObject <XTZExtender> *extender) {
 	XTZ_CHECKED_ADD_EXTENDER(receiver, extender);
 }
+
+void XTZCheckedAddExtenderIfNoneFromSameClass(_Nullable id receiver, XTZ_NSObject <XTZExtender> *extender) {
+	XTZ_CHECKED_ADD_EXTENDER_IF_NONE_FROM_SAME_CLASS(receiver, extender);
+}

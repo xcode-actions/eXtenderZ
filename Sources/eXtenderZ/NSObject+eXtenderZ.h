@@ -167,4 +167,19 @@ void XTZCheckedAddExtender(_Nullable id receiver, XTZ_NSObject <XTZExtender> *ex
 			[NSException raise:@"Cannot add extender" format:@"Tried to add extender %@ to %@, but it failed.", extenderVar, receiverVar]; \
 	}
 
+/** Same as the ``XTZ_CHECKED_ADD_EXTENDER_IF_NONE_FROM_SAME_CLASS`` preprocessor macro, but available in Swift. */
+void XTZCheckedAddExtenderIfNoneFromSameClass(_Nullable id receiver, XTZ_NSObject <XTZExtender> *extender);
+/**
+ Calls ``NSObject_WorkaroundForDoc/xtz_addExtender:`` if no extenders of the same class are added to the object
+  and raises an exception if the call returns `NO`. */
+#define XTZ_CHECKED_ADD_EXTENDER_IF_NONE_FROM_SAME_CLASS(receiver, extender) \
+	{ \
+		id receiverVar = (receiver); \
+		id extenderVar = (extender); \
+		if (![receiverVar xtz_isExtendedByClass:object_getClass(extenderVar)]) {\
+			if ((receiverVar != nil) && ![receiverVar xtz_addExtender:extenderVar]) \
+				[NSException raise:@"Cannot add extender" format:@"Tried to add extender %@ to %@, but it failed.", extenderVar, receiverVar]; \
+		} \
+	}
+
 NS_ASSUME_NONNULL_END
