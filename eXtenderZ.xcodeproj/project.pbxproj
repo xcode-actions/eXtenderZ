@@ -552,6 +552,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DVL8GW97S8;
 				INFOPLIST_FILE = "Xcode Supporting Files/Tests/Test-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -571,6 +572,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DVL8GW97S8;
 				INFOPLIST_FILE = "Xcode Supporting Files/Tests/Test-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
