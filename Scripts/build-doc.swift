@@ -18,8 +18,8 @@ let logger: Logger = {
 }()
 
 
-_ = await Task{ await CreateXcframeworks.main() }.value
-struct CreateXcframeworks : AsyncParsableCommand {
+_ = await Task{ await BuildDoc.main() }.value
+struct BuildDoc : AsyncParsableCommand {
 	
 	static var configuration = CommandConfiguration(
 		abstract: "Build the documentation of eXtenderZ",
