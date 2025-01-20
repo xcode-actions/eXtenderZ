@@ -136,7 +136,10 @@ NS_ASSUME_NONNULL_BEGIN
  This is the override point if you want to act just before or after an extender is removed. */
 - (void)xtz_removeExtender:(XTZ_NSObject <XTZExtender> *)extender atIndex:(NSUInteger)idx;
 
+/** Returns the first extender on the receiver of the given class, or `nil` if there are none. */
 - (nullable XTZ_NSObject <XTZExtender> *)xtz_firstExtenderOfClass:(Class <XTZExtender>)extenderClass;
+/** Returns `YES` if an extender of the given class was added to the object, else `NO`. */
+- (BOOL)xtz_isExtendedByClass:(Class <XTZExtender>)extenderClass;
 
 /** Returns `YES` if the extender was added to the object, else `NO`. */
 - (BOOL)xtz_isExtenderAdded:(XTZ_NSObject <XTZExtender> *)extender;
@@ -162,6 +165,21 @@ void XTZCheckedAddExtender(_Nullable id receiver, XTZ_NSObject <XTZExtender> *ex
 		id extenderVar = (extender); \
 		if ((receiverVar != nil) && ![receiverVar xtz_addExtender:extenderVar]) \
 			[NSException raise:@"Cannot add extender" format:@"Tried to add extender %@ to %@, but it failed.", extenderVar, receiverVar]; \
+	}
+
+/** Same as the ``XTZ_CHECKED_ADD_EXTENDER_IF_NONE_FROM_SAME_CLASS`` preprocessor macro, but available in Swift. */
+void XTZCheckedAddExtenderIfNoneFromSameClass(_Nullable id receiver, XTZ_NSObject <XTZExtender> *extender);
+/**
+ Calls ``NSObject_WorkaroundForDoc/xtz_addExtender:`` if no extenders of the same class are added to the object
+  and raises an exception if the call returns `NO`. */
+#define XTZ_CHECKED_ADD_EXTENDER_IF_NONE_FROM_SAME_CLASS(receiver, extender) \
+	{ \
+		id receiverVar = (receiver); \
+		id extenderVar = (extender); \
+		if (![receiverVar xtz_isExtendedByClass:object_getClass(extenderVar)]) {\
+			if ((receiverVar != nil) && ![receiverVar xtz_addExtender:extenderVar]) \
+				[NSException raise:@"Cannot add extender" format:@"Tried to add extender %@ to %@, but it failed.", extenderVar, receiverVar]; \
+		} \
 	}
 
 NS_ASSUME_NONNULL_END

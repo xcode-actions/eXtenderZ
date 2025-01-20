@@ -47,6 +47,7 @@
 		7BA760F32B8A88C9002B11DE /* NSObject_WorkaroundForDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA760F12B8A88C9002B11DE /* NSObject_WorkaroundForDoc.m */; };
 		7BA760F42B8A8E8A002B11DE /* NSObject_WorkaroundForDoc.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BA760F02B8A88C9002B11DE /* NSObject_WorkaroundForDoc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BA760F52B8A8E8A002B11DE /* NSObject_WorkaroundForDoc.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BA760F02B8A88C9002B11DE /* NSObject_WorkaroundForDoc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BE3298E2D3E6BE300CDA87B /* OneShotObjectExtender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE3298D2D3E6BE300CDA87B /* OneShotObjectExtender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,12 +90,14 @@
 		7B39FEC1255AA577008AF2C5 /* XTZSimpleObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTZSimpleObject.h; sourceTree = "<group>"; };
 		7B39FEC6255AA8E2008AF2C5 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		7B39FF10255AA9F7008AF2C5 /* libeXtenderZ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libeXtenderZ.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B7539C02D3E6D9D0033A3F8 /* eXtenderZ.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = eXtenderZ.xctestplan; sourceTree = "<group>"; };
 		7B83A9C0255D127F00791D17 /* .github */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .github; sourceTree = "<group>"; };
 		7B91F9EB255AEE3E00D5E6E0 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
 		7BA760DA2B8A7F2C002B11DE /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
 		7BA760EE2B8A8718002B11DE /* eXtenderZ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = eXtenderZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BA760F02B8A88C9002B11DE /* NSObject_WorkaroundForDoc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_WorkaroundForDoc.h; sourceTree = "<group>"; };
 		7BA760F12B8A88C9002B11DE /* NSObject_WorkaroundForDoc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_WorkaroundForDoc.m; sourceTree = "<group>"; };
+		7BE3298D2D3E6BE300CDA87B /* OneShotObjectExtender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneShotObjectExtender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +183,7 @@
 		7B39FEB9255AA577008AF2C5 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				7B7539C02D3E6D9D0033A3F8 /* eXtenderZ.xctestplan */,
 				7B39FEBA255AA577008AF2C5 /* eXtenderZTests */,
 			);
 			path = Tests;
@@ -202,6 +206,7 @@
 				7B39FEBF255AA577008AF2C5 /* XTZSimpleObjectHelptender.h */,
 				7B39FEBD255AA577008AF2C5 /* XTZSimpleObjectHelptender.m */,
 				7B39FEC0255AA577008AF2C5 /* SimpleObjectExtender.swift */,
+				7BE3298D2D3E6BE300CDA87B /* OneShotObjectExtender.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -254,11 +259,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B0E933E255ACFAC002E8F1F /* eXtenderZ.h in Headers */,
-				7B0E933F255ACFAC002E8F1F /* XTZExtenderConfig.h in Headers */,
 				7B0E9340255ACFAC002E8F1F /* HelptenderUtils.h in Headers */,
 				7BA760F42B8A8E8A002B11DE /* NSObject_WorkaroundForDoc.h in Headers */,
 				7B0E9342255ACFAC002E8F1F /* NSObject+eXtenderZ.h in Headers */,
 				7B0E9341255ACFAC002E8F1F /* NSObject+Utils.h in Headers */,
+				7B0E933F255ACFAC002E8F1F /* XTZExtenderConfig.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,13 +273,13 @@
 			files = (
 				7B390029255AC64E008AF2C5 /* eXtenderZ-static.h in Headers */,
 				7B39FF56255AAB27008AF2C5 /* eXtenderZ.h in Headers */,
-				7B256EBB264C745F00840604 /* XTZCategoriesLoader.h in Headers */,
-				7B39FF5B255AAB33008AF2C5 /* XTZExtenderConfig.h in Headers */,
 				7B39FF60255AAB38008AF2C5 /* HelptenderUtils.h in Headers */,
 				7B39FF51255AAAC4008AF2C5 /* module.modulemap in Headers */,
 				7BA760F52B8A8E8A002B11DE /* NSObject_WorkaroundForDoc.h in Headers */,
 				7B39FF65255AAB3E008AF2C5 /* NSObject+eXtenderZ.h in Headers */,
 				7B39FF6A255AAB42008AF2C5 /* NSObject+Utils.h in Headers */,
+				7B256EBB264C745F00840604 /* XTZCategoriesLoader.h in Headers */,
+				7B39FF5B255AAB33008AF2C5 /* XTZExtenderConfig.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,11 +288,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BA760DF2B8A8718002B11DE /* eXtenderZ.h in Headers */,
-				7BA760E12B8A8718002B11DE /* XTZExtenderConfig.h in Headers */,
 				7BA760E02B8A8718002B11DE /* HelptenderUtils.h in Headers */,
 				7BA760F22B8A88C9002B11DE /* NSObject_WorkaroundForDoc.h in Headers */,
 				7BA760E22B8A8718002B11DE /* NSObject+eXtenderZ.h in Headers */,
 				7BA760E32B8A8718002B11DE /* NSObject+Utils.h in Headers */,
+				7BA760E12B8A8718002B11DE /* XTZExtenderConfig.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,9 +444,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B56FE3D2B8AB94C00AF034D /* Documentation.docc in Sources */,
-				7B0E9371255AD032002E8F1F /* XTZExtenderConfig.m in Sources */,
 				7B0E9373255AD032002E8F1F /* NSObject+eXtenderZ.m in Sources */,
 				7B0E9372255AD032002E8F1F /* NSObject+Utils.m in Sources */,
+				7B0E9371255AD032002E8F1F /* XTZExtenderConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,10 +455,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B0E93AE255AD093002E8F1F /* eXtenderZTests.swift in Sources */,
+				7B0E93DB255AD139002E8F1F /* ObjcCategoryLibrary.c in Sources */,
+				7BE3298E2D3E6BE300CDA87B /* OneShotObjectExtender.swift in Sources */,
+				7B0E93A2255AD090002E8F1F /* SimpleObjectExtender.swift in Sources */,
 				7B0E938A255AD08B002E8F1F /* XTZSimpleObject.m in Sources */,
 				7B0E9396255AD08E002E8F1F /* XTZSimpleObjectHelptender.m in Sources */,
-				7B0E93DB255AD139002E8F1F /* ObjcCategoryLibrary.c in Sources */,
-				7B0E93A2255AD090002E8F1F /* SimpleObjectExtender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,10 +467,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B256EBF264C745F00840604 /* XTZCategoriesLoader.m in Sources */,
-				7B39FFA2255AAE92008AF2C5 /* XTZExtenderConfig.m in Sources */,
 				7B39FFA3255AAE92008AF2C5 /* NSObject+eXtenderZ.m in Sources */,
 				7B39FFA1255AAE92008AF2C5 /* NSObject+Utils.m in Sources */,
+				7B256EBF264C745F00840604 /* XTZCategoriesLoader.m in Sources */,
+				7B39FFA2255AAE92008AF2C5 /* XTZExtenderConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,10 +479,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BA760E82B8A8718002B11DE /* Documentation.docc in Sources */,
-				7BA760E52B8A8718002B11DE /* XTZExtenderConfig.m in Sources */,
 				7BA760F32B8A88C9002B11DE /* NSObject_WorkaroundForDoc.m in Sources */,
 				7BA760E62B8A8718002B11DE /* NSObject+eXtenderZ.m in Sources */,
 				7BA760E72B8A8718002B11DE /* NSObject+Utils.m in Sources */,
+				7BA760E52B8A8718002B11DE /* XTZExtenderConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +558,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DVL8GW97S8;
 				INFOPLIST_FILE = "Xcode Supporting Files/Tests/Test-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -571,6 +578,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DVL8GW97S8;
 				INFOPLIST_FILE = "Xcode Supporting Files/Tests/Test-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

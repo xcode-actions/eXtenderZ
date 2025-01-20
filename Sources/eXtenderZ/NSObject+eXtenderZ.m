@@ -554,6 +554,15 @@ static CFHashCode classPairHash(const void *value) {
 	return nil;
 }
 
+- (BOOL)xtz_isExtendedByClass:(Class <XTZExtender>)extenderClass
+{
+	for (XTZ_NSObject <XTZExtender> *extender in self.xtz_extenders)
+		if ([extender isKindOfClass:extenderClass])
+			return YES;
+	
+	return NO;
+}
+
 - (BOOL)xtz_isExtenderAdded:(XTZ_NSObject <XTZExtender> *)extender
 {
 	NSMutableArray *e = self.xtz_extenders;
@@ -1009,6 +1018,12 @@ static Class changeClassOfObjectNotifyingHelptenders(XTZ_NSObject *object, Class
 	return nil;
 }
 
+- (BOOL)xtz_isExtendedByClass:(Class <XTZExtender>)extenderClass
+{
+#pragma unused(extenderClass)
+	return NO;
+}
+
 - (BOOL)xtz_isExtenderAdded:(XTZ_NSObject <XTZExtender> *)extender
 {
 #pragma unused(extender)
@@ -1038,4 +1053,8 @@ void __xtz_linkNSObjectExtenderzCategory(void) {
 
 void XTZCheckedAddExtender(id receiver, XTZ_NSObject <XTZExtender> *extender) {
 	XTZ_CHECKED_ADD_EXTENDER(receiver, extender);
+}
+
+void XTZCheckedAddExtenderIfNoneFromSameClass(_Nullable id receiver, XTZ_NSObject <XTZExtender> *extender) {
+	XTZ_CHECKED_ADD_EXTENDER_IF_NONE_FROM_SAME_CLASS(receiver, extender);
 }
