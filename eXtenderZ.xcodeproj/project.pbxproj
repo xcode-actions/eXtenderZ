@@ -89,6 +89,7 @@
 		7B39FEC1255AA577008AF2C5 /* XTZSimpleObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTZSimpleObject.h; sourceTree = "<group>"; };
 		7B39FEC6255AA8E2008AF2C5 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		7B39FF10255AA9F7008AF2C5 /* libeXtenderZ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libeXtenderZ.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B7539C02D3E6D9D0033A3F8 /* eXtenderZ.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = eXtenderZ.xctestplan; sourceTree = "<group>"; };
 		7B83A9C0255D127F00791D17 /* .github */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .github; sourceTree = "<group>"; };
 		7B91F9EB255AEE3E00D5E6E0 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
 		7BA760DA2B8A7F2C002B11DE /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
@@ -180,6 +181,7 @@
 		7B39FEB9255AA577008AF2C5 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				7B7539C02D3E6D9D0033A3F8 /* eXtenderZ.xctestplan */,
 				7B39FEBA255AA577008AF2C5 /* eXtenderZTests */,
 			);
 			path = Tests;

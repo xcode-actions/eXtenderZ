@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "ADB92A6F-9EB8-4EB7-B08D-EAD646529BB9",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:eXtenderZ.xcodeproj",
+        "identifier" : "7B0E91F5255ACC03002E8F1F",
+        "name" : "eXtenderZTests"
+      }
+    }
+  ],
+  "version" : 1
+}
